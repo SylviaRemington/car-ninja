@@ -25,3 +25,4 @@ console.log('JS LINKED AND WORKING');
 
 //The part showing starting and ending game
 //The part showing the "playing of the game/gameplay"
+//Make subfunction categories - like button functions/ ninja functions/ word bubble functions/ sound functions
