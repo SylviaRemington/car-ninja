@@ -1,2 +1,10 @@
 /* CAR NINJA GAME CSS */
 
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+    color: rgb(39, 39, 231);
+    text-align: center;
+}
