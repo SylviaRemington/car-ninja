@@ -1,2 +1,3 @@
 // CAR NINJA GAME JS
 
+console.log('JS LINKED AND WORKING');
