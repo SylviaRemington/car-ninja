@@ -1,5 +1,9 @@
 /* CAR NINJA GAME CSS */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: lightgrey;
 }
