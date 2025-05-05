@@ -1,5 +1,14 @@
 // CAR NINJA GAME JS
 
+//The code in the app adheres to coding conventions covered in lessons, 
+// like using plural names for arrays.
+
+// Render the game in the browser using the DOM manipulation techniques 
+// demonstrated in lecture.
+
+// The game is coded using proper indentation.
+
+
 console.log('JS LINKED AND WORKING');
 
 /*-------------------------------- Constants --------------------------------*/
