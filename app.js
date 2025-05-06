@@ -19,16 +19,28 @@ console.log('JS LINKED AND WORKING');
 
 
 /*------------------------ Cached Element References ------------------------*/
-
-
-
-
-/*----------------------------- Event Listeners -----------------------------*/
+//Things I want to select so I can do something with them.
+//e.g. const button = document.querySelector('button');
+//e.g. const title = document.querySelector ('h1');
 
 
 
 
 /*-------------------------------- Functions --------------------------------*/
+//What it should do... e.g. text in the title should update
+//e.g. function updateTitle(){
+        // title.textContent = "Updated"}; 
+
+
+
+
+/*----------------------------- Event Listeners -----------------------------*/
+//e.g. button.addEventListener('click', updateTitle); //when you click on the button, it will update the title
+
+
+
+
+
 
 
 
