@@ -6,8 +6,11 @@ README Requirements:
 1. Screenshot/Logo: A screenshot of your app or a logo.
 
 2. Your game's name: Include a description of your game and what it does. Background info about the game and why you chose it is a nice touch.
+
 Game Name: Car Ninja
+
 Description:
+
 Background Info: I chose to create this game because (1) fruit ninja is FUN! Who doesn't like to slice random fruit and see it splat everywhere, without the real-life cleanup?! Also, I wanted to create a game that is similar but with cars because when I drive in the United States, the drivers are horrible and like to drive slowly in the fast lanes, and also don't abide by driving rules. I thought it would be fun to create a game where you could "slice" a car that's a poor driver (since you can't do it in real life. hehe). I figure this new rendition could be the solution for "road rage". Just play Car Ninja, and you won't want to do crazy things on the real road! lol
 
 3. Getting started: Include a link to your deployed game and any instructions you deem important. This should also contain a link to your planning materials./Use one of these three terminologies "Deployed Game" or "Play at" or "Demo"
