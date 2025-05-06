@@ -23,6 +23,11 @@ console.log('JS LINKED AND WORKING');
 //e.g. const button = document.querySelector('button');
 //e.g. const title = document.querySelector ('h1');
 
+//button to start game
+//button to adjust game speed
+//button for fun facts --randomized
+//selecting points earned area (might not be a button but something else)
+//click on cars to create getting points (can you create a car as a button? Or an image?)
 
 
 
@@ -31,12 +36,20 @@ console.log('JS LINKED AND WORKING');
 //e.g. function updateTitle(){
         // title.textContent = "Updated"}; 
 
+//Create a function that connects to a different page to start the game
+//Create a function that randomizes fun facts
+//Create a function to add points earned
+//Create a function that gives you instructions when you click on the Basic Instructions button
+
 
 
 
 /*----------------------------- Event Listeners -----------------------------*/
 //e.g. button.addEventListener('click', updateTitle); //when you click on the button, it will update the title
 
+//listen for clicks to create instructions
+//listen for clicks to start game //Do they all have to be separate event listeners?
+//listen for click to adjust game speed
 
 
 
