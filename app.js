@@ -12,10 +12,14 @@
 console.log('JS LINKED AND WORKING');
 
 /*-------------------------------- Constants --------------------------------*/
+//for creating a new element and saving it in memory
+//e.g. const clickToAddParagraphButton = document.createElement('button')
+
 
 
 /*-------------------------------- Variables --------------------------------*/
 
+let pointsEarned = '';
 
 
 /*------------------------ Cached Element References ------------------------*/
