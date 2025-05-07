@@ -4,11 +4,11 @@
 //objects have key:valuePairs,
 //create a randomization of pulling these comments. Figure out how to do that in JS.
 const carComments = [
-    { comment1: "Oh noooo! I was driving to slow!" },
+    { comment1: "Oh noooo! I was driving to slow!" },//AI is saying I need consistent keys here and to name them all "text"/ask about this
     { comment2: "" },
     { comment3: "" },
-    { comment4: "", },
-    { comment5: "", },
+    { comment4: "" },
+    { comment5: "" } //Took off trailing comment here. Even though comma works with modern JS, doesn't work for older environments.
 ];
 
 
@@ -17,7 +17,7 @@ const congratsComments = [
     { congrats2: "" },
     { congrats3: "" },
     { congrats4: "" },
-    { congrats5: "" },
+    { congrats5: "" }
 ];
 
 
@@ -26,7 +26,7 @@ const gameOverComments = [
     {gameOverComment2: "Dooooooooooooooode"},
     {gameOverComment3: ""},
     {gameOverComment4: ""},
-    {gameOverComment5: ""},  
+    {gameOverComment5: ""} 
 ];
 
 
