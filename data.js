@@ -4,9 +4,15 @@
 //objects have key:valuePairs,
 //create a randomization of pulling these comments. Figure out how to do that in JS.
 const carComments = [
-    {
-        comment1: "Oh noooo! I was driving to slow!",
-        comment2: "",
+    { comment1: "Oh noooo! I was driving to slow!"},
+    {comment2: "",},
+    {},
+    {},
+    {},
+    {},
+
+    }
+        
         comment3: "",
         comment4: "",
         comment5: "",
