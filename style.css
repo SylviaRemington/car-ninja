@@ -16,9 +16,11 @@ body {
     background-color: lightgrey;
 }
 
-header h1 {
+header h1 { 
+    /* chose header h1 to differentiate between other headers on other screens */
+    font-size: 2.5em;
     color: rgb(39, 39, 231);
     /* color: rgb(39, 39, 231); */
-    background-gradient
+    background: linear-gradient(to right, white, blue);
     text-align: center;
 }
