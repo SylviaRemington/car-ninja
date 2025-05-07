@@ -29,26 +29,32 @@ and also audio sounds and funny comments. -->
 
 <body>
 
+       <!-- Header holds the games title -->
     <header class="header">
         <h1>Car Ninja Game!</h1>
     </header>
 
-    <!-- Using Nav Bar for buttons at the top -->
+    <!-- Using Nav Bar for buttons at the top - better navigation for all-->
     <nav class="buttons">
         <button id="instructions" class="buttons">Instructions</button>
         <button id="play-game" class="buttons">Play Game</button>
+        <button id="pause-game" class="buttons">Pause Game</button> <!-- Also have a button to click on if you want to pause game and/or leave/start over -->
+        <button id="leave-game" class="buttons">Leave Game</button>
         <button id="fun-facts" class="buttons">Fun Facts</button>
         <button id="adjust-game-speed" class="buttons">Adjust Game Speed</button><!-- the ability to choose a different game speed each-->
         <button id="get-your-car" class="buttons">Get Your Car</button>  <!-- the ability to choose different cars each time play -->
         <button id="swords" class="buttons">Sword, Stars, or Nunchucks</button> <!-- the ability to choose different weapons each time play -->
+        <button id="level-up" class="buttons">Level Up!</button>  <!-- the ability to level up after a certain amount of points -->
         <button id="points-earned" class="buttons">Points Earned</button> <!-- This Points Earned Button might be taken away, and instead use a SCORE DISPLAY or SCORE COUNTER -->
         <button id="tries-left" class="buttons">Tries Left Before Gameover</button><!-- This Tries Left Button might be taken away, and instead use a SCORE DISPLAY or SCORE COUNTER -->
-        <button id="level-up" class="buttons">Level Up!</button>  <!-- the ability to level up after a certain amount of points -->
-      
+        
+        <!--Grok ai told me about better practices to use <span>s(class="display")for score and live displays as they are not interactive.
+         <span id="points-earned" class="display">Score: 0</span>
+        <span id="tries-left" class="display">Lives: 3</span> -->
     </nav>
 
 
-<!-- MAIN GAME SCREENS -->
+<!-- MAIN GAME SCREENS - houses the game's 3 screens -->
     <main>
 
         <!-- SET UP SCREEN -->
@@ -57,13 +63,14 @@ and also audio sounds and funny comments. -->
         <!-- GAMEPLAY SCREEN -->
         <div id = "gameplay-screen"></div>
         <!-- have a 'ready...3 2 1... go'section -->
+ 
 
         <!-- GAMEOVER SCREEN... have Bill Paxton saying "Game Over Man! Game Over! Why don't we put her in charge?" -->
         <div id = "gameover-screen"></div>
 
     </main>
 
-<!-- FOOTER (Visible only on GAMEOVER SCREEN) -->
+<!-- FOOTER (perhaps only Visible on GAMEOVER SCREEN) -->
     <footer>
 
     </footer>
