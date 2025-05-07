@@ -17,7 +17,8 @@ body {
 }
 
 header h1 { /* chose header h1 to differentiate between other headers on other screens */
-    color: black;/* originally using this color and might come back to color: rgb(39, 39, 231); */
+    color: cornflowerblue;/* originally using this color and might come back to color: rgb(39, 39, 231); */
+    -webkit-text-stroke: 1px black; /* Black outline around letters */
     text-align: center;
     
 
