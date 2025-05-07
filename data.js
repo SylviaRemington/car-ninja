@@ -9,7 +9,7 @@ const carComments = [
     { comment3: "" },
     { comment4: "", },
     { comment5: "", },
-]
+];
 
 
 const congratsComments = [
@@ -18,7 +18,7 @@ const congratsComments = [
     { congrats3: "" },
     { congrats4: "" },
     { congrats5: "" },
-]
+];
 
 
 const gameOverComments = [
@@ -27,15 +27,24 @@ const gameOverComments = [
     {gameOverComment3: ""},
     {gameOverComment4: ""},
     {gameOverComment5: ""},  
-]
+];
 
 
-const carChoiceNinja = {
+const carChoiceNinja = [
+{
     name: "Ferrari Ninja",
     speed: 120, //or could do a string "The speed of sound."
     weapons: ["Sword", "Ninja Stars/Throwing Stars", "Nunchucks"],
-    location: Rome, //where car typically likes to drive
+    locations: ["Rome", "Australia", "Nepal", "Japan", "Underground", "Under water"], //where car typically likes to drive
+},
+
+{
+    name: "Cybertruck Trashcan",
+    speed: 20,
+    weapons: "I'm a cybertruck. I look like a big weapon",
+    locations: ["Rome", "Australia", "Nepal", "Japan", "Underground", "Under water"], 
 }
+];
 //above create a startGame function within the Object like...
 // startGame: function() {
 //     console.log("Game started!");
