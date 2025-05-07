@@ -16,8 +16,9 @@ body {
     background-color: lightgrey;
 }
 
-h1 {
+header h1 {
     color: rgb(39, 39, 231);
     /* color: rgb(39, 39, 231); */
+    background-gradient
     text-align: center;
 }
