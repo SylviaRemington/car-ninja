@@ -46,3 +46,23 @@ The ability to be different characters as you play.
 8. Ahas
 
 CONSISTENT TEXT - In my data.js section, inside Objects, using consistent text for the "key" in key: value pairs was especially eye opening for me, regarding ease of use later on in coding... Especially in JS iterating over arrays and objects (e.g. forEach, for...loop). Creating consistent text makes code more reusable and easier to maintain.
+
+Example: 
+
+MY INITIAL VERSION:
+const carComments = [
+    { comment1: "Oh noooo! I was driving to slow!" },//AI is saying I need consistent keys here and to name them all "text"/ask about this
+    { comment2: "" },
+    { comment3: "" },
+    { comment4: "" },
+    { comment5: "" } //Took off trailing comment here. Even though comma works with modern JS, doesn't work for older environments.
+];
+
+CORRECTED VERSION FOR MORE USEABILITY:
+const carComments = [
+    { text: "Oh noooo! I was driving to slow!" },//AI is saying I need consistent keys here and to name them all "text"/ask about this
+    { text: "" },
+    { text: "" },
+    { text: "" },
+    { text: "" } //Took off trailing comment here. Even though comma works with modern JS, doesn't work for older environments.
+];
