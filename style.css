@@ -17,13 +17,13 @@ body {
 }
 
 header h1 { /* chose header h1 to differentiate between other headers on other screens */
-    color: white;
-    /* originally using this color and might come back to color: rgb(39, 39, 231); */
-    font-size: 2.5em; /* chose em so that this h1 could scale with responsive designs depending on if computer or phone*/
-    background: linear-gradient(to right, green, blue);
+    color: rgb(39, 39, 231);/* originally using this color and might come back to color: rgb(39, 39, 231); */
     text-align: center;
+    
+    /* font-size: 2.5em; chose em so that this h1 could scale with responsive designs depending on if computer or phone */
+    /* background: linear-gradient(to right, green, blue); */
     /* display: flex;
     justify-content: center; */
-    display: inline-block; /* Gradient hugs text */
-    padding: 0.2em 0.5em; Adds space around text
+    /* display: inline-block; Gradient hugs text */
+    /* padding: 0.2em 0.5em; Adds space around text */
 }

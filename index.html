@@ -34,13 +34,17 @@ and also audio sounds and funny comments. -->
     </header>
 
     <!-- Using Nav Bar for buttons at the top -->
-    <nav>
-        <button>Start Game</button>
-        <button>Instructions</button>
-        <button>Fun Facts</button>
-        <button>Adjust Game Speed</button>
-        <button>Get Your Car</button>
-        <button>Points Earned</button>
+    <nav class="buttons">
+        <button id="instructions" class="buttons">Instructions</button>
+        <button id="play-game" class="buttons">Play Game</button>
+        <button id="fun-facts" class="buttons">Fun Facts</button>
+        <button id="adjust-game-speed" class="buttons">Adjust Game Speed</button><!-- the ability to choose a different game speed each-->
+        <button id="get-your-car" class="buttons">Get Your Car</button>  <!-- the ability to choose different cars each time play -->
+        <button id="swords" class="buttons">Sword, Stars, or Nunchucks</button> <!-- the ability to choose different weapons each time play -->
+        <button id="points-earned" class="buttons">Points Earned</button> <!-- This Points Earned Button might be taken away, and instead use a SCORE DISPLAY or SCORE COUNTER -->
+        <button id="tries-left" class="buttons">Tries Left Before Gameover</button><!-- This Tries Left Button might be taken away, and instead use a SCORE DISPLAY or SCORE COUNTER -->
+        <button id="level-up" class="buttons">Level Up!</button>  <!-- the ability to level up after a certain amount of points -->
+      
     </nav>
 
 
@@ -52,6 +56,7 @@ and also audio sounds and funny comments. -->
 
         <!-- GAMEPLAY SCREEN -->
         <div id = "gameplay-screen"></div>
+        <!-- have a 'ready...3 2 1... go'section -->
 
         <!-- GAMEOVER SCREEN... have Bill Paxton saying "Game Over Man! Game Over! Why don't we put her in charge?" -->
         <div id = "gameover-screen"></div>
