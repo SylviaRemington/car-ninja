@@ -32,7 +32,8 @@ const carClickCommentSounds = [
     {text: "Flash!"},
     {text: "Silence. Target destroyed!"},
     {text: "Zoomf!"},
-    {text: "Boomf!"}
+    {text: "Boomf!"},
+    {text: "Chop Chop!"},
 ]
 
 const congratsComments = [
