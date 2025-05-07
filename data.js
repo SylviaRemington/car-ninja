@@ -1,4 +1,4 @@
-//data for putting car comments and also congratulatory comments
+//data for putting car funny possibly insult comments and also congratulatory comments
 
 
 //objects have key:valuePairs,
@@ -11,12 +11,18 @@ const carComments = [
     { comment5: "" } //Took off trailing comment here. Even though comma works with modern JS, doesn't work for older environments.
 ];
 
+const carClickCommentSounds = [
+    {text: "hiyyyyyyyaaaaaaa!"},
+    {text: "NINJA CHOP!"},
+    {text: "kapow!"},
+    {text: "Splat!"}
+]
 
 const congratsComments = [
     { congrats1: "You're technique is very strong!" },
-    { congrats2: "" },
-    { congrats3: "" },
-    { congrats4: "" },
+    { congrats2: "You are like the Iron Fist, chopping through cars and saving people from horrible drivers!" },
+    { congrats3: "You are like Wolverine, cutting all these cars in half!" },
+    { congrats4: "You're doing grrrrreat!" },
     { congrats5: "" }
 ];
 
