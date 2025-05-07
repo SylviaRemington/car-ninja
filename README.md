@@ -42,3 +42,7 @@ The ability to be different characters as you play.
 
 
 7. //If time, add sections including: Features, Screenshot/Images/Visuals Descriptions,MVP Requirements, Early Concept/Ideas, Process aka Build/CodeProcess, Known Issues & Bug Solves, Edge Cases Covered, and also disclaimer since I'm re-creating a game that is already big "Fruit Ninja". Somewhere state that this is educational, for learning class purposes, and is from a ninja-movie-watching-fan!
+
+8. Ahas
+
+CONSISTENT TEXT - In my data.js section, inside Objects, using consistent text for the "key" in key: value pairs was especially eye opening for me, regarding ease of use later on in coding... Especially in JS iterating over arrays and objects (e.g. forEach, for...loop). Creating consistent text makes code more reusable and easier to maintain.
