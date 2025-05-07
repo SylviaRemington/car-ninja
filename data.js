@@ -2,6 +2,7 @@
 
 
 //objects have key:valuePairs,
+//create a randomization of pulling these comments. Figure out how to do that in JS.
 const carComments = [
     {
         comment1: "Oh noooo! I was driving to slow!",
@@ -19,3 +20,32 @@ const congratsComments = [
     }
 
 ]
+
+
+const gameOverComments = [
+    { 
+        gameOverComment1: "Gameover, man! Gameover!", //from the movie Aliens2. Maybe also add "Why don't you put her in charge?!"
+        gameOverComment2: "Dooooooooooooooode",
+        gameOverComment3: "",
+        gameOverComment4: "",
+        gameOverComment5: "",
+    
+    
+    }
+]
+
+
+const carChoiceNinja = {
+    name: "Ferrari Ninja",
+    speed: 120, //or could do a string "The speed of sound."
+    weapons: ["Sword", "Ninja Stars/Throwing Stars", "Nunchucks"],
+}
+//above create a startGame function within the Object like...
+// startGame: function() {
+//     console.log("Game started!");
+// }
+
+// Access properties
+// console.log(carNinja.name); // "Ferrari Ninja"
+// carNinja.startGame(); // "Game started!"
+
