@@ -15,7 +15,24 @@ const carClickCommentSounds = [
     {text: "hiyyyyyyyaaaaaaa!"},
     {text: "NINJA CHOP!"},
     {text: "kapow!"},
-    {text: "Splat!"}
+    {text: "Splat!"},
+    {text: "Wham!"},
+    {text: "Whack!"},
+    {text: "Slice!"},
+    {text: "Swoosh!"},
+    {text: "Snap!"},
+    {text: "Crack!"},
+    {text: "Zing!"},
+    {text: "Zoom!"},
+    {text: "Bam!"},
+    {text: "Ping!"},
+    {text: "Smack!"},
+    {text: "Strike!"},
+    {text: "Crush!"},
+    {text: "Flash!"},
+    {text: "Silence. Target destroyed!"},
+    {text: "Zoomf!"},
+    {text: "Boomf!"}
 ]
 
 const congratsComments = [
