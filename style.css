@@ -51,8 +51,8 @@ header h1 { /* chose header h1 to differentiate between other headers on other s
     background-color: cornflowerblue;
 }
 
-/* START GAME BUTTON */
-#start-game {
+/* START GAME BUTTON & INSTRUCTIONS BUTTONS */
+#start-game, #instructions {
     background-color: yellow;
 }
 
