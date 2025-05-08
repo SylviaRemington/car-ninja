@@ -62,7 +62,7 @@ header h1 { /* chose header h1 to differentiate between other headers on other s
 }
 
 /* Styling Of Different Screens below */
-#start-screen h2, #instructions-screen h2 {
+#starter-screen h2, #instructions-screen h2 {
     color: cornflowerblue;/* originally using this color and might come back to color: rgb(39, 39, 231); */
     -webkit-text-stroke: 1px black; /* Black outline around letters */
     text-align: left;
