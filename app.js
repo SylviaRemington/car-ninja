@@ -47,7 +47,8 @@ let pointsEarned = '';
 //Create a function to add points earned
 //Create a function that gives you instructions when you click on the Basic Instructions button
 
-
+// !! USE THIS:
+// !! updateScore() and updateLives() functions
 
 
 /*----------------------------- Event Listeners -----------------------------*/
