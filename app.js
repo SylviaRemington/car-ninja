@@ -10,7 +10,6 @@
 
 //!! MAIN FOCUS IS ON MVP AND GETTING GAMEPLAY SCREEN TO WORK
 
-
 console.log('JS LINKED AND WORKING');
 
 /*-------------------------------- Constants --------------------------------*/
