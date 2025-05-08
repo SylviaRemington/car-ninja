@@ -93,8 +93,20 @@ Scores update automatically – The score changes quickly as the player earns po
 
 Less confusing – A button implies you can interact with it, but the score is just information.
 
-------
+-------------
 
+            <!-- SCORE DISPLAY - recommended to use span because inline and because it's dynamic text-->
+            <div class = "score-display"> <!-- Using class instead of id for reusability, in case create another screen with points earned. -->
+                <span id="points-earned">Points Earned: 0</span>
+                <!-- Could also change this to Score: 0 for better readability and simplicity-->
+                <span id="tries-left">Tries Left: 3</span>
+                <!-- Could also change this to Lives: 3 for better readability and simplicity -->
+                CHANGING TO SCORE AND LIVES BECAUSE THESE ARE THE MOST COMMON TERMS IN GAMING
+
+-------------
+
+    <!-- MAIN GAME SCREENS - houses the game's 3 screens of the Starter Screen, the Instructions Screen, the Gameplay Screen, and the GameOver Screen -->
+    <!-- The good stuff is in main...woot woot -->
 
 */
 
