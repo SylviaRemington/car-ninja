@@ -68,6 +68,10 @@ header h1 { /* chose header h1 to differentiate between other headers on other s
     text-align: left;
 }
 
+#instructions-screen p {
+    font-size: 12px;
+}
 
-
-
+h2 {
+    margin-bottom: .5px;
+}
