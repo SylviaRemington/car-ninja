@@ -49,3 +49,7 @@ header h1 { /* chose header h1 to differentiate between other headers on other s
     /* dark blue with light blue border */
     background-color: cornflowerblue;
 }
+
+#start-game {
+    background-color: yellow;
+}
