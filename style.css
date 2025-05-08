@@ -37,12 +37,6 @@ header h1 { /* chose header h1 to differentiate between other headers on other s
     text-align: center;
     
 
-    /* font-size: 2.5em; chose em so that this h1 could scale with responsive designs depending on if computer or phone */
-    /* background: linear-gradient(to right, green, blue); */
-    /* display: flex;
-    justify-content: center; */
-    /* display: inline-block; Gradient hugs text */
-    /* padding: 0.2em 0.5em; Adds space around text */
 }
 
 /* ALL BUTTONS */
@@ -84,4 +78,19 @@ h2 {
 /* Trying to add thin black border around images... and not currently working*/
 #game-grid img {
     border: 5px black;
+}
+
+.score-display {
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Space between score and game grid */
+    text-align: center; /* Optional: Center the text */
+}
+
+#points-earned, #tries-left {
+    margin-right: 20px;
 }

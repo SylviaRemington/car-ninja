@@ -122,7 +122,32 @@ May use these tabs for addtl parts of the website if I have time in the future:
 
 // CSS CODE GRAVEYARD /*----------------------------- CSS Code Graveyard -----------------------------*/
 /*
+ ORIGINALLY FOR HEADER H1 trying this:
+    font-size: 2.5em; chose em so that this h1 could scale with responsive designs depending on if computer or phone
+    background: linear-gradient(to right, green, blue);
+    display: flex;
+    justify-content: center; 
+    display: inline-block; Gradient hugs text
+    padding: 0.2em 0.5em; Adds space around text
 
+---------------------
+ FOR SCORE WHEN WITHIN GAME GRID... BUT THIS ONE MAKES ACCESSIBILITY HARD CAUSE OVERLAY:
+ .score-display {
+    position: absolute; Overlay on top of the game 
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#points-earned, #tries-left {
+    margin-right: 20px; Space between score and lives
+}
+------------------------------
 
 
 
