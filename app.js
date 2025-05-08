@@ -22,6 +22,7 @@ console.log('JS LINKED AND WORKING');
 
 let pointsEarned = '';
 
+// Store score/lives in variables (score, lives).
 
 /*------------------------ Cached Element References ------------------------*/
 //Things I want to select so I can do something with them.
