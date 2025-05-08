@@ -103,10 +103,20 @@ Less confusing – A button implies you can interact with it, but the score is j
                 <!-- Could also change this to Lives: 3 for better readability and simplicity -->
                 CHANGING TO SCORE AND LIVES BECAUSE THESE ARE THE MOST COMMON TERMS IN GAMING
 
--------------
+--------------
 
     <!-- MAIN GAME SCREENS - houses the game's 3 screens of the Starter Screen, the Instructions Screen, the Gameplay Screen, and the GameOver Screen -->
     <!-- The good stuff is in main...woot woot -->
+
+-------------
+
+May use these tabs for addtl parts of the website if I have time in the future:
+    <section></section>
+    <aside></aside>
+
+-------------
+
+
 
 */
 
