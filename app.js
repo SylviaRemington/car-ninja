@@ -137,9 +137,21 @@ CHANGING THIS CODE TO AN ORDERED LIST
                 <li>Score 10+ points in 30 seconds to win!</li>
             </ol>
 ---------------
+Also, just had an ai review my html on 5/8/25 and this is what they came up with:
 
+Your HTML code is well-structured and functional - you're absolutely ready to start working on CSS and JavaScript! Here's a quick review:
+✅ What's Working Great:
 
-
+Perfect Document Structure
+Correct DOCTYPE, html with lang, head with metadata, and body
+Excellent semantic HTML (header, nav, main, footer, section)
+Game Architecture
+Clear screen separation (starter/instructions/gameplay/gameover)
+Properly organized score display and game grid
+Good button structure for controls
+Readiness for CSS/JS
+Logical ID/class naming (#points-earned, .score-display)
+External files properly linked (app.js, data.js, style.css)
 
 */
 
@@ -187,7 +199,7 @@ CHANGING THIS CODE TO AN ORDERED LIST
 //   margin-top: 4px;    /* Small gap before the list */
 //   padding-left: 20px; /* Adjust indentation */
 // }
-
+// -------------------------------
 
 
 
