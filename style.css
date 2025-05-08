@@ -57,7 +57,7 @@ header h1 { /* chose header h1 to differentiate between other headers on other s
 }
 
 /* BACK TO HOME SCREEN BUTTON */
-#back-to-home-screen {
+#play-again, #back-to-home-screen {
     background-color: yellow;
 }
 
