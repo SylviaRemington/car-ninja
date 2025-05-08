@@ -85,9 +85,15 @@ CHANGING BUTTONS TO SCORE DISPLAY - FOR POINTS EARNED & TRIES LEFT
          <span id="points-earned" class="display">Score: 0</span>
         <span id="tries-left" class="display">Lives: 3</span> -->
 
-        
+When making a simple video game, using a score display (like text on the screen) instead of buttons is better because:
 
+Buttons are for player input – Buttons are meant to be clicked or pressed by the player (like "Start" or "Pause").
 
+Scores update automatically – The score changes quickly as the player earns points, so displaying it as text is cleaner and faster.
+
+Less confusing – A button implies you can interact with it, but the score is just information.
+
+------
 
 
 */
