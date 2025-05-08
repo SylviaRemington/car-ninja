@@ -80,3 +80,8 @@ h2 {
     font-size: 12px;
     margin-top: 0;
 }
+
+/* Trying to add thin black border around images... and not currently working*/
+#game-grid img {
+    border: 5px black;
+}
