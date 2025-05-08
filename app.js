@@ -65,3 +65,43 @@ let pointsEarned = '';
 //The part showing starting and ending game
 //The part showing the "playing of the game/gameplay"
 //Make subfunction categories - like button functions/ ninja functions/ word bubble functions/ sound functions
+
+
+
+
+
+
+
+
+
+// CODE GRAVEYARD
+// Code Graveyard
+
+// HTML CODE GRAVEYARD /*----------------------------- HTML Code Graveyard -----------------------------*/
+
+
+
+
+
+// CSS CODE GRAVEYARD /*----------------------------- CSS Code Graveyard -----------------------------*/
+
+
+
+
+
+// JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard -----------------------------*/
+
+
+
+
+// DATA.JS CODE GRAVEYARD
+
+
+
+
+// README CODE GRAVEYARD
+
+
+
+
+// LICENSE CODE GRAVEYARD
