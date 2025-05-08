@@ -45,6 +45,12 @@ header h1 { /* chose header h1 to differentiate between other headers on other s
 
 }
 
+h2 {
+    margin-top: 0; 
+    /* removes all space above */
+    margin-bottom: .8px;
+}
+
 
 
 /*****************************
@@ -80,17 +86,24 @@ header h1 { /* chose header h1 to differentiate between other headers on other s
     text-align: left;
 }
 
-
-h2 {
-    margin-top: 0; 
-    /* removes all space above */
-    margin-bottom: .8px;
-}
+/* DOUBLE CHECK THIS STYLING BELOW WITH RESETING MARGIN AND MAKE SURE IT'S CORRECT */
+#instructions-screen p,
+#instructions-screen ol {
+margin: 0;/* Resets top/bottom margins */
+ }
 
 
 #instructions-screen p {
     font-size: 12px;
     margin-top: 0;
+    color: black;
+}
+
+#instructions-screen
+
+ol {
+    font-size: 12px;
+    font-weight: semi-bold;
 }
 
 /* Trying to add thin black border around images... and not currently working*/

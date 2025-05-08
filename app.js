@@ -118,6 +118,27 @@ May use these tabs for addtl parts of the website if I have time in the future:
 
 -------------
 
+CHANGING THIS CODE TO AN ORDERED LIST
+        <!-- INSTRUCTIONS SCREEN -->
+        <section id="instructions-screen" class="screen">
+            <h2>Instructions</h2>
+            <p>1. Click cars to score points. Don't you wanna get slow drivers, bad drivers, and cybertrucks off the road?</p>
+            <p>2. Avoid potholes to keep lives. If you click on a pothole, you lose a life!</p>
+            <p>3. Score 10+ points in 30 seconds to win!</p>
+
+
+        ALSO TRIED THIS BUT IT LOOKED WEIRD... TRYING TO NAME AN OL DOESN'T SEEM TO WORK
+        <!-- INSTRUCTIONS SCREEN -->
+        <section id="instructions-screen" class="screen">
+            <h2>Instructions</h2>
+            <ol>Your challenge if you choose to accept it:
+                <li>Click cars to score points. Don't you wanna get slow drivers, bad drivers, and cybertrucks off the road?</li>
+                <li>Avoid potholes to keep lives. If you click on a pothole, you lose a life!</li>
+                <li>Score 10+ points in 30 seconds to win!</li>
+            </ol>
+---------------
+
+
 
 
 */
@@ -150,6 +171,22 @@ May use these tabs for addtl parts of the website if I have time in the future:
     margin-right: 20px; Space between score and lives
 }
 ------------------------------
+/* Remove default margins/padding */
+// #instructions-screen p,
+// #instructions-screen ol {
+//   margin: 0;          /* Resets top/bottom margins */
+//   padding: 0;         /* Resets left/right padding */
+// }
+
+/* Add custom spacing ONLY where needed */
+// #instructions-screen p {
+//   margin-bottom: 8px; /* Tight gap after the phrase */
+// }
+
+// #instructions-screen ol {
+//   margin-top: 4px;    /* Small gap before the list */
+//   padding-left: 20px; /* Adjust indentation */
+// }
 
 
 
