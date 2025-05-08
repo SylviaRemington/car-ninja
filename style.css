@@ -45,21 +45,29 @@ header h1 { /* chose header h1 to differentiate between other headers on other s
     /* padding: 0.2em 0.5em; Adds space around text */
 }
 
+/* ALL BUTTONS */
+.buttons {
+    /* dark blue with light blue border */
+    background-color: cornflowerblue;
+}
+
+/* START GAME BUTTON */
+#start-game {
+    background-color: yellow;
+}
+
+/* BACK TO HOME SCREEN BUTTON */
+#back-to-home-screen {
+    background-color: yellow;
+}
+
+/* Styling Of Different Screens below */
 #start-screen h2, #instructions-screen h2 {
     color: cornflowerblue;/* originally using this color and might come back to color: rgb(39, 39, 231); */
     -webkit-text-stroke: 1px black; /* Black outline around letters */
     text-align: left;
 }
 
-.buttons {
-    /* dark blue with light blue border */
-    background-color: cornflowerblue;
-}
 
-#start-game {
-    background-color: yellow;
-}
 
-#back-to-home-screen {
-    background-color: yellow;
-}
+
