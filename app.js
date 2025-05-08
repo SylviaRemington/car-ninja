@@ -78,6 +78,14 @@ let pointsEarned = '';
 // HTML CODE GRAVEYARD /*----------------------------- HTML Code Graveyard -----------------------------*/
 /*
 
+CHANGING BUTTONS TO SCORE DISPLAY - FOR POINTS EARNED & TRIES LEFT
+        <button id="points-earned" class="buttons">Points Earned</button> <!-- This Points Earned Button might be taken away, and instead use a SCORE DISPLAY or SCORE COUNTER -->
+        <button id="tries-left" class="buttons">Tries Left Before Gameover</button><!-- This Tries Left Button might be taken away, and instead use a SCORE DISPLAY or SCORE COUNTER -->
+        <!--Grok ai told me about better practices to use <span>s(class="display")for score and live displays as they are not interactive.
+         <span id="points-earned" class="display">Score: 0</span>
+        <span id="tries-left" class="display">Lives: 3</span> -->
+
+        
 
 
 
