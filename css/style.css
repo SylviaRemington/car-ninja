@@ -186,11 +186,11 @@ ol {
 
 #game-grid div { /* targeting each individual box inside the grid */
     width: 8.33%; /* 100% ÷ 12 = 8.333...%, rounded */
-    height: 8.33%;
-    /* height: 60px; */
+    /* height: 8.33%; */
+    height: 50px;  /* not sure why height in px works but height in % doesn't */
     border: 1px solid lightblue;
 }
 
 #game-grid div.cyberTruckGreen2 {
-    background-image: url("../images/cyberTruckGreen2.jpg");
+    background-image: url("../images/cybertruck.jpg");
 }

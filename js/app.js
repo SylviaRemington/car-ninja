@@ -31,9 +31,9 @@ const cells = []; //creating an empty array that is meant to store each cell of 
 function createGrid() {
         for (let i = 0; i < cellCount; i++) {
                 const cell = document.createElement("div");
+                cell.classList.add("cyberTruckGreen2");
                 cell.textContent = i;
-                // cells.push(i); //pushing number i(0,1,2..) into the array - not the actual <div> elements.
-                cells.push(cell); //for if I want to store the divs (more useful for later interaction).
+                cells.push(i); //pushing number i(0,1,2..) into the array - not the actual <div> elements.
                 gameGrid.appendChild(cell);//append it to the DOM
         }
 }
@@ -409,6 +409,7 @@ If you want more complex mechanics like obstacles or combo scoring
 // }
 // createGrid();
 
+// NOT WORKING cells.push(cell); //for if I want to store the divs (more useful for later interaction). //NOT WORKING
 // cells.push(cell); //for if I want to store the divs (more useful for later interaction).//change out cells.push(i);
 // Reason 💡 Why:
 // You're creating <div> elements that represent the squares of your game grid.
@@ -472,7 +473,7 @@ If you want more complex mechanics like obstacles or combo scoring
 //Make subfunction categories - like button functions/ ninja functions/ word bubble functions/ sound functions
 
 
-*/
+
 
 
 // DATA.JS CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- DATA.JS CODE GRAVEYARD  -----------------------------*/
