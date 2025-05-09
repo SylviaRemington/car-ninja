@@ -12,6 +12,13 @@
 
 console.log('JS LINKED AND WORKING');
 
+/*------------------------- Temporary Code to Have Gameplay Screen as active -------------------*/
+// Find gameplay screen
+const gameplayScreen = document.getElementById('gameplay-screen');
+
+// Show gameplay screen
+gameplayScreen.classList.add('active');
+
 /*-------------------------------- Constants --------------------------------*/
 //for creating a new element and saving it in memory
 //e.g. const clickToAddParagraphButton = document.createElement('button')
@@ -20,7 +27,7 @@ console.log('JS LINKED AND WORKING');
 
 /*-------------------------------- Variables --------------------------------*/
 
-let pointsEarned = '';
+// let pointsEarned = '';
 
 // Store score/lives in variables (score, lives).
 
@@ -47,8 +54,8 @@ let pointsEarned = '';
 //Create a function to add points earned
 //Create a function that gives you instructions when you click on the Basic Instructions button
 
-// !! USE THIS:
-// !! updateScore() and updateLives() functions
+// USE THIS:
+// updateScore() and updateLives() functions
 
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -168,23 +175,36 @@ External files properly linked (app.js, data.js, style.css)
     padding: 0.2em 0.5em; Adds space around text
 
 ---------------------
- FOR SCORE WHEN WITHIN GAME GRID... BUT THIS ONE MAKES ACCESSIBILITY HARD CAUSE OVERLAY:
- .score-display {
-    position: absolute; Overlay on top of the game 
-    top: 10px;
-    left: 10px;
-    color: white;
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background 
-    padding: 10px;
-    border-radius: 5px;
-}
+/*******************************
+  HIDING SCREENS -- original code, but changing it to .active to make screens more useable. Might go back to this.
+********************************/
+// .screens {
+//         display: none;
+//     }
+    
+//     #gameplay-screen {
+//         display: block;
+    
+//     }
 
-#points-earned, #tries-left {
-    margin-right: 20px; Space between score and lives
-}
-------------------------------
+// ---------------------
+//  FOR SCORE WHEN WITHIN GAME GRID... BUT THIS ONE MAKES ACCESSIBILITY HARD CAUSE OVERLAY:
+//  .score-display {
+//     position: absolute; Overlay on top of the game 
+//     top: 10px;
+//     left: 10px;
+//     color: white;
+//     font-size: 24px;
+//     font-family: Arial, sans-serif;
+//     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background 
+//     padding: 10px;
+//     border-radius: 5px;
+// }
+
+// #points-earned, #tries-left {
+//     margin-right: 20px; Space between score and lives
+// }
+// ------------------------------
 /* Remove default margins/padding */
 // #instructions-screen p,
 // #instructions-screen ol {
@@ -205,7 +225,6 @@ External files properly linked (app.js, data.js, style.css)
 
 
 
-*/
 
 // JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard -----------------------------*/
 /*

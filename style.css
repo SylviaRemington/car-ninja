@@ -84,10 +84,13 @@ h2 {
     display: none;
 }
 
-#gameplay-screen {
+.active { 
+    /* Any element with class="active" will be visible on the screen. And the class="active" is done in JS */
     display: block;
-
 }
+
+
+
 /*****************************
   SCREEN-SPECIFIC STYLES
 *****************************/
