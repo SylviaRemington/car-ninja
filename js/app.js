@@ -25,14 +25,15 @@ gameplayScreen.classList.add('active');
 const gameGrid = document.querySelector("#game-grid");//grabbing the grid in html
 const width = 12; // columns - width usually refers to how many columns are in each row. 12 columns * 12 rows = 144 squares total
 const height = 4; // rows
-const cellCount = width * height; //12 * 4 = 48
-const cells = [];
+const cellCount = width * height; //12 * 4 = 48 --currently creating a game with 12 across and 4 high -- subject to change later
+const cells = []; //creating an empty array that is meant to store each cell of the grid as I create them in a loop.
 
 function createGrid() {
         for (let i = 0; i < cellCount; i++) {
                 const cell = document.createElement("div");
                 cell.textContent = i;
-                cells.push(i);
+                // cells.push(i); //pushing number i(0,1,2..) into the array - not the actual <div> elements.
+                cells.push(cell); //for if I want to store the divs (more useful for later interaction).
                 gameGrid.appendChild(cell);//append it to the DOM
         }
 }
@@ -407,6 +408,15 @@ If you want more complex mechanics like obstacles or combo scoring
 //         }
 // }
 // createGrid();
+
+// cells.push(cell); //for if I want to store the divs (more useful for later interaction).//change out cells.push(i);
+// Reason 💡 Why:
+// You're creating <div> elements that represent the squares of your game grid.
+// By pushing cell (the actual DOM element) into the cells array, you can later:
+// Change their styles (e.g. color, background)
+// Add event listeners to individual cells (e.g. click)
+// Identify specific positions in the grid using their index
+// If you just store the numbers i, you can't interact with the actual grid elements later.
 
 // ---------------------------------------
 
