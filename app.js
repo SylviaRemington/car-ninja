@@ -136,7 +136,9 @@ CHANGING THIS CODE TO AN ORDERED LIST
                 <li>Avoid potholes to keep lives. If you click on a pothole, you lose a life!</li>
                 <li>Score 10+ points in 30 seconds to win!</li>
             </ol>
+
 ---------------
+
 Also, just had an ai review my html on 5/8/25 and this is what they came up with:
 
 Your HTML code is well-structured and functional - you're absolutely ready to start working on CSS and JavaScript! Here's a quick review:
