@@ -175,13 +175,10 @@ ol {
 *****************************/
 
 #game-grid {/* targeting the full container/the outer wrapper holding all the grid squares */
-    display: flex;
-    flex-wrap: wrap;
-    /* width: 600px;
-    height: 600px; */
-    width: 100%; /*how do I change it so that boxes stay the same size no matter screen width? Need to look up responsive design info*/
-
-
+    display: flex; /* to arrange cells in the grid*/
+    flex-wrap: wrap; /* to arrange cells in the grid*/
+    width: 600px; /*sets grid size - fixed width for 12 columns so grid has stability depending on screen size */
+    margin: 0 auto; /* to center the grid on the page & fixes left alignment issue*/
 }
 
 #game-grid div { /* targeting each individual box inside the grid */
