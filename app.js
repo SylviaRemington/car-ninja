@@ -34,6 +34,7 @@ function createGrid() {
                 gameGrid.appendChild(cell);
         }
 }
+createGrid();
 
 
 
