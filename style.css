@@ -22,7 +22,7 @@ Use in Your Game: You’d use display: none to hide screens (e.g., <div id="game
 Example Context: Apply display: none to <div id="gameplay-screen"> in CSS so it’s hidden until the game starts,
  controlled by JavaScript. */
 
- 
+
 /*******************************
   RESETS & GLOBAL STYLES IN BODY
 ********************************/
@@ -120,7 +120,7 @@ footer {
     text-align: left;
 }
 
-#gameplay-screen-title {}
+/* #gameplay-screen-title {} */
 
 /* DOUBLE CHECK THIS STYLING BELOW WITH RESETING MARGIN AND MAKE SURE IT'S CORRECT */
 #instructions-screen p,
@@ -158,6 +158,7 @@ ol {
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
+    margin-top: 10px;
     margin-bottom: 20px; /* Space between score and game grid */
     text-align: center; /* Optional: Center the text */
 }
