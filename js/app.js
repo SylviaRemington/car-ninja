@@ -358,8 +358,8 @@ Remove default margins/padding */
 
 
 
-// JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard -----------------------------*/
-// JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard -----------------------------*/
+// JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard ---------------------------------------------------------*/
+// JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard ---------------------------------------------------------*/
 
 /*
 GRID INFO
@@ -382,6 +382,7 @@ If you want more complex mechanics like obstacles or combo scoring
 ---------------------------
 
 /*------------------------- Temporary Code to Have Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-------------------*/
+//THIS WAS TAKEN FROM TOP OF JS CODE - FIRST JS WORKING ON FOR THE GAME - USING THIS AS BASIC MVP FOR NOW, BUT WILL BUILD OUT ADDTL FUNCTIONS/CODE LATER
 
 // Find gameplay screen
 // const gameplayScreen = document.getElementById('gameplay-screen');
