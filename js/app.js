@@ -23,8 +23,8 @@ gameplayScreen.classList.add('active');
 /* Using tools/example Tristan showed in class and this is the html I created for this previously <div id="game-grid"></div> */
 const gameGrid = document.querySelector("#game-grid");//grabbing the grid in html
 const width = 12; // columns - width usually refers to how many columns are in each row. 12 columns * 12 rows = 144 squares total
-const height = 7; // rows
-const cellCount = width * height; //12 * 7 = 84
+const height = 4; // rows
+const cellCount = width * height; //12 * 4 = 48
 const cells = [];
 
 function createGrid() {
@@ -270,7 +270,22 @@ External files properly linked (app.js, data.js, style.css)
 
 // JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard -----------------------------*/
 /*
+GRID INFO
+12 across × 4 down (48 cells) layout works great for certain types of games, especially:
+✅ It’s Good For:
+Click-to-score games like your car game (think of it like a 4-lane highway across 12 positions)
+Fast reaction/timing games where cars “appear” in lanes to be clicked
+Visually clear layouts without overwhelming the player
 
+🧠 Why It Works:
+12 columns gives you plenty of left-to-right space (like road lanes).
+4 rows gives enough room to visually show different car positions.
+Keeps it simple and focused — you’re not overwhelmed by too many squares.
+
+🚧 When It Might Be Too Small:
+If you later add movement/animation and want cars to visibly “travel” down a long path
+If you want more complex mechanics like obstacles or combo scoring
+✅ But for your current goal (clicking cars on screen), 12 × 4 is a solid choice.
 
 
 
