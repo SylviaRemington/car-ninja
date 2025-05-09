@@ -339,6 +339,38 @@ External files properly linked (app.js, data.js, style.css)
 //     background-repeat: no-repeat;
 // }
 
+// UPDATING GAME GRID AND GAME GRID DIV
+// /*****************************
+//             GRID 
+// *****************************/
+
+// #game-grid {/* targeting the full container/the outer wrapper holding all the grid squares */
+//     display: flex; /* to arrange cells in the grid*/
+//     flex-wrap: wrap; /* to arrange cells in the grid*/
+//     width: 600px; /*sets grid size - fixed width for 12 columns so grid has stability depending on screen size */
+//     margin: 0 auto; /* to center the grid on the page & fixes left alignment issue*/
+// }
+
+// #game-grid div { /* targeting each individual box inside the grid */
+//     width: 8.33%; /* 100% ÷ 12 = 8.333...%, rounded */
+//     /* height: 8.33%; */
+//     height: 50px;  /* not sure why height in px works but height in % doesn't */
+//     border: 1px solid lightblue;
+// }
+
+// #game-grid div.cybertruck {
+//     background-image: url("../images/cybertruck.jpg");
+//     background-size: contain;
+//     background-repeat: no-repeat;
+// }
+
+// ----
+// GAME GRID DIV CHANGED TO THIS:
+// #game-grid div { /* targeting each individual box inside the grid */
+//     width: calc(100% / 12); /* makes every cell exactly 50px wide (600 divided by 12) */
+//     height: 50px;  /* not sure why height in px works but height in % doesn't */
+//     border: 1px solid lightblue;
+// }
 
 //______________________________
 
