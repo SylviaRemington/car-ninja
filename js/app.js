@@ -12,11 +12,12 @@
 
 console.log('JS LINKED AND WORKING');
 
-/*------------------------- Temporary Code to Have Gameplay Screen as active -------------------*/
+/*------------------------- Temporary Code to Have Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-------------------*/
+
 // Find gameplay screen
 const gameplayScreen = document.getElementById('gameplay-screen');
 
-// Show gameplay screen
+// Show gameplay screen - as active (as opposed to hidden)
 gameplayScreen.classList.add('active');
 
 // Creating gameGrid
@@ -377,6 +378,36 @@ Keeps it simple and focused — you’re not overwhelmed by too many squares.
 If you later add movement/animation and want cars to visibly “travel” down a long path
 If you want more complex mechanics like obstacles or combo scoring
 ✅ But for your current goal (clicking cars on screen), 12 × 4 is a solid choice.
+
+---------------------------
+
+/*------------------------- Temporary Code to Have Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-------------------*/
+
+// Find gameplay screen
+// const gameplayScreen = document.getElementById('gameplay-screen');
+
+// Show gameplay screen - as active (as opposed to hidden)
+// gameplayScreen.classList.add('active');
+
+// Creating gameGrid
+/* Using tools/example Tristan showed in class and this is the html I created for this previously <div id="game-grid"></div> */
+// const gameGrid = document.querySelector("#game-grid");//grabbing the grid in html
+// const width = 12; // columns - width usually refers to how many columns are in each row. 12 columns * 12 rows = 144 squares total
+// const height = 4; // rows
+// const cellCount = width * height; //12 * 4 = 48
+// const cells = [];
+
+// function createGrid() {
+//         for (let i = 0; i < cellCount; i++) {
+//                 const cell = document.createElement("div");
+//                 cell.textContent = i;
+//                 cells.push(i);
+//                 gameGrid.appendChild(cell);//append it to the DOM
+//         }
+// }
+// createGrid();
+
+// ---------------------------------------
 
 
 
