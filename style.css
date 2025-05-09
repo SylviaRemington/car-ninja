@@ -175,6 +175,11 @@ ol {
 
 #game-grid {
     display: flex;
+    flex-wrap: wrap;
 }
 
-
+#game-grid div {
+    width: 8.33%; /* 100% ÷ 12 = 8.333...%, rounded */
+    height: 30px;
+    border: 1px solid lightgrey;
+}
