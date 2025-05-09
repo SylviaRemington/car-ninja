@@ -179,12 +179,18 @@ ol {
     flex-wrap: wrap;
     /* width: 600px;
     height: 600px; */
-    width: 100%;
+    width: 100%; /*how do I change it so that boxes stay the same size no matter screen width? Need to look up responsive design info*/
+
+
 }
 
 #game-grid div { /* targeting each individual box inside the grid */
     width: 8.33%; /* 100% ÷ 12 = 8.333...%, rounded */
-    /* height: 8.33%; */
-    height: 60px;
+    height: 8.33%;
+    /* height: 60px; */
     border: 1px solid lightblue;
+}
+
+#game-grid div.cyberTruckGreen2 {
+    background-image: url("../images/cyberTruckGreen2.jpg");
 }
