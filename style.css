@@ -52,6 +52,9 @@ h2 {
     margin-bottom: .8px;
 }
 
+
+
+
 /*****************************
  NAVIGATION BAR STYLES
 *****************************/
@@ -59,6 +62,9 @@ nav {
     display: flex;
     justify-content: space-evenly;
 }
+
+
+
 
 /*****************************
  FOOTER STYLES
@@ -68,6 +74,9 @@ footer {
     justify-content: right;
     gap: 15px;
 }
+
+
+
 
 /*****************************
   BUTTON STYLES
@@ -91,6 +100,7 @@ footer {
 
 
 
+
 /*******************************
   HIDING SCREENS
 ********************************/
@@ -102,6 +112,7 @@ footer {
     /* Any element with class="active" will be visible on the screen. And the class="active" is done in JS */
     display: block;
 }
+
 
 
 
@@ -143,6 +154,7 @@ ol {
 
 
 
+
 /*****************************
   SCORE & LIVES STYLES
 *****************************/
@@ -160,3 +172,7 @@ ol {
 #points-earned, #tries-left {
     margin-right: 20px;
 }
+
+
+
+
