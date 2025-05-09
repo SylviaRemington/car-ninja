@@ -19,6 +19,14 @@ const gameplayScreen = document.getElementById('gameplay-screen');
 // Show gameplay screen
 gameplayScreen.classList.add('active');
 
+// Creating gameGrid
+/* Using tools Tristan showed in class and this is the html I created for this previously <div id="game-grid"></div> */
+const gameGrid = document.querySelector("#game-grid");//grabbing the grid in html
+const width = 5; //width usually refers to how many columns are in each row. 5 columns * 5 rows = 25 squares total
+const cellCount = width * width;
+const cells = [];
+
+
 /*-------------------------------- Constants --------------------------------*/
 //for creating a new element and saving it in memory
 //e.g. const clickToAddParagraphButton = document.createElement('button')
@@ -41,8 +49,6 @@ gameplayScreen.classList.add('active');
 //button for fun facts --randomized
 //selecting points earned area (might not be a button but something else)
 //click on cars to create getting points (can you create a car as a button? Or an image?)
-
-
 
 /*-------------------------------- Functions --------------------------------*/
 //What it should do... e.g. text in the title should update
@@ -74,6 +80,15 @@ gameplayScreen.classList.add('active');
 //The part showing starting and ending game
 //The part showing the "playing of the game/gameplay"
 //Make subfunction categories - like button functions/ ninja functions/ word bubble functions/ sound functions
+
+
+
+
+
+
+
+
+
 
 
 
@@ -192,6 +207,20 @@ External files properly linked (app.js, data.js, style.css)
 //     }
 
 // ---------------------
+
+/*****************************
+ GRID //trying to figure out how to do grid again... gah!
+*****************************/
+// #game-grid {
+//         display: grid;
+//     }
+
+
+
+
+
+//______________________________
+
 //  FOR SCORE WHEN WITHIN GAME GRID... BUT THIS ONE MAKES ACCESSIBILITY HARD CAUSE OVERLAY:
 //  .score-display {
 //     position: absolute; Overlay on top of the game 
