@@ -50,6 +50,10 @@ h2 {
     margin-top: 0; 
     /* removes all space above */
     margin-bottom: .8px;
+    color: cornflowerblue;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    padding: 0, 15px, 15px, 0; 
 }
 
 
@@ -126,6 +130,8 @@ footer {
     -webkit-text-stroke: 1px black; /* Black outline around letters */
     text-align: left;
 }
+
+#gameplay-screen-title {}
 
 /* DOUBLE CHECK THIS STYLING BELOW WITH RESETING MARGIN AND MAKE SURE IT'S CORRECT */
 #instructions-screen p,
