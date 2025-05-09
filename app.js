@@ -124,6 +124,10 @@ May use these tabs for addtl parts of the website if I have time in the future:
     <aside></aside>
 
 -------------
+ADD THIS BACK FOR LEVEL UP! :)
+        <!-- <button id="ninja-ads" class="buttons">Ads?! Ninja Chop Them!</button> -->
+        <!-- create funny ads that pop up and then you ninja chop them randomly whether in the game or outside the game. -->
+------------
 
 CHANGING THIS CODE TO AN ORDERED LIST
         <!-- INSTRUCTIONS SCREEN -->

@@ -52,8 +52,22 @@ h2 {
     margin-bottom: .8px;
 }
 
+/*****************************
+ NAVIGATION BAR STYLES
+*****************************/
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
 
-
+/*****************************
+ FOOTER STYLES
+*****************************/
+footer {
+    display: flex;
+    justify-content: right;
+    
+}
 
 /*****************************
   BUTTON STYLES
