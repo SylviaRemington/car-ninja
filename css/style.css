@@ -173,13 +173,17 @@ ol {
             GRID 
 *****************************/
 
-#game-grid {
+#game-grid {/* targeting the full container/the outer wrapper holding all the grid squares */
     display: flex;
     flex-wrap: wrap;
+    /* width: 600px;
+    height: 600px; */
+    width: 100%;
 }
 
-#game-grid div {
+#game-grid div { /* targeting each individual box inside the grid */
     width: 8.33%; /* 100% ÷ 12 = 8.333...%, rounded */
-    height: 30px;
-    border: 1px solid lightgrey;
+    /* height: 8.33%; */
+    height: 60px;
+    border: 1px solid lightblue;
 }
