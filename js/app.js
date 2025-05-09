@@ -194,11 +194,8 @@ CHANGING BUTTONS TO SCORE DISPLAY - FOR POINTS EARNED & TRIES LEFT
         <span id="tries-left" class="display">Lives: 3</span> -->
 
 When making a simple video game, using a score display (like text on the screen) instead of buttons is better because:
-
 Buttons are for player input – Buttons are meant to be clicked or pressed by the player (like "Start" or "Pause").
-
 Scores update automatically – The score changes quickly as the player earns points, so displaying it as text is cleaner and faster.
-
 Less confusing – A button implies you can interact with it, but the score is just information.
 
 -------------
@@ -223,9 +220,12 @@ May use these tabs for addtl parts of the website if I have time in the future:
     <aside></aside>
 
 -------------
+
+LEVEL UP - ADDING FAKE FUNNY ADS TO NINJA CHOP - CREATE THIS LATER IF HAVE TIME
 ADD THIS BACK FOR LEVEL UP! :)
         <!-- <button id="ninja-ads" class="buttons">Ads?! Ninja Chop Them!</button> -->
         <!-- create funny ads that pop up and then you ninja chop them randomly whether in the game or outside the game. -->
+
 ------------
 
 CHANGING THIS CODE TO AN ORDERED LIST
@@ -266,6 +266,9 @@ Logical ID/class naming (#points-earned, .score-display)
 External files properly linked (app.js, data.js, style.css)
 
 */
+
+
+
 
 
 // CSS CODE GRAVEYARD /*----------------------------- CSS Code Graveyard -----------------------------*/
