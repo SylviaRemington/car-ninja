@@ -122,6 +122,7 @@ footer {
 
 /* #gameplay-screen-title {} */
 
+
 /* DOUBLE CHECK THIS STYLING BELOW WITH RESETING MARGIN AND MAKE SURE IT'S CORRECT */
 #instructions-screen p,
 #instructions-screen ol {
@@ -151,6 +152,7 @@ ol {
 /*****************************
   SCORE & LIVES STYLES
 *****************************/
+
 .score-display {
     color: white;
     font-size: 24px;
@@ -166,7 +168,6 @@ ol {
 #points-earned, #tries-left {
     margin-right: 20px;
 }
-
 
 
 /*****************************
