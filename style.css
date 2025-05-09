@@ -80,9 +80,14 @@ h2 {
 /*******************************
   HIDING SCREENS
 ********************************/
-.
+.screens {
+    display: none;
+}
 
+#gameplay-screen {
+    display: block;
 
+}
 /*****************************
   SCREEN-SPECIFIC STYLES
 *****************************/
