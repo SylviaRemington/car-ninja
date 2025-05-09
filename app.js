@@ -26,6 +26,17 @@ const width = 5; //width usually refers to how many columns are in each row. 5 c
 const cellCount = width * width;
 const cells = [];
 
+function createGrid() {
+        for (let i = 0; i < cellCount; i++) {
+                const cell = document. createElement("div");
+                cell.textContent = i;
+                cells.push(i);
+                gameGrid.appendChild(cell);
+        }
+}
+
+
+
 
 /*-------------------------------- Constants --------------------------------*/
 //for creating a new element and saving it in memory
