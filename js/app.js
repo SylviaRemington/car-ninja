@@ -46,11 +46,18 @@ createGrid();
 
 
 
+
+
 /*-------------------------------- Variables --------------------------------*/
 
 // let pointsEarned = '';
 
 // Store score/lives in variables (score, lives).
+
+
+
+
+
 
 /*------------------------ Cached Element References ------------------------*/
 //Things I want to select so I can do something with them.
@@ -62,6 +69,11 @@ createGrid();
 //button for fun facts --randomized
 //selecting points earned area (might not be a button but something else)
 //click on cars to create getting points (can you create a car as a button? Or an image?)
+
+
+
+
+
 
 /*-------------------------------- Functions --------------------------------*/
 //What it should do... e.g. text in the title should update
@@ -75,6 +87,10 @@ createGrid();
 
 // USE THIS:
 // updateScore() and updateLives() functions
+
+
+
+
 
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -111,9 +127,64 @@ createGrid();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // CODE GRAVEYARD
 // HTML CODE GRAVEYARD /*----------------------------- HTML Code Graveyard -----------------------------*/
+// HTML CODE GRAVEYARD /*----------------------------- HTML Code Graveyard -----------------------------*/
 /*
+
+TITLES FOR HTML COMMENTED OUT. I USED A LOT OF COMMENTS SO TRANSPLANTING THEM HERE IN CASE I WANT TO USE THEM AGAIN.
+<!-- Header holds the game's title / Wanted to use Semantic Elements in HTML for better visibility & SEO on search engines. -->
+<!-- Using Nav Bar for buttons at the top instead of div - better navigation for all & easier readbility for SEO/other coders-->
+<!-- MAIN GAME SCREENS - houses the game's 4 screens of the Starter Screen, the Instructions Screen, the Gameplay Screen, and the GameOver Screen -->
+ <!-- STARTER SCREEN -- chose to do section instead of div for each screen for better SEO & readibility -->
+<!-- INSTRUCTIONS SCREEN -->
+<!-- GAMEPLAY SCREEN -->
+<!-- SCORE DISPLAY - recommended to use span because inline and because it's dynamic text-->
+<!-- GAME-GRID -->
+<!-- GAMEOVER SCREEN... have Bill Paxton saying "Game Over Man! Game Over! Why don't we put her in charge?" -->
+<!-- FOOTER (perhaps only Visible on GAMEOVER SCREEN - where post-game actions live) -->
+
+-----------------------------------------
+
+IDEAS FOR "FUTURE PROOFING" MY CODE THAT I NEED TO FURTHER LOOK INTO SINCE IT WAS MENTIONED IN AI AS SUGGESTIONS:
+<!-- AI suggestion for me improving this code. Need to look into this:
+Image Optimization:
+Consider adding loading="lazy" to game images
+Add width and height attributes to maintain layout
+
+Future-Proofing:
+Add empty <div id="countdown"></div> for your "3-2-1" timer
+Consider adding data- attributes for game state (e.g., data-score="0")
+
+INFO ABOUT ADDING LAZY TO IMAGES FOR GAMING:
+What loading="lazy" Means for Images
+The loading="lazy" attribute is a performance optimization that tells the browser to delay loading an image until it's about to appear in the viewport (the visible part of the webpage). Here's why and how to use it in your game:
+Key Benefits for Your Game
+Faster Initial Load
+Images load only when needed (e.g., when the player reaches the gameplay screen).
+Reduces data usage and speeds up page startup.
+Better Performance
+Prevents loading all images (cars/potholes) upfront, which can slow down older devices.
+Smoother Experience
+Avoids stuttering when many images load simultaneously.-->
+
+-----------------------------------------
 
 CHANGING BUTTONS TO SCORE DISPLAY - FOR POINTS EARNED & TRIES LEFT
         <button id="points-earned" class="buttons">Points Earned</button> <!-- This Points Earned Button might be taken away, and instead use a SCORE DISPLAY or SCORE COUNTER -->
@@ -196,6 +267,8 @@ External files properly linked (app.js, data.js, style.css)
 
 */
 
+
+// CSS CODE GRAVEYARD /*----------------------------- CSS Code Graveyard -----------------------------*/
 // CSS CODE GRAVEYARD /*----------------------------- CSS Code Graveyard -----------------------------*/
 /*
  ORIGINALLY FOR HEADER H1 trying this:
@@ -269,6 +342,7 @@ External files properly linked (app.js, data.js, style.css)
 
 
 // JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard -----------------------------*/
+// JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard -----------------------------*/
 /*
 GRID INFO
 12 across × 4 down (48 cells) layout works great for certain types of games, especially:
@@ -292,7 +366,8 @@ If you want more complex mechanics like obstacles or combo scoring
 
 */
 
-// DATA.JS CODE GRAVEYARD
+// DATA.JS CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- DATA.JS CODE GRAVEYARD  -----------------------------*/
+// DATA.JS CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- DATA.JS CODE GRAVEYARD  -----------------------------*/
 /*
 
 
@@ -301,7 +376,8 @@ If you want more complex mechanics like obstacles or combo scoring
 
 */
 
-// README CODE GRAVEYARD
+// README CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- README CODE GRAVEYARD  -----------------------------*/
+// README CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- README CODE GRAVEYARD  -----------------------------*/
 /*
 
 
@@ -310,7 +386,8 @@ If you want more complex mechanics like obstacles or combo scoring
 
 */
 
-// LICENSE CODE GRAVEYARD
+// LICENSE CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- LICENSE CODE GRAVEYARD-----------------------------*/
+// LICENSE CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- LICENSE CODE GRAVEYARD-----------------------------*/
 /*
 
 
