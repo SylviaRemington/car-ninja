@@ -22,13 +22,14 @@ gameplayScreen.classList.add('active');
 // Creating gameGrid
 /* Using tools/example Tristan showed in class and this is the html I created for this previously <div id="game-grid"></div> */
 const gameGrid = document.querySelector("#game-grid");//grabbing the grid in html
-const width = 12; //width usually refers to how many columns are in each row. 12 columns * 12 rows = 144 squares total
-const cellCount = width * width;
+const width = 12; // columns - width usually refers to how many columns are in each row. 12 columns * 12 rows = 144 squares total
+const height = 7; // rows
+const cellCount = width * height; //12 * 7 = 84
 const cells = [];
 
 function createGrid() {
         for (let i = 0; i < cellCount; i++) {
-                const cell = document. createElement("div");
+                const cell = document.createElement("div");
                 cell.textContent = i;
                 cells.push(i);
                 gameGrid.appendChild(cell);//append it to the DOM
