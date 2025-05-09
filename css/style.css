@@ -191,6 +191,8 @@ ol {
     border: 1px solid lightblue;
 }
 
-#game-grid div.cyberTruckGreen2 {
+#game-grid div.cybertruck {
     background-image: url("../images/cybertruck.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }

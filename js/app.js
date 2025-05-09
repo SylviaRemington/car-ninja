@@ -31,7 +31,7 @@ const cells = []; //creating an empty array that is meant to store each cell of 
 function createGrid() {
         for (let i = 0; i < cellCount; i++) {
                 const cell = document.createElement("div");
-                cell.classList.add("cyberTruckGreen2");
+                cell.classList.add("cybertruck");
                 cell.textContent = i;
                 cells.push(i); //pushing number i(0,1,2..) into the array - not the actual <div> elements.
                 gameGrid.appendChild(cell);//append it to the DOM
@@ -311,6 +311,33 @@ External files properly linked (app.js, data.js, style.css)
 // #game-grid {
 //         display: grid;
 //     }
+
+/*****************************
+            GRID --first iteration of attemption grid with sizes
+*****************************/
+
+// #game-grid {/* targeting the full container/the outer wrapper holding all the grid squares */
+//     display: flex;
+//     flex-wrap: wrap;
+//     /* width: 600px;
+//     height: 600px; */
+//     width: 100%; /*how do I change it so that boxes stay the same size no matter screen width? Need to look up responsive design info*/
+
+
+// }
+
+// #game-grid div { /* targeting each individual box inside the grid */
+//     width: 8.33%; /* 100% ÷ 12 = 8.333...%, rounded */
+//     /* height: 8.33%; */
+//     height: 50px;  /* not sure why height in px works but height in % doesn't */
+//     border: 1px solid lightblue;
+// }
+
+// #game-grid div.cybertruck {
+//     background-image: url("../images/cybertruck.jpg");
+//     background-size: contain;
+//     background-repeat: no-repeat;
+// }
 
 
 //______________________________
