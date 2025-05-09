@@ -31,7 +31,7 @@ function createGrid() {
                 const cell = document. createElement("div");
                 cell.textContent = i;
                 cells.push(i);
-                gameGrid.appendChild(cell);
+                gameGrid.appendChild(cell);//append it to the DOM
         }
 }
 createGrid();
