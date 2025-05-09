@@ -273,8 +273,11 @@ External files properly linked (app.js, data.js, style.css)
 
 // CSS CODE GRAVEYARD /*----------------------------- CSS Code Graveyard -----------------------------*/
 // CSS CODE GRAVEYARD /*----------------------------- CSS Code Graveyard -----------------------------*/
+
 /*
- ORIGINALLY FOR HEADER H1 trying this:
+
+ ORIGINALLY FOR HEADER H1 trying this - Wanted to create a glimmer effect but it didn't hold up to the following standards: 
+ Colors used on the site have appropriate contrast that meet the WCAG 2.0 level AA standard.
     font-size: 2.5em; chose em so that this h1 could scale with responsive designs depending on if computer or phone
     background: linear-gradient(to right, green, blue);
     display: flex;
@@ -283,6 +286,8 @@ External files properly linked (app.js, data.js, style.css)
     padding: 0.2em 0.5em; Adds space around text
 
 ---------------------
+
+
 /*******************************
   HIDING SCREENS -- original code, but changing it to .active to make screens more useable. Might go back to this.
 ********************************/
@@ -292,10 +297,11 @@ External files properly linked (app.js, data.js, style.css)
     
 //     #gameplay-screen {
 //         display: block;
-    
 //     }
 
+
 // ---------------------
+
 
 /*****************************
  GRID //trying to figure out how to do grid again... gah!
@@ -304,7 +310,9 @@ External files properly linked (app.js, data.js, style.css)
 //         display: grid;
 //     }
 
+
 //______________________________
+
 
 //  FOR SCORE WHEN WITHIN GAME GRID... BUT THIS ONE MAKES ACCESSIBILITY HARD CAUSE OVERLAY:
 //  .score-display {
@@ -322,8 +330,12 @@ External files properly linked (app.js, data.js, style.css)
 // #points-earned, #tries-left {
 //     margin-right: 20px; Space between score and lives
 // }
+
 // ------------------------------
-/* Remove default margins/padding */
+
+
+/* ADDTL STUFF TRIED BUT DIDN'T WORK FOR WHAT I WAS TRYING TO CREATE
+Remove default margins/padding */
 // #instructions-screen p,
 // #instructions-screen ol {
 //   margin: 0;          /* Resets top/bottom margins */
@@ -339,6 +351,7 @@ External files properly linked (app.js, data.js, style.css)
 //   margin-top: 4px;    /* Small gap before the list */
 //   padding-left: 20px; /* Adjust indentation */
 // }
+
 // -------------------------------
 
 
@@ -346,6 +359,7 @@ External files properly linked (app.js, data.js, style.css)
 
 // JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard -----------------------------*/
 // JS CODE GRAVEYARD /*----------------------------- JS Code Graveyard -----------------------------*/
+
 /*
 GRID INFO
 12 across × 4 down (48 cells) layout works great for certain types of games, especially:
@@ -379,8 +393,8 @@ If you want more complex mechanics like obstacles or combo scoring
 
 */
 
-// README CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- README CODE GRAVEYARD  -----------------------------*/
-// README CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- README CODE GRAVEYARD  -----------------------------*/
+// README CODE GRAVEYARD / //  /*----------------------------- README CODE GRAVEYARD  -----------------------------*/
+// README CODE GRAVEYARD / //  /*----------------------------- README CODE GRAVEYARD  -----------------------------*/
 /*
 
 
@@ -389,8 +403,8 @@ If you want more complex mechanics like obstacles or combo scoring
 
 */
 
-// LICENSE CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- LICENSE CODE GRAVEYARD-----------------------------*/
-// LICENSE CODE GRAVEYARD / // JS CODE GRAVEYARD /*----------------------------- LICENSE CODE GRAVEYARD-----------------------------*/
+// LICENSE CODE GRAVEYARD / //  /*----------------------------- LICENSE CODE GRAVEYARD-----------------------------*/
+// LICENSE CODE GRAVEYARD / //  /*----------------------------- LICENSE CODE GRAVEYARD-----------------------------*/
 /*
 
 
