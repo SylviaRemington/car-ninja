@@ -227,10 +227,6 @@ External files properly linked (app.js, data.js, style.css)
 //         display: grid;
 //     }
 
-
-
-
-
 //______________________________
 
 //  FOR SCORE WHEN WITHIN GAME GRID... BUT THIS ONE MAKES ACCESSIBILITY HARD CAUSE OVERLAY:

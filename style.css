@@ -169,11 +169,12 @@ ol {
 
 
 
-/* /*****************************
- GRID //trying to figure out how to do grid again... gah!
+/*****************************
+            GRID 
 *****************************/
+
 #game-grid {
-    display: grid;
-} */
+    display: flex;
+}
 
 
