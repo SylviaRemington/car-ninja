@@ -33,13 +33,28 @@ function createGrid() {
                 const cell = document.createElement("div");
                 cell.classList.add("cybertruck");
                 cell.textContent = i;
-                cells.push(i); //pushing number i(0,1,2..) into the array - not the actual <div> elements.
-                gameGrid.appendChild(cell);//append it to the DOM
+                cells.push(cell); // Store <div> elements, not numbers
+                gameGrid.appendChild(cell);
+                // cells.push(i); //pushing number i(0,1,2..) into the array - not the actual <div> elements.
+                // gameGrid.appendChild(cell);//append it to the DOM
         }
 }
 createGrid();
 
+// function spawnCar() {
+//     const randomIndex = Math.floor(Math.random() * cells.length);
+//     const cell = cells[randomIndex];
+//     if (!cell.querySelector('img')) { // Check if cell is empty
+//         const car = document.createElement('img');
+//         car.src = '../images/cybertruck.jpg';
+//         car.alt = 'Cybertruck Car';
+//         car.style.width = '100%';
+//         car.style.height = '100%';
+//         cell.appendChild(car);
+//     }
+// }
 
+// setInterval(spawnCar, 2000); // Spawn car every 2 seconds
 
 
 /*-------------------------------- Constants --------------------------------*/
@@ -513,6 +528,37 @@ If you want more complex mechanics like obstacles or combo scoring
 // Add event listeners to individual cells (e.g. click)
 // Identify specific positions in the grid using their index
 // If you just store the numbers i, you can't interact with the actual grid elements later.
+
+/*------------------------- Temporary Code to Have Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-------------------*/
+
+//Second Version of Temporary Code
+// Find gameplay screen
+// const gameplayScreen = document.getElementById('gameplay-screen');
+
+// // Show gameplay screen - as active (as opposed to hidden)
+// gameplayScreen.classList.add('active');
+
+// // Creating gameGrid
+// /* Using tools/example Tristan showed in class and this is the html I created for this previously <div id="game-grid"></div> */
+// const gameGrid = document.querySelector("#game-grid");//grabbing the grid in html
+// const width = 12; // columns - width usually refers to how many columns are in each row. 12 columns * 12 rows = 144 squares total
+// const height = 4; // rows
+// const cellCount = width * height; //12 * 4 = 48 --currently creating a game with 12 across and 4 high -- subject to change later
+// const cells = []; //creating an empty array that is meant to store each cell of the grid as I create them in a loop.
+
+// function createGrid() {
+//         for (let i = 0; i < cellCount; i++) {
+//                 const cell = document.createElement("div");
+//                 cell.classList.add("cybertruck");
+//                 cell.textContent = i;
+//                 cells.push(cell); // Store <div> elements, not numbers
+//                 gameGrid.appendChild(cell);
+//                 // cells.push(i); //pushing number i(0,1,2..) into the array - not the actual <div> elements.
+//                 // gameGrid.appendChild(cell);//append it to the DOM
+//         }
+// }
+// createGrid();
+
 
 // ---------------------------------------
 
