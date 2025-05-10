@@ -1,9 +1,8 @@
-//data for putting car funny possibly insult comments and also congratulatory comments
+//Below is data for putting funny car insult comments and also congratulatory comments.
 
 //objects have key:valuePairs,
 //create a randomization of pulling these comments. Figure out how to do that in JS.
 
-//ALSO NEED TO CHANGE ALL KEYS TO BE CONSISTENT IN KEY:VALUE PAIRS AND CHANGE ALL TO the word 'text'.
 const carComments = [
     { text: "Oh noooo! I was driving to slow!" },//AI is saying I need consistent keys here and to name them all "text"/ask about this
     { text: "Bad cybertruck! Bad!" },
