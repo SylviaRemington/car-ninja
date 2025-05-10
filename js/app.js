@@ -44,9 +44,9 @@ createGrid();
 // spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
 
 function spawnCar() { //Declaring a function called spawnCar that will run code to add a car image to the grid when called
-    const randomizationCellPick = Math.floor(Math.random() * cells.length); //storing a random # to pick a grid cell
-    //Math.random()built in function generates decimal number and then it's multiplied by 48
-    const cell = cells[randomIndex];
+    const randomCellPick = Math.floor(Math.random() * cells.length); //storing a random # to pick a grid cell
+    //Math.random()built in function generates decimal number and then it's multiplied by 48 //don't totally get it but it's working
+    const cell = cells[randomCellPick];
     if (!cell.querySelector('img')) { // Check if cell is empty with no image so it can put an image in there
         const car = document.createElement('img'); //creates a new img html element
         car.src = '../images/cybertruck.jpg'; //setting image source
