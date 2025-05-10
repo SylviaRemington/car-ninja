@@ -11,6 +11,8 @@ const carComments = [
     { text: "Why are you driving slowly in the fast lane?!" } //Took off trailing comment here. Even though comma works with modern JS, doesn't work for older environments.
 ];
 
+//This!.. is a CYBERTRUCK! CHOP IT! --EASTER EGG DOUG DIMURO CAR GUY
+
 const carClickCommentSounds = [
     {text: "hiyyyyyyyaaaaaaa!"},
     {text: "NINJA CHOP!"},
@@ -41,16 +43,18 @@ const congratsComments = [
     { text: "You are like the Iron Fist, chopping through cars and saving people from horrible drivers!" },
     { text: "You are like Wolverine, cutting all these cars in half!" },
     { text: "You're doing grrrrreat!" },
-    { text: "" }
+    { text: "ALRIIIIGHT, YOU'VE CHOPPED ALL THE CYBERTRUCKS" }
+    { text: "CHOPPING THE CAR CHOPPING THE CAR" }//BREAKING THE LAW SONG
 ];
 
 
 const gameOverComments = [
     {text: "Gameover, man! Gameover!"}, //from the movie Aliens2. Maybe also add "Why don't you put her in charge?!"
     {text: "Dooooooooooooooode"},
-    {text: ""},
-    {text: ""},
-    {text: ""} 
+    {text: "Breh, you're not good at this."},
+    {text: "Beavis, I'm disappointed in you."},
+    {text: "Settle down, Beavis, you lost"},
+    {test: "Simmah down now! Simmah down nah!"}
 ];
 
 

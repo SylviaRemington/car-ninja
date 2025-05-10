@@ -190,6 +190,7 @@ ol {
 #game-grid div.cybertruck {
     background-image: url("../images/cybertruck.jpg");
     background-size: 100% 100%; /* stretch to fill cell - I'm ok if image is distorted - wanted it to be on purpose so car looks more cartoony */
+    /* Can use background-size: cover too to fill without the distortion */
     background-repeat: no-repeat; /*to show one image*/
     background-position: center; /*to center the in the cell*/
 }
