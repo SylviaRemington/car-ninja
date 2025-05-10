@@ -43,20 +43,23 @@ createGrid();
 
 // spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
 
-function spawnCar() {
-    const randomIndex = Math.floor(Math.random() * cells.length);
+function spawnCar() { //Declaring a function called spawnCar that will run code to add a car image to the grid when called
+    const randomizationCellPick = Math.floor(Math.random() * cells.length); //storing a random # to pick a grid cell
+    //Math.random()built in function generates decimal number and then it's multiplied by 48
     const cell = cells[randomIndex];
-    if (!cell.querySelector('img')) { // Check if cell is empty
-        const car = document.createElement('img');
-        car.src = '../images/cybertruck.jpg';
-        car.alt = 'Cybertruck Car';
-        car.style.width = '100%';
-        car.style.height = '100%';
-        cell.appendChild(car);
+    if (!cell.querySelector('img')) { // Check if cell is empty with no image so it can put an image in there
+        const car = document.createElement('img'); //creates a new img html element
+        car.src = '../images/cybertruck.jpg'; //setting image source
+        car.alt = 'Cybertruck Car'; //setting alt text for accessibility and screen readers
+        car.style.width = '100%'; //newly created car is styled with the width of 100% of the cell
+        car.style.height = '100%'; //newly created car is styled with the height of 100% of the cell
+        cell.appendChild(car); //adds car as child of cell
     }
 }
 
 setInterval(spawnCar, 2000); // Spawn car every 2 seconds
+//setInterval is a function that repeatedly calls a function at a set interval.
+
 
 
 /*-------------------------------- Constants --------------------------------*/
