@@ -31,7 +31,7 @@ const cells = []; //creating an empty array that is meant to store each cell of 
 function createGrid() {
         for (let i = 0; i < cellCount; i++) {
                 const cell = document.createElement("div");
-                cell.classList.add("cybertruck");
+                // cell.classList.add("cybertruck");
                 cell.textContent = i;
                 cells.push(cell); // Store <div> elements, not numbers
                 gameGrid.appendChild(cell);
@@ -41,21 +41,22 @@ function createGrid() {
 }
 createGrid();
 
-//spawnCar fail! Need to figure out why not working
-// function spawnCar() {
-//     const randomIndex = Math.floor(Math.random() * cells.length);
-//     const cell = cells[randomIndex];
-//     if (!cell.querySelector('img')) { // Check if cell is empty
-//         const car = document.createElement('img');
-//         car.src = '../images/cybertruck.jpg';
-//         car.alt = 'Cybertruck Car';
-//         car.style.width = '100%';
-//         car.style.height = '100%';
-//         cell.appendChild(car);
-//     }
-// }
+// spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
 
-// setInterval(spawnCar, 2000); // Spawn car every 2 seconds
+function spawnCar() {
+    const randomIndex = Math.floor(Math.random() * cells.length);
+    const cell = cells[randomIndex];
+    if (!cell.querySelector('img')) { // Check if cell is empty
+        const car = document.createElement('img');
+        car.src = '../images/cybertruck.jpg';
+        car.alt = 'Cybertruck Car';
+        car.style.width = '100%';
+        car.style.height = '100%';
+        cell.appendChild(car);
+    }
+}
+
+setInterval(spawnCar, 2000); // Spawn car every 2 seconds
 
 
 /*-------------------------------- Constants --------------------------------*/
