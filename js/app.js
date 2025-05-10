@@ -41,6 +41,7 @@ function createGrid() {
 }
 createGrid();
 
+//spawnCar fail! Need to figure out why not working
 // function spawnCar() {
 //     const randomIndex = Math.floor(Math.random() * cells.length);
 //     const cell = cells[randomIndex];
