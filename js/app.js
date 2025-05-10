@@ -28,7 +28,7 @@ const cellCount = width * height; //12 * 4 = 48 --currently creating a game with
 const cells = []; //creating an empty array that is meant to store each cell of the grid as I create them in a loop.
 const cell = document.createElement("div");
 let score = 0; //creating score variable
-let car = document.createElement('img');
+let car = document.createElement('img'); //defining car in global scope
 
 function createGrid() {
         for (let i = 0; i < cellCount; i++) {
@@ -75,7 +75,7 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
         
         setTimeout(()=>{
             car.remove();
-        }, 3000);
+        }, 3000); //removes car from grid after 3 seconds if not clicked
     }
 }
 setInterval(spawnCar, 1000); // Spawn car every 1 second
@@ -89,7 +89,7 @@ setInterval(spawnCar, 1000); // Spawn car every 1 second
 
 const scoreDisplay = document.getElementById("points-earned"); //selecting and creating a variable for the score display element
 
-function updateScore() {
+function updateScore() { //updates the score
     scoreDisplay.textContent = `Score: ${score}`;
 }
 
