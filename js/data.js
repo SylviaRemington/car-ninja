@@ -5,11 +5,11 @@
 
 //ALSO NEED TO CHANGE ALL KEYS TO BE CONSISTENT IN KEY:VALUE PAIRS AND CHANGE ALL TO the word 'text'.
 const carComments = [
-    { comment1: "Oh noooo! I was driving to slow!" },//AI is saying I need consistent keys here and to name them all "text"/ask about this
-    { comment2: "Bad cybertruck! Bad!" },
-    { comment3: "What are you doing on the road, cybertruck? You don't fit!" },
-    { comment4: "Slow drivers! Hiiiiya!!!" },
-    { comment5: "Why are you driving slowly in the fast lane?!" } //Took off trailing comment here. Even though comma works with modern JS, doesn't work for older environments.
+    { text: "Oh noooo! I was driving to slow!" },//AI is saying I need consistent keys here and to name them all "text"/ask about this
+    { text: "Bad cybertruck! Bad!" },
+    { text: "What are you doing on the road, cybertruck? You don't fit!" },
+    { text: "Slow drivers! Hiiiiya!!!" },
+    { text: "Why are you driving slowly in the fast lane?!" } //Took off trailing comment here. Even though comma works with modern JS, doesn't work for older environments.
 ];
 
 const carClickCommentSounds = [
@@ -38,20 +38,20 @@ const carClickCommentSounds = [
 ]
 
 const congratsComments = [
-    { congrats1: "You're technique is very strong!" },
-    { congrats2: "You are like the Iron Fist, chopping through cars and saving people from horrible drivers!" },
-    { congrats3: "You are like Wolverine, cutting all these cars in half!" },
-    { congrats4: "You're doing grrrrreat!" },
-    { congrats5: "" }
+    { text: "You're technique is very strong!" },
+    { text: "You are like the Iron Fist, chopping through cars and saving people from horrible drivers!" },
+    { text: "You are like Wolverine, cutting all these cars in half!" },
+    { text: "You're doing grrrrreat!" },
+    { text: "" }
 ];
 
 
 const gameOverComments = [
-    {gameOverComment1: "Gameover, man! Gameover!"}, //from the movie Aliens2. Maybe also add "Why don't you put her in charge?!"
-    {gameOverComment2: "Dooooooooooooooode"},
-    {gameOverComment3: ""},
-    {gameOverComment4: ""},
-    {gameOverComment5: ""} 
+    {text: "Gameover, man! Gameover!"}, //from the movie Aliens2. Maybe also add "Why don't you put her in charge?!"
+    {text: "Dooooooooooooooode"},
+    {text: ""},
+    {text: ""},
+    {text: ""} 
 ];
 
 
