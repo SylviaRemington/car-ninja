@@ -54,6 +54,27 @@ function removeCyberTruck() {
 
 // ------------------------------
 
+//CREATING START BUTTON FUNCTIONALITY
+const startButton = document.getElementById("start-game");
+startButton.addEventListener('click', startGame);
+
+function startGame() {
+    //reset game state
+    score = 0;
+    lives = 3;
+    updateScore();
+    updateLives();
+    //start timer
+    startGameTimer();
+    //start spawning cars
+    spawnLoop = setInterval(spawnCar, 1000);
+}
+
+
+
+
+// ------------------------------
+
 //CREATING SPAWN CAR SECTION
 // SPAWN CAR Section
 // spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
@@ -80,7 +101,9 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
         }, 3000); //removes car from grid after 3 seconds if not clicked
     }
 }
-setInterval(spawnCar, 1000); // Spawn car every 1 second
+
+//! Commented out setInterval so that it doesn't immediately spawn cars immediately before game starts
+// setInterval(spawnCar, 1000); // Spawn car every 1 second
 //setInterval is a function that repeatedly calls a function at a set interval.
 
 //create click event where click on car and number generates for score
