@@ -71,23 +71,33 @@ createGrid();
 //button for fun facts --randomized
 //selecting points earned area (might not be a button but something else)
 //click on cars to create getting points (can you create a car as a button? Or an image?)
-adjust-game-speed
+/*adjust-game-speed
 pause-game
 leave-game
+play-again
+back-to-home-screen
+starter-screen
+instructions-screen
+gameplay-screen
+gameover-screen
 fun-facts
+get-your-car
+swords
+level-up
+*/
 
-const startGameButton = document.querySelector('#start-game');
-const instructionsButton = document.querySelector('#instructions');
-const gameGrid = document.querySelector('#game-grid');
-const score = document.querySelector('#points-earned');
-const lives = document.querySelector('#tries-left');
+// const startGameButton = document.querySelector('#start-game');
+// const instructionsButton = document.querySelector('#instructions');
+// const gameGrid = document.querySelector('#game-grid');
+// const score = document.querySelector('#points-earned');
+// const lives = document.querySelector('#tries-left');
 
-const screens = {
-  start: document.querySelector('#start-screen'),
-  instructions: document.querySelector('#instructions-screen'),
-  gameplay: document.querySelector('#gameplay-screen'),
-  gameover: document.querySelector('#gameover-screen')
-};
+// const screens = {
+//   start: document.querySelector('#start-screen'),
+//   instructions: document.querySelector('#instructions-screen'),
+//   gameplay: document.querySelector('#gameplay-screen'),
+//   gameover: document.querySelector('#gameover-screen')
+// };
 
 
 
