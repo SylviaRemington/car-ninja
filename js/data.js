@@ -6,10 +6,10 @@
 //ALSO NEED TO CHANGE ALL KEYS TO BE CONSISTENT IN KEY:VALUE PAIRS AND CHANGE ALL TO the word 'text'.
 const carComments = [
     { comment1: "Oh noooo! I was driving to slow!" },//AI is saying I need consistent keys here and to name them all "text"/ask about this
-    { comment2: "" },
-    { comment3: "" },
-    { comment4: "" },
-    { comment5: "" } //Took off trailing comment here. Even though comma works with modern JS, doesn't work for older environments.
+    { comment2: "Bad cybertruck! Bad!" },
+    { comment3: "What are you doing on the road, cybertruck? You don't fit!" },
+    { comment4: "Slow drivers! Hiiiiya!!!" },
+    { comment5: "Why are you driving slowly in the fast lane?!" } //Took off trailing comment here. Even though comma works with modern JS, doesn't work for older environments.
 ];
 
 const carClickCommentSounds = [
