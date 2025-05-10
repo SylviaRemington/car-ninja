@@ -98,10 +98,58 @@ function updateScore() { //updates the score
 // ------------------------------
 
 //ADDING COUNTDOWN TIMER FUNCTIONALITY, SO CODE DOESN'T GO ON INDEFINITELY
+//getting help from chatgpt, deepseek, and grok
+
+let gameTimer; // creating gameTimer for the 15-second timeout
+let timeLeft = 15; //starting time for the 15-second timeout
+let countdownInterval; //for live countdown display turning red in last 3 seconds
+
+function startGameTimer() {
+    const countdownDisplay = document.getElementById('countdown-timer'); //selecting element
+    timeLeft = 15; //setting game time to 15 seconds
+    countdownDisplay.textContent = `Time Left: ${timeLeft}`;
+  
+    // Countdown that updates every second
+    countdownInterval = setInterval(() => {
+      timeLeft--;
+      countdownDisplay.textContent = `Time Left: ${timeLeft}`;
+
+      if(timeLeft <= 3) {
+        countdownDisplay.classList.add("low-time");
+      } else {
+        countdownDisplay.classList.remove("low-time");
+      }
 
 
+      if (timeLeft <= 0) {
+        clearInterval(countdownInterval);
+      }
+    }, 1000);
+  
+    // After 15 seconds, end the game
+    gameTimer = setTimeout(() => {
+      triggerGameOver();
+    }, 15000);
+  }
+  
 
+  function triggerGameOver() {
+    clearInterval(countdownInterval);
+    clearTimeout(gameTimer);
+  }
 
+  function restartGame() {
+    // reset score, lives, etc.
+    startCountdown(() => {
+      spawnLoop = setInterval(spawnCar, 1000);
+      startGameTimer(); // this line starts the timer
+    });
+  }
+
+//   startCountdown(() => {
+//     spawnLoop = setInterval(spawnCar, 1000);
+//     startGameTimer();  //this line starts the timer
+//   });
 
 
 
@@ -719,9 +767,6 @@ If you want more complex mechanics like obstacles or combo scoring
 // //setInterval is a function that repeatedly calls a function at a set interval.
 
 // //create click event where click on car and in any cell and number generates for score
-
-
-
 
 
 // ---------------------------------------
