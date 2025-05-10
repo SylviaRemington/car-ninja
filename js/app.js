@@ -104,6 +104,9 @@ let gameTimer; // creating gameTimer for the 15-second timeout
 let timeLeft = 15; //starting time for the 15-second timeout
 let countdownInterval; //for live countdown display turning red in last 3 seconds
 
+const startButton = document.getElementById('start-game');
+startButton.addEventListener('click', restartGame);
+
 function startGameTimer() {
     const countdownDisplay = document.getElementById('countdown-timer'); //selecting element
     timeLeft = 15; //setting game time to 15 seconds - resetting time
