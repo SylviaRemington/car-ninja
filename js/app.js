@@ -96,6 +96,7 @@ function updateScore() { //updates the score
 }
 
 // ------------------------------
+// ------------------------------
 
 //ADDING COUNTDOWN TIMER FUNCTIONALITY, SO CODE DOESN'T GO ON INDEFINITELY
 //getting help from chatgpt, deepseek, and grok big time for this one
@@ -139,20 +140,27 @@ function startGameTimer() {
     clearTimeout(gameTimer);
   }
 
-  function restartGame() {
-    // reset score, lives, etc.
-    startCountdown(() => {
-      spawnLoop = setInterval(spawnCar, 1000);
-      startGameTimer(); // this line starts the timer
-    });
+  function restartGame () {
+    spawnLoop = setInterval(spawnCar, 1000);
+    startGameTimer();
   }
+
+
+//   function restartGame() {
+//     // reset score, lives, etc.
+//     startCountdown(() => {
+//       spawnLoop = setInterval(spawnCar, 1000);
+//       startGameTimer(); // this line starts the timer
+//     });
+//   }
 
 //   startCountdown(() => {
 //     spawnLoop = setInterval(spawnCar, 1000);
 //     startGameTimer();  //this line starts the timer
 //   });
 
-
+// ------------------------------
+// ------------------------------
 
 
 
