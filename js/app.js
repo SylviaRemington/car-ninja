@@ -399,6 +399,14 @@ External files properly linked (app.js, data.js, style.css)
 // }
 // Why: The new width ensures 12 cells fit in one row without spilling over, fixing the vertical stacking. Your global box-sizing: border-box ensures borders don’t add extra width.
 
+//cybertruck image changed to fit width:
+// #game-grid div.cybertruck {
+//     background-image: url("../images/cybertruck.jpg");
+//     background-size: 100% 100%;
+//     /* background-size: contain; to fit the image in the cell */ This part was deleted from css
+//     background-repeat: no-repeat; /*to show one image*/
+//     background-position: center; /*to center the in the cell*/
+// }
 
 //______________________________
 
