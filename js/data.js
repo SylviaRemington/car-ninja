@@ -43,7 +43,7 @@ const congratsComments = [
     { text: "You are like the Iron Fist, chopping through cars and saving people from horrible drivers!" },
     { text: "You are like Wolverine, cutting all these cars in half!" },
     { text: "You're doing grrrrreat!" },
-    { text: "ALRIIIIGHT, YOU'VE CHOPPED ALL THE CYBERTRUCKS" }
+    { text: "ALRIIIIGHT, YOU'VE CHOPPED ALL THE CYBERTRUCKS" },
     { text: "CHOPPING THE CAR CHOPPING THE CAR" }//BREAKING THE LAW SONG
 ];
 
