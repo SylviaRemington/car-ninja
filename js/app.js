@@ -106,7 +106,7 @@ let countdownInterval; //for live countdown display turning red in last 3 second
 
 function startGameTimer() {
     const countdownDisplay = document.getElementById('countdown-timer'); //selecting element
-    timeLeft = 15; //setting game time to 15 seconds
+    timeLeft = 15; //setting game time to 15 seconds - resetting time
     countdownDisplay.textContent = `Time Left: ${timeLeft}`;
   
     // Countdown that updates every second
@@ -120,7 +120,6 @@ function startGameTimer() {
         countdownDisplay.classList.remove("low-time");
       }
 
-
       if (timeLeft <= 0) {
         clearInterval(countdownInterval);
       }
@@ -132,7 +131,6 @@ function startGameTimer() {
     }, 15000);
   }
   
-
   function triggerGameOver() {
     clearInterval(countdownInterval);
     clearTimeout(gameTimer);
