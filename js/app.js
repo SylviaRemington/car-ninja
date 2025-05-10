@@ -79,6 +79,32 @@ setInterval(spawnCar, 1000); // Spawn car every 1 second
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------- Constants --------------------------------*/
 //for creating a new element and saving it in memory
 //e.g. const clickToAddParagraphButton = document.createElement('button')
