@@ -46,11 +46,13 @@ function addCyberTruck(cellNumber) {
     cells[cellNumber].classList.add("cybertruck");
 }
 // addCybertruck(7);
-// -------------------------------
+// ------
 
 function removeCyberTruck() {
     cells[cybertruckPosition].classList.remove("cybertruck");
 }
+
+// ------------------------------
 
 //CREATING SPAWN CAR SECTION
 // SPAWN CAR Section
@@ -79,19 +81,23 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
     }
 }
 setInterval(spawnCar, 1000); // Spawn car every 1 second
-
 //setInterval is a function that repeatedly calls a function at a set interval.
 
-//create click event where click on car and in any cell and number generates for score
+//create click event where click on car and number generates for score
+//create click event where click on a cell that doesn't have points, and number generates for score
 
-// -----
+// ------------------------------
+
 //ADDING CLICK-TO-SCORE FUNCTIONALITY
-
 const scoreDisplay = document.getElementById("points-earned"); //selecting and creating a variable for the score display element
 
 function updateScore() { //updates the score
     scoreDisplay.textContent = `Score: ${score}`;
 }
+
+// ------------------------------
+
+//ADDING COUNTDOWN TIMER FUNCTIONALITY, SO CODE DOESN'T GO ON INDEFINITELY
 
 
 
@@ -246,7 +252,7 @@ level-up
 
 
 
-// CODE GRAVEYARD
+// CODE GRAVEYARD/*-------------------------------------------------------------------------------------------------------------------*/
 // HTML CODE GRAVEYARD /*----------------------------- HTML Code Graveyard -----------------------------*/
 // HTML CODE GRAVEYARD /*----------------------------- HTML Code Graveyard -----------------------------*/
 /*
@@ -797,3 +803,8 @@ If you want more complex mechanics like obstacles or combo scoring
 
 // LICENSE CODE GRAVEYARD / //  /*----------------------------- LICENSE CODE GRAVEYARD-----------------------------*/
 // LICENSE CODE GRAVEYARD / //  /*----------------------------- LICENSE CODE GRAVEYARD-----------------------------*/
+
+
+// CODE GRAVEYARD/*-------------------------------------------------------------------------------------------------------------------*/
+// HTML CODE GRAVEYARD /*----------------------------- MY ENTIRE GAME WITH HTML, CSS, JS BEFORE DELETING COMMENTS -----------------------------*/
+// HTML CODE GRAVEYARD /*----------------------------- MY ENTIRE GAME WITH HTML, CSS, JS BEFORE DELETING COMMENTS -----------------------------*/
