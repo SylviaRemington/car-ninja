@@ -98,7 +98,7 @@ function updateScore() { //updates the score
 // ------------------------------
 
 //ADDING COUNTDOWN TIMER FUNCTIONALITY, SO CODE DOESN'T GO ON INDEFINITELY
-//getting help from chatgpt, deepseek, and grok
+//getting help from chatgpt, deepseek, and grok big time for this one
 
 let gameTimer; // creating gameTimer for the 15-second timeout
 let timeLeft = 15; //starting time for the 15-second timeout
