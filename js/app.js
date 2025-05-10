@@ -14,7 +14,7 @@ console.log('JS LINKED AND WORKING');
 
 /*------------------------- Temporary Code to Have Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-------------------*/
 
-
+//CREATING GAMEPLAY SCREEN WITH GRID
 const gameplayScreen = document.getElementById('gameplay-screen'); // Find gameplay screen
 
 gameplayScreen.classList.add('active'); // Show gameplay screen - as active (as opposed to hidden)
@@ -39,6 +39,7 @@ createGrid();
 
 // ------------------------------
 
+//CREATING ADDING AND REMOVING CYBERTRUCK
 function addCyberTruck(cellNumber) {
     cells[cellNumber].classList.add("cybertruck");
 }
@@ -49,7 +50,7 @@ function removeCyberTruck() {
     cells[cybertruckPosition].classList.remove("cybertruck");
 }
 
-
+//CREATING SPAWN CAR SECTION
 // SPAWN CAR Section
 // spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
 function spawnCar() { //Declaring a function called spawnCar that will run code to add a car image to the grid when called
@@ -70,6 +71,7 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
     }
 }
 setInterval(spawnCar, 1000); // Spawn car every 1 second
+
 //setInterval is a function that repeatedly calls a function at a set interval.
 
 //create click event where click on car and in any cell and number generates for score

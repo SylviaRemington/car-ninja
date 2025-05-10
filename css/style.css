@@ -35,6 +35,7 @@ body {
 }
 
 
+
 /*****************************
   HEADER STYLES
 *****************************/
@@ -56,6 +57,7 @@ h2 {
 }
 
 
+
 /*****************************
  NAVIGATION BAR STYLES
 *****************************/
@@ -63,6 +65,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
 }
+
 
 
 /*****************************
@@ -86,6 +89,7 @@ nav {
 }
 
 
+
 /*******************************
   HIDING SCREENS
 ********************************/
@@ -97,6 +101,7 @@ nav {
     /* Any element with class="active" will be visible on the screen. And the class="active" is done in JS */
     display: block;
 }
+
 
 
 /*****************************
@@ -139,6 +144,7 @@ ol {
 }
 
 
+
 /*****************************
   SCORE & LIVES STYLES
 *****************************/
@@ -158,6 +164,7 @@ ol {
 #points-earned, #tries-left {
     margin-right: 20px;
 }
+
 
 
 /*****************************
@@ -185,6 +192,8 @@ ol {
     background-repeat: no-repeat; /*to show one image*/
     background-position: center; /*to center the in the cell*/
 }
+
+
 
 /*****************************
  FOOTER STYLES
