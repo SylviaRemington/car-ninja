@@ -74,7 +74,8 @@ setInterval(spawnCar, 1000); // Spawn car every 1 second
 
 //create click event where click on car and in any cell and number generates for score
 
-
+// -----
+//ADDING CLICK-TO-SCORE FUNCTIONALITY
 
 
 
