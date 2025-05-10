@@ -371,6 +371,8 @@ External files properly linked (app.js, data.js, style.css)
 //     height: 50px;  /* not sure why height in px works but height in % doesn't */
 //     border: 1px solid lightblue;
 // }
+// Why: The new width ensures 12 cells fit in one row without spilling over, fixing the vertical stacking. Your global box-sizing: border-box ensures borders don’t add extra width.
+
 
 //______________________________
 
