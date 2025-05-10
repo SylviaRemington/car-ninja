@@ -64,9 +64,9 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
         car.style.height = '100%'; //newly created car is styled with the height of 100% of the cell
         car.classList.add('car'); // Ensure CSS positioning
         cell.appendChild(car); //adds car as child of cell
-        // removeCyberTruck();
-    
-     if ()
+        setTimeout(()=>{
+            car.remove();
+        }, 3000);
     }
 }
 setInterval(spawnCar, 1000); // Spawn car every 1 second
@@ -758,10 +758,3 @@ If you want more complex mechanics like obstacles or combo scoring
 
 // LICENSE CODE GRAVEYARD / //  /*----------------------------- LICENSE CODE GRAVEYARD-----------------------------*/
 // LICENSE CODE GRAVEYARD / //  /*----------------------------- LICENSE CODE GRAVEYARD-----------------------------*/
-/*
-
-
-
-
-
-*/
