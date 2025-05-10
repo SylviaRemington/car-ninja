@@ -128,7 +128,7 @@ let gameTimer; // creating gameTimer for the 15-second timeout
 let timeLeft = 15; //starting time for the 15-second timeout
 let countdownInterval; //for live countdown display turning red in last 3 seconds
 
-const startButton = document.getElementById('start-game');
+// const startButton = document.getElementById('start-game');//already declared
 startButton.addEventListener('click', restartGame);
 
 function startGameTimer() {
@@ -161,6 +161,7 @@ function startGameTimer() {
   function triggerGameOver() {
     clearInterval(countdownInterval);
     clearTimeout(gameTimer);
+    clearInterval(spawnLoop); //stops spawning cars
   }
 
   function restartGame () {
