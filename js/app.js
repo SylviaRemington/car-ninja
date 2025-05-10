@@ -12,6 +12,22 @@
 
 console.log('JS LINKED AND WORKING');
 
+/*
+Create grid first in HTML CSS & JS - so have game's playing field needed for cars and potholes
+Set Up Variables and Displays: Set up score, lives, and displays to track and show the game’s state.
+SET UP VARIABLES FOR SCORE, LIVES, AND DISPLAYS
+Code the Start Game Button Functionality - 
+Code the Score Functionality
+Code the Lives Functionality
+Code the Timer Functionality
+Code the Car Spawning Functionality
+Code the game Over-Functionality
+Code the pothole spawning functionality
+Code the win/loss conditions
+Code for 3 Round Functionality
+*/
+
+
 /*------------------------- Temporary Code to Have Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-------------------*/
 
 //CREATING GAMEPLAY SCREEN WITH GRID
@@ -41,19 +57,6 @@ createGrid();
 
 // ------------------------------
 
-//CREATING ADDING AND REMOVING CYBERTRUCK
-function addCyberTruck(cellNumber) {
-    cells[cellNumber].classList.add("cybertruck");
-}
-// addCybertruck(7);
-// ------
-
-function removeCyberTruck() {
-    cells[cybertruckPosition].classList.remove("cybertruck");
-}
-
-// ------------------------------
-
 //CREATING START BUTTON FUNCTIONALITY
 const startButton = document.getElementById("start-game");
 startButton.addEventListener('click', startGame);
@@ -70,8 +73,19 @@ function startGame() {
     spawnLoop = setInterval(spawnCar, 1000);
 }
 
+// ------------------------------
 
+//PART OF CAR SPAWNING FUNCTIONALITY
+//CREATING ADDING AND REMOVING CYBERTRUCK
+function addCyberTruck(cellNumber) {
+    cells[cellNumber].classList.add("cybertruck");
+}
+// addCybertruck(7);
+// ------
 
+function removeCyberTruck() {
+    cells[cybertruckPosition].classList.remove("cybertruck");
+}
 
 // ------------------------------
 
@@ -869,7 +883,23 @@ If you want more complex mechanics like obstacles or combo scoring
 // HTML CODE GRAVEYARD /*----------------------------- MY ENTIRE GAME WITH HTML, CSS, JS BEFORE DELETING COMMENTS -----------------------------*/
 // HTML CODE GRAVEYARD /*----------------------------- MY ENTIRE GAME WITH HTML, CSS, JS BEFORE DELETING COMMENTS -----------------------------*/
 
-//CURRENT CODE AS OF MAY 10TH, 2025 327PM
+//REDOING ORDER OF THINGS FOR BETTER FUNCTIONALITY
+/*
+Create grid first in HTML CSS & JS - so have game's playing field needed for cars and potholes
+Set Up Variables and Displays: Set up score, lives, and displays to track and show the game’s state.
+SET UP VARIABLES FOR SCORE, LIVES, AND DISPLAYS
+Code the Start Game Button Functionality - 
+Code the Score Functionality
+Code the Lives Functionality
+Code the Timer Functionality
+Code the Car Spawning Functionality
+Code the game Over-Functionality
+Code the pothole spawning functionality
+Code the win/loss conditions
+Code for 3 Round Functionality
+*/
+
+//CURRENT CODE AS OF MAY 10TH, 2025 327PM --BEFORE REDOING THE ORDER OF THINGS FOR FUNCTIONALITY
 
 //HTML
 // <!-- CAR NINJA GAME HTML -->
