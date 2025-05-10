@@ -27,6 +27,8 @@ const height = 4; // rows
 const cellCount = width * height; //12 * 4 = 48 --currently creating a game with 12 across and 4 high -- subject to change later
 const cells = []; //creating an empty array that is meant to store each cell of the grid as I create them in a loop.
 const cell = document.createElement("div");
+let score = 0; //creating score variable
+let car = document.createElement('img');
 
 function createGrid() {
         for (let i = 0; i < cellCount; i++) {
@@ -65,6 +67,12 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
         car.style.height = '100%'; //newly created car is styled with the height of 100% of the cell
         car.classList.add('car'); // Ensure CSS positioning
         cell.appendChild(car); //adds car as child of cell
+        car.addEventListener('click', () => {
+            score++;
+            updateScore();
+            car.remove(); //remove the car once it is clicked
+        })
+        
         setTimeout(()=>{
             car.remove();
         }, 3000);
@@ -79,9 +87,11 @@ setInterval(spawnCar, 1000); // Spawn car every 1 second
 // -----
 //ADDING CLICK-TO-SCORE FUNCTIONALITY
 
+const scoreDisplay = document.getElementById("points-earned"); //selecting and creating a variable for the score display element
 
-
-
+function updateScore() {
+    scoreDisplay.textContent = `Score: ${score}`;
+}
 
 
 
