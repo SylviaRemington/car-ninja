@@ -26,13 +26,11 @@ const width = 12; // columns - width usually refers to how many columns are in e
 const height = 4; // rows
 const cellCount = width * height; //12 * 4 = 48 --currently creating a game with 12 across and 4 high -- subject to change later
 const cells = []; //creating an empty array that is meant to store each cell of the grid as I create them in a loop.
+const cell = document.createElement("div");
 
 function createGrid() {
         for (let i = 0; i < cellCount; i++) {
                 const cell = document.createElement("div");
-                // cell.classList.add("cybertruck");
-                // cell.textContent = i;//this line adds a text node inside the cell. When you later append an image, the image goes after the number
-                //resulting in a layout where the image stacks vertically. So it looks like the image below the cell.
                 cells.push(cell); // Store <div> elements, not numbers
                 gameGrid.appendChild(cell);
         }
@@ -64,10 +62,11 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
         car.alt = 'Cybertruck Car'; //setting alt text for accessibility and screen readers
         car.style.width = '100%'; //newly created car is styled with the width of 100% of the cell
         car.style.height = '100%'; //newly created car is styled with the height of 100% of the cell
+        car.classList.add('car'); // Ensure CSS positioning
         cell.appendChild(car); //adds car as child of cell
         // removeCyberTruck();
     
-        // if 
+     if ()
     }
 }
 setInterval(spawnCar, 1000); // Spawn car every 1 second
@@ -608,6 +607,76 @@ If you want more complex mechanics like obstacles or combo scoring
 //         }
 // }
 // createGrid();
+
+// ----
+/*------------------------- Temporary Code to Have Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-------------------*/
+
+// Fourth Version - also figured out: "fixed the spawned car showing up below the cell by commenting out cell.textContent = i; because it adds a number text node
+// //  inside the cell and then the image stacks vertically under that"
+// const gameplayScreen = document.getElementById('gameplay-screen'); // Find gameplay screen
+
+// gameplayScreen.classList.add('active'); // Show gameplay screen - as active (as opposed to hidden)
+
+// // Creating gameGrid
+// /* Using tools/example Tristan showed in class*/
+// const gameGrid = document.querySelector("#game-grid");//grabbing the grid in html
+// const width = 12; // columns - width usually refers to how many columns are in each row. 12 columns * 12 rows = 144 squares total
+// const height = 4; // rows
+// const cellCount = width * height; //12 * 4 = 48 --currently creating a game with 12 across and 4 high -- subject to change later
+// const cells = []; //creating an empty array that is meant to store each cell of the grid as I create them in a loop.
+
+// function createGrid() {
+//         for (let i = 0; i < cellCount; i++) {
+//                 const cell = document.createElement("div");
+//                 // cell.classList.add("cybertruck");
+//                 // cell.textContent = i;//this line adds a text node inside the cell. When you later append an image, the image goes after the number
+//                 //resulting in a layout where the image stacks vertically. So it looks like the image below the cell.
+// //                 "fixed the spawned car showing up below the cell by commenting out cell.textContent = i; because it adds a number text node
+// //  inside the cell and then the image stacks vertically under that"
+//                 cells.push(cell); // Store <div> elements, not numbers
+//                 gameGrid.appendChild(cell);
+//         }
+// }
+// createGrid();
+
+// // ------------------------------
+
+// function addCyberTruck(cellNumber) {
+//     cells[cellNumber].classList.add("cybertruck");
+// }
+// // addCybertruck(7);
+// // -------------------------------
+
+// function removeCyberTruck() {
+//     cells[cybertruckPosition].classList.remove("cybertruck");
+// }
+
+
+// // SPAWN CAR Section
+// // spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
+// function spawnCar() { //Declaring a function called spawnCar that will run code to add a car image to the grid when called
+//     const randomCellPick = Math.floor(Math.random() * cells.length); //storing a random # to pick a grid cell
+//     //Math.random()built in function generates decimal number and then it's multiplied by 48 //don't totally get it but it's working
+//     const cell = cells[randomCellPick];
+//     if (!cell.querySelector('img')) { // Check if cell is empty with no image so it can put an image in there
+//         const car = document.createElement('img'); //creates a new img html element
+//         car.src = '../images/cybertruck.jpg'; //setting image source
+//         car.alt = 'Cybertruck Car'; //setting alt text for accessibility and screen readers
+//         car.style.width = '100%'; //newly created car is styled with the width of 100% of the cell
+//         car.style.height = '100%'; //newly created car is styled with the height of 100% of the cell
+//         cell.appendChild(car); //adds car as child of cell
+//         // removeCyberTruck();
+    
+//         // if 
+//     }
+// }
+// setInterval(spawnCar, 1000); // Spawn car every 1 second
+// //setInterval is a function that repeatedly calls a function at a set interval.
+
+// //create click event where click on car and in any cell and number generates for score
+
+
+
 
 
 // ---------------------------------------
