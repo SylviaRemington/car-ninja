@@ -66,16 +66,6 @@ nav {
 
 
 /*****************************
- FOOTER STYLES
-*****************************/
-footer {
-    display: flex;
-    justify-content: right;
-    gap: 15px;
-}
-
-
-/*****************************
   BUTTON STYLES
 *****************************/
 
@@ -179,6 +169,7 @@ ol {
     flex-wrap: wrap; /* to arrange cells in the grid*/
     width: 600px; /*sets grid size - fixed width for 12 columns so grid has stability depending on screen size */
     margin: 0 auto; /* to center the grid on the page & fixes left alignment issue*/
+    
 }
 
 #game-grid div { /* targeting each individual box inside the grid */
@@ -195,3 +186,11 @@ ol {
     background-position: center; /*to center the in the cell*/
 }
 
+/*****************************
+ FOOTER STYLES
+*****************************/
+footer {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+}

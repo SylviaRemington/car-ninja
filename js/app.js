@@ -14,14 +14,13 @@ console.log('JS LINKED AND WORKING');
 
 /*------------------------- Temporary Code to Have Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-------------------*/
 
-// Find gameplay screen
-const gameplayScreen = document.getElementById('gameplay-screen');
 
-// Show gameplay screen - as active (as opposed to hidden)
-gameplayScreen.classList.add('active');
+const gameplayScreen = document.getElementById('gameplay-screen'); // Find gameplay screen
+
+gameplayScreen.classList.add('active'); // Show gameplay screen - as active (as opposed to hidden)
 
 // Creating gameGrid
-/* Using tools/example Tristan showed in class and this is the html I created for this previously <div id="game-grid"></div> */
+/* Using tools/example Tristan showed in class*/
 const gameGrid = document.querySelector("#game-grid");//grabbing the grid in html
 const width = 12; // columns - width usually refers to how many columns are in each row. 12 columns * 12 rows = 144 squares total
 const height = 4; // rows
@@ -32,17 +31,29 @@ function createGrid() {
         for (let i = 0; i < cellCount; i++) {
                 const cell = document.createElement("div");
                 // cell.classList.add("cybertruck");
-                cell.textContent = i;
+                // cell.textContent = i;//this line adds a text node inside the cell. When you later append an image, the image goes after the number
+                //resulting in a layout where the image stacks vertically. So it looks like the image below the cell.
                 cells.push(cell); // Store <div> elements, not numbers
                 gameGrid.appendChild(cell);
-                // cells.push(i); //pushing number i(0,1,2..) into the array - not the actual <div> elements.
-                // gameGrid.appendChild(cell);//append it to the DOM
         }
 }
 createGrid();
 
-// spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
+// ------------------------------
 
+function addCyberTruck(cellNumber) {
+    cells[cellNumber].classList.add("cybertruck");
+}
+// addCybertruck(7);
+// -------------------------------
+
+function removeCyberTruck() {
+    cells[cybertruckPosition].classList.remove("cybertruck");
+}
+
+
+// SPAWN CAR Section
+// spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
 function spawnCar() { //Declaring a function called spawnCar that will run code to add a car image to the grid when called
     const randomCellPick = Math.floor(Math.random() * cells.length); //storing a random # to pick a grid cell
     //Math.random()built in function generates decimal number and then it's multiplied by 48 //don't totally get it but it's working
@@ -54,11 +65,17 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
         car.style.width = '100%'; //newly created car is styled with the width of 100% of the cell
         car.style.height = '100%'; //newly created car is styled with the height of 100% of the cell
         cell.appendChild(car); //adds car as child of cell
+        // removeCyberTruck();
+    
+        // if 
     }
 }
-
-setInterval(spawnCar, 2000); // Spawn car every 2 seconds
+setInterval(spawnCar, 1000); // Spawn car every 1 second
 //setInterval is a function that repeatedly calls a function at a set interval.
+
+//create click event where click on car and in any cell and number generates for score
+
+
 
 
 
@@ -555,6 +572,34 @@ If you want more complex mechanics like obstacles or combo scoring
 //         for (let i = 0; i < cellCount; i++) {
 //                 const cell = document.createElement("div");
 //                 cell.classList.add("cybertruck");
+//                 cell.textContent = i;
+//                 cells.push(cell); // Store <div> elements, not numbers
+//                 gameGrid.appendChild(cell);
+//                 // cells.push(i); //pushing number i(0,1,2..) into the array - not the actual <div> elements.
+//                 // gameGrid.appendChild(cell);//append it to the DOM
+//         }
+// }
+// createGrid();
+
+/*------------------------- Temporary Code to Have Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-------------------*/
+
+//Third Version
+// const gameplayScreen = document.getElementById('gameplay-screen'); // Find gameplay screen
+
+// gameplayScreen.classList.add('active'); // Show gameplay screen - as active (as opposed to hidden)
+
+// // Creating gameGrid
+// /* Using tools/example Tristan showed in class*/
+// const gameGrid = document.querySelector("#game-grid");//grabbing the grid in html
+// const width = 12; // columns - width usually refers to how many columns are in each row. 12 columns * 12 rows = 144 squares total
+// const height = 4; // rows
+// const cellCount = width * height; //12 * 4 = 48 --currently creating a game with 12 across and 4 high -- subject to change later
+// const cells = []; //creating an empty array that is meant to store each cell of the grid as I create them in a loop.
+
+// function createGrid() {
+//         for (let i = 0; i < cellCount; i++) {
+//                 const cell = document.createElement("div");
+//                 // cell.classList.add("cybertruck");
 //                 cell.textContent = i;
 //                 cells.push(cell); // Store <div> elements, not numbers
 //                 gameGrid.appendChild(cell);
