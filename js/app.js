@@ -40,6 +40,14 @@ create click event where click on a cell that doesn't have points, and number ge
 
 /*-------- Temporary Code to Have For Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-----*/
 
+const livesDisplay = document.getElementById('tries-left');
+const countdownDisplay = document.getElementById('countdown-timer');
+const gameOverScreen = document.getElementById('gameover-screen');
+
+
+
+
+
 //CREATING GRID
 //CREATING gameplayScreen WITH gameGrid - finding and then making it active
 const gameplayScreen = document.getElementById('gameplay-screen'); // Find gameplay screen
@@ -78,7 +86,7 @@ function startGame() {
     score = 0;
     lives = 3;
     updateScore();
-    updateLives();
+    updateLives();//this isn't defined yet
     //start timer
     startGameTimer();
     //start spawning cars
