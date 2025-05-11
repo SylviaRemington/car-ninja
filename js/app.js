@@ -2148,7 +2148,7 @@ Example Context: Apply display: none to <div id="gameplay-screen"> in CSS so itâ
 
 //!! MAIN FOCUS IS ON MVP AND GETTING GAMEPLAY SCREEN TO WORK
 
-console.log('JS LINKED AND WORKING');
+// console.log('JS LINKED AND WORKING');
 
 /*
 âœ… Create grid first in HTML CSS & JS - so have game's playing field needed for cars and potholes
