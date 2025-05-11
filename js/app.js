@@ -82,12 +82,12 @@ function startGame() {
     //reset game state
     score = 0;
     lives = 3;
-    updateScore();
-    updateLives();//this isn't defined yet
+    updateScore();//Do I need to create an additional function for this?
+    updateLives();//this isn't defined yet - //Do I need to create an additional function for this?
     //start timer
     startGameTimer();
     //start spawning cars
-    spawnLoop = setInterval(spawnCar, 1000);
+    spawnLoop = setInterval(spawnCar, 1000);//spawning cars every second
 }
 
 // ------------------------------
