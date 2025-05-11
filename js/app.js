@@ -37,16 +37,13 @@ create click event where click on car and number generates for score
 create click event where click on a cell that doesn't have points, and number generates for score
 */
 
-
-/*-------- Temporary Code to Have For Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-----*/
-
+/* ------ADDTL VARIABLES ADDED TO THE TOP THAT I WAS MISSING ----------*/
 const livesDisplay = document.getElementById('tries-left');
 const countdownDisplay = document.getElementById('countdown-timer');
 const gameOverScreen = document.getElementById('gameover-screen');
 
 
-
-
+/*-------- Temporary Code to Have For Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-----*/
 
 //CREATING GRID
 //CREATING gameplayScreen WITH gameGrid - finding and then making it active
