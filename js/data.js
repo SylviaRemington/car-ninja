@@ -1,5 +1,6 @@
 //Below is data for putting funny car insult comments and also congratulatory comments.
 
+//ADDTL REMINDERS AND IDEAS:
 //objects have key:valuePairs,
 //create a randomization of pulling these comments. Figure out how to do that in JS.
 
