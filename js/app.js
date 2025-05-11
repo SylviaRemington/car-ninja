@@ -13,10 +13,16 @@
 console.log('JS LINKED AND WORKING');
 
 /*
-Create grid first in HTML CSS & JS - so have game's playing field needed for cars and potholes
-Set Up Variables and Displays: Set up score, lives, and displays to track and show the game’s state.
-SET UP VARIABLES FOR SCORE, LIVES, AND DISPLAYS
-Code the Start Game Button Functionality - 
+✅ Create grid first in HTML CSS & JS - so have game's playing field needed for cars and potholes
+Set Up Variables and Displays for score/lives/displays: ✅ Set up score, ✅ lives, and displays to track and show the game’s state.
+
+✅ Set up these variables already:
+let score, let lives, const gameGrid, const width, const height, const cellCount, const cells, const cell,
+const gameplayScreen, const startButton, let gameTimer, let timeLeft, let countdownInterval,
+const scoreDisplay, const countdownDisplay
+
+
+Code the Start Game Button Functionality
 Code the Score Functionality
 Code the Lives Functionality
 Code the Timer Functionality
@@ -25,15 +31,20 @@ Code the game Over-Functionality
 Code the pothole spawning functionality
 Code the win/loss conditions
 Code for 3 Round Functionality
+
+
+create click event where click on car and number generates for score
+create click event where click on a cell that doesn't have points, and number generates for score
 */
 
 
-/*------------------------- Temporary Code to Have Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-------------------*/
+/*-------- Temporary Code to Have For Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-----*/
 
-//CREATING GAMEPLAY SCREEN WITH GRID
+//CREATING GRID
+//CREATING gameplayScreen WITH gameGrid - finding and then making it active
 const gameplayScreen = document.getElementById('gameplay-screen'); // Find gameplay screen
-
 gameplayScreen.classList.add('active'); // Show gameplay screen - as active (as opposed to hidden)
+
 
 // Creating gameGrid
 /* Using tools/example Tristan showed in class*/
@@ -42,8 +53,9 @@ const width = 12; // columns - width usually refers to how many columns are in e
 const height = 4; // rows
 const cellCount = width * height; //12 * 4 = 48 --currently creating a game with 12 across and 4 high -- subject to change later
 const cells = []; //creating an empty array that is meant to store each cell of the grid as I create them in a loop.
-const cell = document.createElement("div");
-let score = 0; //creating score variable
+const cell = document.createElement("div"); //creating the cells
+let score = 0; //creating score variable for tracking player's points
+let lives = 3; // creating lives variable for tracking player's lives (3 total)
 let car = document.createElement('img'); //defining car in global scope
 
 function createGrid() {
@@ -116,12 +128,9 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
     }
 }
 
-//! Commented out setInterval so that it doesn't immediately spawn cars immediately before game starts
-// setInterval(spawnCar, 1000); // Spawn car every 1 second
+// setInterval(spawnCar, 1000); // Spawn car every 1 second//! Commented out setInterval so that it doesn't immediately spawn cars immediately before game starts
 //setInterval is a function that repeatedly calls a function at a set interval.
 
-//create click event where click on car and number generates for score
-//create click event where click on a cell that doesn't have points, and number generates for score
 
 // ------------------------------
 
