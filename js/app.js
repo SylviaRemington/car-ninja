@@ -48,7 +48,7 @@ const cellCount = width * height; //12 * 4 = 48 --currently creating a game with
 const cells = []; //creating an empty array that is meant to store each cell of the grid as I create them in a loop.
 const cell = document.createElement("div"); //creating the cells
 let score = 0; //creating score variable for tracking player's points
-let lives = 3; // creating lives variable for tracking player's lives (3 total)
+// let lives = 3; // creating lives variable for tracking player's lives (3 total)
 let car = document.createElement('img'); //defining car in global scope
 
 function createGrid() {
