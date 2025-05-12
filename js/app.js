@@ -185,14 +185,30 @@ function startGameTimer() {
     startGameTimer();
   }
 
-
-  function restartGame() {
+  //The startCountdown function does not exist in my code yet...getting an error message.
+//I intended to use a countdown mechanism (for a "Ready... 3, 2, 1, Go!" sequence), 
+// but haven't had a chance to implement the function yet.
+function restartGame() {
     // reset score, lives, etc.
     startCountdown(() => {
       spawnLoop = setInterval(spawnCar, 1000);
       startGameTimer(); // this line starts the timer
     });
   }
+
+
+//   function restartGame() {
+    // Reset game state
+//     score = 0;
+    // lives = 3; // Uncomment if you add lives functionality later
+//     updateScore();
+    // updateLives(); // Uncomment if you add lives functionality later
+
+    // Start spawning cars and timer
+//     spawnLoop = setInterval(spawnCar, 1000);
+//     startGameTimer();
+// }
+
 
 //   startCountdown(() => {
 //     spawnLoop = setInterval(spawnCar, 1000);
