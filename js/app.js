@@ -30,9 +30,6 @@ const livesDisplay = document.getElementById('tries-left');
 const countdownDisplay = document.getElementById('countdown-timer');
 const gameOverScreen = document.getElementById('gameover-screen');
 
-function updateLives() {
-    livesDisplay.textContent = `Lives: ${lives}`;
-  }
 
 /*-------- Temporary Code to Have For Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-----*/
 
@@ -80,18 +77,6 @@ function startGame() {
     //start spawning cars
     spawnLoop = setInterval(spawnCar, 1000);//spawning cars every second
 }
-
-//SHOW SCREEN FUNCTION
-function showScreen(screenId) {
-  document.querySelectorAll('.screens').forEach(screen => {
-    screen.classList.remove('active');
-    screen.classList.add('hidden');
-  });
-  const screen = document.getElementById(screenId);
-  screen.classList.remove('hidden');
-  screen.classList.add('active');
-}
-showScreen('gameover-screen');
 
 // ------------------------------
 
@@ -149,6 +134,10 @@ function updateScore() { //updates the score
     scoreDisplay.textContent = `Score: ${score}`;
 }
 
+function updateLives() {
+    livesDisplay.textContent = `Lives: ${lives}`;
+  }
+
 // ------------------------------
 // ------------------------------
 
@@ -189,26 +178,11 @@ function startGameTimer() {
     }, 15000);
   }
   
-
-
   function triggerGameOver() {
     clearInterval(countdownInterval);
     clearTimeout(gameTimer);
-    clearInterval(spawnLoop);
-
-    // Show the gameover screen
-    document.getElementById('gameplay-screen').classList.remove('active');
-    showScreen('gameover-screen'); //  this replaces the old line
-  
-    const finalMessage = document.getElementById('final-result');
-  
-    if (score >= 5) {
-      finalMessage.textContent = `You Win! Final Score: ${score}`;
-    } else {
-      finalMessage.textContent = `Game Over. You Lose! Final Score: ${score}`;
-    }
+    clearInterval(spawnLoop); //stops spawning cars
   }
-  
 
   function restartGame () {
     spawnLoop = setInterval(spawnCar, 1000);
@@ -425,14 +399,6 @@ level-up
 // HTML CODE GRAVEYARD /*----------------------------- HTML Code Graveyard -----------------------------*/
 // HTML CODE GRAVEYARD /*----------------------------- HTML Code Graveyard -----------------------------*/
 /*
-
-  function triggerGameOver() {
-    clearInterval(countdownInterval);
-    clearTimeout(gameTimer);
-    clearInterval(spawnLoop); //stops spawning cars
-  }
-
-------
 CAR NINJA GAME JS
 
 console.log('JS LINKED AND WORKING');
@@ -2186,7 +2152,7 @@ Example Context: Apply display: none to <div id="gameplay-screen"> in CSS so itâ
 
 //!! MAIN FOCUS IS ON MVP AND GETTING GAMEPLAY SCREEN TO WORK
 
-// console.log('JS LINKED AND WORKING');
+console.log('JS LINKED AND WORKING');
 
 /*
 âœ… Create grid first in HTML CSS & JS - so have game's playing field needed for cars and potholes

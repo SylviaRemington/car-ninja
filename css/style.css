@@ -1,4 +1,3 @@
-/* CAR NINJA GAME CSS */
 
 /* CSS Flexbox and/or Grid is used for page layout design. */
 /* Colors used on the site have appropriate contrast that meet the 
@@ -97,10 +96,6 @@ nav {
 .active { 
     /* Any element with class="active" will be visible on the screen. And the class="active" is done in JS */
     display: block;
-}
-
-.hidden {
-    display: none;
 }
 
 
@@ -209,4 +204,3 @@ footer {
 #play-again, #back-to-home-screen {
     margin-top: 12px;
 }
-
