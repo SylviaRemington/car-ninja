@@ -78,6 +78,20 @@ function startGame() {
     spawnLoop = setInterval(spawnCar, 1000);//spawning cars every second
 }
 
+//SHOW SCREEN FUNCTION
+function showScreen(screenId) {
+  document.querySelectorAll('.screens').forEach(screen => {
+    screen.classList.remove('active');
+    screen.classList.add('hidden');
+  });
+  const screen = document.getElementById(screenId);
+  screen.classList.remove('hidden');
+  screen.classList.add('active');
+}
+Then replace gameOverScreen.classList.add('active'); with:
+
+showScreen('gameover-screen');
+
 // ------------------------------
 
 //PART OF CAR SPAWNING FUNCTIONALITY
@@ -174,11 +188,26 @@ function startGameTimer() {
     }, 15000);
   }
   
+
+
   function triggerGameOver() {
     clearInterval(countdownInterval);
     clearTimeout(gameTimer);
-    clearInterval(spawnLoop); //stops spawning cars
+    clearInterval(spawnLoop);
+
+    // Show the gameover screen
+    document.getElementById('gameplay-screen').classList.remove('active');
+    gameOverScreen.classList.add('active');
+  
+    const finalMessage = document.getElementById('final-result');
+  
+    if (score >= 5) {
+      finalMessage.textContent = `You Win! Final Score: ${score}`;
+    } else {
+      finalMessage.textContent = `Game Over. You Lose! Final Score: ${score}`;
+    }
   }
+  
 
   function restartGame () {
     spawnLoop = setInterval(spawnCar, 1000);
@@ -395,6 +424,14 @@ level-up
 // HTML CODE GRAVEYARD /*----------------------------- HTML Code Graveyard -----------------------------*/
 // HTML CODE GRAVEYARD /*----------------------------- HTML Code Graveyard -----------------------------*/
 /*
+
+  function triggerGameOver() {
+    clearInterval(countdownInterval);
+    clearTimeout(gameTimer);
+    clearInterval(spawnLoop); //stops spawning cars
+  }
+
+------
 CAR NINJA GAME JS
 
 console.log('JS LINKED AND WORKING');
