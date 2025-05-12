@@ -193,27 +193,6 @@ footer {
  GAMEOVER SCREEN STYLES
 *****************************/
 
-/*
-#gameover-screen {
-    text-align: center; /* Centers everything */
-    /* padding-top: 150px; /* Pushes everything down */
-/* }
-
-.game-message {
-    color: cornflowerblue;
-    font-size: 30px;
-    margin-bottom: 30px; /* Space between message and button */
-/* } */
-/* 
-#play-again {
-    font-size: 15px;
-    padding: 10px 20px;
-} */
- 
-/* #gameover-screen {
-    text-align: center;
-} */
-
 #gameover-screen {
     text-align: center;
     padding-top: 20px; /* can move this higher or lower depending on where I want the game over text to fit */
