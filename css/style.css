@@ -1,7 +1,12 @@
+CSS
+/* CAR NINJA GAME CSS */
 
 /* CSS Flexbox and/or Grid is used for page layout design. */
+
 /* Colors used on the site have appropriate contrast that meet the 
 WCAG 2.0 level AA standard. */
+
+/* The game is coded using proper indentation. */
 
 /*ADDTL INFO FOR HIDING ELEMENTS - TO BE DELETED BEFORE SUBMISSION
 
@@ -178,7 +183,7 @@ ol {
 #game-grid div { /* targeting each individual box inside the grid */
     width: calc(100% / 12); /* makes every cell exactly 50px wide (600 divided by 12) */
     height: 50px;  /* keeps height 50px for 4 rows - not sure why height in px works but height in % doesn't */
-    border: 1px solid lightblue; /* for cell outlines - could also use rgb(143, 199, 218) */
+    border: 1px solid lightblue; /* for cell outlines */
 }
 
 #game-grid div.cybertruck {
@@ -204,3 +209,4 @@ footer {
 #play-again, #back-to-home-screen {
     margin-top: 12px;
 }
+
