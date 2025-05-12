@@ -77,8 +77,15 @@ function startGame() {
     score = 0;
     isGameActive = true;
     updateScore();
+    //clear any existing intervals
     if (spawnLoop) clearInterval(spawnLoop);
     if (countdownInterval) clearInterval(countdownInterval);
+
+    // Reset screens
+    document.getElementById('gameplay-screen').classList.add('active');
+    document.getElementById('gameover-screen').classList.remove('active');
+
+    //Start game functions
     spawnLoop = setInterval(spawnCar, 500);
     startGameTimer();
 }
@@ -213,10 +220,27 @@ function startGameTimer() {
         document.getElementById('play-again').addEventListener('click', restartGame);
     }
 
+    function restartGame() {
+        // Reset score and timer display
+        score = 0;
+        timeLeft = 15;
+        updateScore();
+        document.getElementById('countdown-timer').textContent = `Time Left: ${timeLeft}`;
+        
+        // Clear any existing cars
+        document.querySelectorAll('#game-grid img').forEach(img => img.remove());
+        
+        // Show gameplay screen, hide game over screen
+        document.getElementById('gameplay-screen').classList.add('active');
+        document.getElementById('gameover-screen').classList.remove('active');
+        
+        // Start the game
+        startGame();
+    }
 
-function restartGame() {
-    startGame();
-};
+// function restartGame() {
+//     startGame();
+// };
 
 
 
