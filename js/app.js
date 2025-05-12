@@ -30,6 +30,9 @@ const livesDisplay = document.getElementById('tries-left');
 const countdownDisplay = document.getElementById('countdown-timer');
 const gameOverScreen = document.getElementById('gameover-screen');
 
+function updateLives() {
+    livesDisplay.textContent = `Lives: ${lives}`;
+  }
 
 /*-------- Temporary Code to Have For Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-----*/
 
@@ -88,8 +91,6 @@ function showScreen(screenId) {
   screen.classList.remove('hidden');
   screen.classList.add('active');
 }
-Then replace gameOverScreen.classList.add('active'); with:
-
 showScreen('gameover-screen');
 
 // ------------------------------
@@ -197,7 +198,7 @@ function startGameTimer() {
 
     // Show the gameover screen
     document.getElementById('gameplay-screen').classList.remove('active');
-    gameOverScreen.classList.add('active');
+    showScreen('gameover-screen'); //  this replaces the old line
   
     const finalMessage = document.getElementById('final-result');
   
