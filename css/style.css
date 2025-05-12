@@ -202,3 +202,25 @@ footer {
     display: block;
     margin: 0 auto;
 }
+
+/*****************************
+INSTRUCTIONS SCREEN STYLES
+*****************************/
+#instructions-screen {
+    text-align: center;
+    padding: 20px;
+}
+
+#instructions-screen ol {
+    text-align: left;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+#instructions-screen h2 {
+    text-align: center;
+}
+
+#back-button {
+    margin-top: 20px;
+}

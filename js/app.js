@@ -38,9 +38,42 @@ const gameOverScreen = document.getElementById('gameover-screen');
 
 // /*-------- Temporary Code to Have For Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-----*/
 
+//INSTRUCTIONS
+// Get the elements
+const instructionsButton = document.getElementById('instructions');
+const instructionsScreen = document.getElementById('instructions-screen');
+const starterScreen = document.getElementById('starter-screen');
+const gameplayScreen = document.getElementById('gameplay-screen');
+const backButton = document.getElementById('back-button');
+
+//Instructions button so it functions:
+instructionsButton.addEventListener('click', () => {
+    // hiding all other screens first to prevent overlaps
+    document.querySelectorAll('.screens').forEach(screen => {
+        screen.classList.remove('active');
+    });
+    // to show only the instructions screen
+    instructionsScreen.classList.add('active');
+});
+
+// // Instructions button so it functions:
+// instructionsButton.addEventListener('click', () => {
+//     starterScreen.classList.remove('active');
+//     gameplayScreen.classList.add('active'); 
+//     // instructionsScreen.classList.add('active');
+// });
+
+// Back button so it functions:
+backButton.addEventListener('click', () => {
+    instructionsScreen.classList.remove('active');
+    gameplayScreen.classList.add('active');
+});
+
+
+
 //CREATING GRID
 //CREATING gameplayScreen WITH gameGrid - finding and then making it active
-const gameplayScreen = document.getElementById('gameplay-screen'); // Find gameplay screen
+// const gameplayScreen = document.getElementById('gameplay-screen'); // Find gameplay screen //already typed above
 gameplayScreen.classList.add('active'); // Show gameplay screen - as active (as opposed to hidden)
 
 
