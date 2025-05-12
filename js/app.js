@@ -278,3 +278,25 @@ function startGameTimer() {
 
 
 
+// Code Graveyard
+
+/*
+#gameover-screen {
+    text-align: center; /* Centers everything */
+    /* padding-top: 150px; /* Pushes everything down */
+/* }
+
+.game-message {
+    color: cornflowerblue;
+    font-size: 30px;
+    margin-bottom: 30px; /* Space between message and button */
+/* } */
+/* 
+#play-again {
+    font-size: 15px;
+    padding: 10px 20px;
+} */
+ 
+/* #gameover-screen {
+    text-align: center;
+} */
