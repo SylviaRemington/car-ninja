@@ -224,3 +224,11 @@ INSTRUCTIONS SCREEN STYLES
 #back-button {
     margin-top: 20px;
 }
+
+/*****************************
+ADDTL
+*****************************/
+
+.low-time {
+    color: red;
+}

@@ -197,31 +197,33 @@ function updateScore() { //updates the score
 
 let gameTimer; // creating gameTimer for the 15-second timeout
 let timeLeft = 15; //starting time for the 15-second timeout
-let countdownInterval; //for live countdown display turning red in last 3 seconds
+let countdownInterval; //for live countdown display turning red in last 3 seconds //This one I didn't have the chance to create.
 
 // const startButton = document.getElementById('start-game');//already declared
-startButton.addEventListener('click', restartGame);
+startButton.addEventListener('click', restartGame); //add event listener to restart the game
 
 
-function startGameTimer() {
-    const countdownDisplay = document.getElementById('countdown-timer');
-    timeLeft = 15;
-    countdownDisplay.textContent = `Time Left: ${timeLeft}`;
+function startGameTimer() { //Here I created a function that's starting the game timer and controlling the countdown.
+    const countdownDisplay = document.getElementById('countdown-timer'); //Find the element where the countdown time is shown & saves it to this variable.
+    timeLeft = 15; //Setting the countdown time to 15 seconds
+    countdownDisplay.textContent = `Time Left: ${timeLeft}`; //Show time left on the screen.
 
-    if (countdownInterval) clearInterval(countdownInterval);
-    if (gameTimer) clearTimeout(gameTimer);
+    if (countdownInterval) clearInterval(countdownInterval); //If a countdown is already running, stop it (as per previous function)
+    if (gameTimer) clearTimeout(gameTimer); //If another game-ending-timer is running, stop that too.
 
-    countdownInterval = setInterval(() => {
-        if (timeLeft <= 0) {
-            countdownDisplay.textContent = `Time Left: 0`;
-            clearInterval(countdownInterval);
-            triggerGameOver();
-            return;
+    countdownInterval = setInterval(() => { //Start a new countdown that runs once every second. Everything happens once per second.
+        if (timeLeft <= 0) { //if time left is zero or less & time has run out...
+            countdownDisplay.textContent = `Time Left: 0`; //then show time left of 0 on the screen.
+            clearInterval(countdownInterval); //Stop the countdown timer completely.
+            triggerGameOver(); //End game by calling triggerGameOver
+            return; //then exit the countdown loop early so it doesn't keep going.
         }
-        timeLeft--;
-        countdownDisplay.textContent = `Time Left: ${timeLeft}`;
-        if (timeLeft <= 3) {
-            countdownDisplay.classList.add("low-time");
+
+        timeLeft = timeLeft -1; //subtract 1 from the time left
+        //timeLeft--; Can also do this /it's the same
+        countdownDisplay.textContent = `Time Left: ${timeLeft}`; //Update the screen to show the new time left.
+        if (timeLeft <= 3) { //If there are 3 seconds or less remaining,
+            countdownDisplay.classList.add("low-time"); //add a css class to change the look to red (This part isn't working yet.)
         } else {
             countdownDisplay.classList.remove("low-time");
         }
