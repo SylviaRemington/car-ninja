@@ -26,12 +26,14 @@ Ultimately, in its current iteration, it is purely a game in which you click on 
 - (2) Click cars to score points.
 - (3) Score 17+ points in 15 seconds to win!
 
-## My Planning Materials including proposal, user stories, and pseudocode:
+
+# My Planning Materials including Proposal, User Stories, and Pseudocode:
 Excalidraw Proposal Rendering: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
 
 Link to my planning materials: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
 
-## User Stories:
+
+# User Stories:
 - As a player, I want cars to appear in a grid so that I can interact with them visually.
 - As a player, I want to click on slow cars so that I can earn points and feel rewarded.
 - As a player, I want slow cars to break apart when clicked so that it feels like I sliced them.
@@ -50,10 +52,11 @@ Link to my planning materials: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVo
 - As a player, I want the game to give me positive messages when I score well so I feel encouraged.
 - As a player, I want the game to include accessibility features so I can play no matter my abilities.
 
-## Pseudocode:
-# Car Ninja Project - Pseudocode Developer Tasks
 
-# Initial proposal Idea that I sent to Tristan that he ok'd 
+# Pseudocode:
+## Car Ninja Project - Pseudocode Developer Tasks
+
+### Initial proposal Idea that I sent to Tristan that he ok'd 
 "I just thought of a fun idea. I could do a take off of "Fruit Ninja" and instead do a
 simple "Car Ninja" game where I use a grid and the cars move... but if a car is
 moving too slowly, I can chop it /click it to get it out of the way. I think it could be
