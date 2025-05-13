@@ -345,3 +345,16 @@ Unique Keys Add Complexity: Needing to know comment1 vs. comment2 in your functi
 Example (no code): If you want “Oh noooo!” for a slow-driving function, check carComments[0].text or add { text: "Oh noooo!", id: "slow" } and filter by id, not comment1.
 --Reference from chatGPT
 */
+
+/*
+MORE CODE GRAVEYARD STUFF FROM JS SECTION:
+
+
+
+
+
+
+
+
+
+*/
