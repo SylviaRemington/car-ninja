@@ -54,7 +54,7 @@ Link to my planning materials: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVo
 
 
 ## Pseudocode:
-## Car Ninja Project - Pseudocode Developer Tasks
+## Pseudocode Developer Tasks 
 
 ### Initial proposal Idea that I sent to Tristan that he ok'd 
 "I just thought of a fun idea. I could do a take off of "Fruit Ninja" and instead do a
