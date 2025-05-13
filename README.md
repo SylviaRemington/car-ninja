@@ -1,6 +1,6 @@
 # Car Ninja!
 
-## Screenshot of Car Ninja App with Instructions
+## Car Ninja App with Instructions
 ![Gameplay Screenshot](./images/car-ninja-screenshot.png)
 ![Gameplay Screenshot](./images/instructions.png)
 
