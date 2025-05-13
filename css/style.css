@@ -71,11 +71,13 @@ nav {
   HIDING SCREENS
 ********************************/
 .screens {
-    display: none;
+    display: none;  /* This hides all elements with this class by default. 
+    It makes them invisible and removes them from the webpage layout */
 }
 
 .active { 
-    /* elements with class="active" will be visible on the screen. And the class="active" is done in JS */
+    /* This means that the elements with class="active" will be visible on the screen. 
+    And the class="active" interactivity stuff is in JS */
     display: block;
 }
 
@@ -85,7 +87,7 @@ nav {
   SCREEN-SPECIFIC STYLES
 *****************************/
 
-/* Styling Of Different Screens below */
+/* Styling of different screens below */
 #starter-screen h2, #instructions-screen h2 {
     color: cornflowerblue;/* originally using this color and might come back to color: rgb(39, 39, 231); */
     -webkit-text-stroke: 1px black; /* Black outline around letters */
@@ -101,21 +103,18 @@ nav {
 margin: 0;/* Resets top/bottom margins */
  }
 
-
 #instructions-screen p {
     font-size: 12px;
     margin-top: 0;
     color: black;
 }
 
-#instructions-screen
-
-ol {
+#instructions-screen ol {
     font-size: 12px;
     font-weight: semi-bold;
 }
 
-/* Trying to add thin black border around images... and not currently working*/
+
 #game-grid img {
     border: 5px black;
 }
