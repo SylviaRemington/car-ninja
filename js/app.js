@@ -109,22 +109,23 @@ function startGame() { //When the game starts...
     isGameActive = true; //Mark the game as active so it knows it is running.
     updateScore(); //Call a function that updates the score display on the screen.
 
-    //clear any existing intervals
+    //clear any existing repeating or looping timers, or automatic countdown timers
     if (spawnLoop) clearInterval(spawnLoop); //If the game is already running, stop the old car-spawning timer and countdown timer, clear it.
     if (countdownInterval) clearInterval(countdownInterval); //If countdown timer is running, stop it and clear it. So that don't have multiple countdowns.
 
     // Reset screens
-    document.getElementById('gameplay-screen').classList.add('active');
-    document.getElementById('gameover-screen').classList.remove('active');
+    document.getElementById('gameplay-screen').classList.add('active'); //get the gameplay screen and add the active class to it
+    document.getElementById('gameover-screen').classList.remove('active');//get the gameover screen and remove the active class from it.
 
     //Start game functions
-    spawnLoop = setInterval(spawnCar, 500);
-    startGameTimer();
+    spawnLoop = setInterval(spawnCar, 500); //start a repeating timer that runs every 1/2 second (500 milliseconds)
+    //every time it runs, it calls the spawnCar function
+    startGameTimer();//call the startGameTimer function and run it
 }
 
-startButton.addEventListener('click', () => {
-    console.log('Start button clicked');
-    startGame();
+startButton.addEventListener('click', () => { //listen for the start button click
+    console.log('Start button clicked');//checking to see if the startButton works
+    startGame(); //call the startGame function
 });
 
 
@@ -249,7 +250,7 @@ function startGameTimer() {
         gameplayScreen.classList.remove('active');
         gameOverScreen.classList.add('active');
     
-
+        //WIN LOSE MESSAGE
         let message;
         if (score >=17) {
             message = 'You Win! Ninja Master!';
