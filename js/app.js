@@ -45,23 +45,22 @@ const gameplayScreen = document.getElementById('gameplay-screen');
 const backButton = document.getElementById('back-button');
 
 //Instructions button so it functions:
-instructionsButton.addEventListener('click', () => { //When you click on the instructions button
+instructionsButton.addEventListener('click', () => { //Listen for a click on the instructions button
     // hiding all other screens first to prevent overlaps
-    document.querySelectorAll('.screens').forEach(screen => { //you select all other screens
-        screen.classList.remove('active');
+    document.querySelectorAll('.screens').forEach(screen => { //find all elements with the class .screens
+        screen.classList.remove('active'); //for each one, remove the active class, so it hides all screens
     });
     // to show only the instructions screen
-    instructionsScreen.classList.add('active'); //find the instructions screen and mark it as active
+    instructionsScreen.classList.add('active'); //find the instructions screen and mark it as active & adding the active css style tag to this element
 });
 
-
-// Back button so it functions:
-backButton.addEventListener('click', () => {
-    instructionsScreen.classList.remove('active');
-    gameplayScreen.classList.add('active');
+// Back button so it can go back to gameplay screen and make instructions button as inactive:
+backButton.addEventListener('click', () => { //When backButton gets clicked, run the following code inside.
+    instructionsScreen.classList.remove('active'); //find instructions screen & remove active class from it
+    gameplayScreen.classList.add('active'); // find the gameplay screen & add active class to it to make screen show up.
 });
 
-
+//-----------------------------------------------------------------------------------------------------------
 
 //CREATING GRID
 //CREATING gameplayScreen WITH gameGrid - finding and then making it active
