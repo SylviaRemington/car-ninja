@@ -304,3 +304,59 @@ function startGameTimer() {
 //I put my excess code and code ideas in another file since it's so large.
 //If you want to see all the Code Graveyard code (thousands of lines with notes, ideas, etc), 
 //you can find that on my github account under the repo name of "car-ninja-alternate-universe"
+
+
+//ADDTL CODE GRAVEYARD INFO FROM DATA.JS PAGE - STILL WANT TO WORK ON THESE IDEAS AND HAVE THIS INFO HERE:
+
+// CODE IDEAS:
+//above create a startGame function within the Object like...
+// startGame: function() {
+//     console.log("Game started!");
+// }
+
+// Access properties
+// console.log(carNinja.name); // "Ferrari Ninja"
+// carNinja.startGame(); // "Game started!"
+
+/*
+INFORMATION ABOUT INCONSISTENT KEYS THAT CAN BE DELETED LATER AFTER I DELVE MORE INTO THIS AND BETTER UNDERSTAND IT:
+Why Consistent Keys (e.g., text) Are Recommended
+
+Iterating by index lets you access each object (e.g., carComments[0], carComments[1]), 
+but the issue is accessing the comment text inside each object due to inconsistent keys 
+(e.g. comment1, comment2, etc.). 
+
+Here’s why this causes problems and why consistent keys help:
+Problem with Inconsistent Keys
+Each object has a different key (comment1, comment2, comment3, etc.), 
+so to get the comment text, you need to know which key to use for each index:
+carComments[0].comment1 gets “Oh noooo! I was driving to slow!”
+
+carComments[1].comment2 gets “”, etc.
+
+When iterating, you can’t use a single key to access the text. 
+You’d need logic to match the index to the correct key 
+(e.g., if index === 0, use comment1; if index === 1, use comment2), which is complex and error-prone.
+
+For specific comment selection (e.g., picking “Oh noooo!” for a slow-driving scenario), 
+you must hardcode the key (comment1) and index (0), making your function less flexible.
+
+Why Consistent Keys Help:
+Using the same key (e.g., text) for all objects means you can access the comment text with one key, regardless of index:
+carComments[0].text, carComments[1].text, etc.
+
+Iteration: In a loop (e.g., index++), you can always use carComments[index].text to get the comment, no extra logic needed.
+
+Specific Selection: To pick a comment (e.g., “Oh noooo!”), use the index (carComments[0].text) or add an id/type property (e.g., { text: "Oh noooo!", type: "slow" }) for clarity, without needing unique keys.
+
+Simpler Functions: A function to display or select comments can assume text as the key, making your code reusable and easier to maintain (user story #24).
+
+Your Concern (No Confusion with Different Keys):
+You think different keys (comment1, comment2) help identify comments to avoid confusion, especially for specific functions. However:
+Indices Are Enough: The array’s index (0, 1, 2, ...) already identifies each comment uniquely. You can iterate with index++ and select by index (e.g., carComments[0] for “Oh noooo!”).
+
+Unique Keys Add Complexity: Needing to know comment1 vs. comment2 in your function logic is harder than using text and relying on indices or an id property.
+
+Example (no code): If you want “Oh noooo!” for a slow-driving function, check carComments[0].text or add { text: "Oh noooo!", id: "slow" } and filter by id, not comment1.
+--Reference from chatGPT
+*/
