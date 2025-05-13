@@ -5,7 +5,7 @@ console.log('JS LINKED AND WORKING');
 
 //FOR INSTRUCTORS: Notes below (and the comments next to the code) are necessary for me to understand what I am doing currently.
 //I am aware that in real world coding situations, I will need all of this gone. This is just helping me so that I can 
-//get through this exercise and mentally retain and understand what I am doing. Thank you for understanding.
+//get through this exercise and understand what I am doing. Thank you for understanding.
 //I've also put thousands of lines of code, comments, and ideas in a "Code Graveyard" in another repository named "car-ninja-alternate-universe."
 
 /*
