@@ -1,4 +1,4 @@
-# Car Ninja!
+### Car Ninja!
 
 Ready to ninja chop some cars??!? Have all the cars around you been driving too slowly in the fast lane, lately? And you're done with it?! If so, Car Ninja is for you!
 
@@ -15,12 +15,12 @@ Ultimately, in its current iteration, it is purely a game in which you click on 
 
 ## Getting Started
 
-Deployed Game: wait for it... wait for it...
+### Deployed Game: wait for it... wait for it...
 
 Instructions: 
-(1) Click on Start Game Button to commence the game 
-(2) Click cars to score points 
-(3) Score 17+ points in 15 seconds to win!
+- First item (1) Click on Start Game Button to commence the game 
+- Second item (2) Click cars to score points 
+- Third item (3) Score 17+ points in 15 seconds to win!
 
 Excalidraw Proposal Rendering: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
 
