@@ -18,15 +18,32 @@ Ultimately, in its current iteration, it is purely a game in which you click on 
 ### Deployed Game: wait for it... wait for it...
 
 Instructions: 
-- (1) Click on Start Game Button to commence the game 
-- (2) Click cars to score points 
+- (1) Click on "Start Game" Button to commence the game. 
+- (2) Click cars to score points.
 - (3) Score 17+ points in 15 seconds to win!
 
 Excalidraw Proposal Rendering: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
 
 Link to my planning materials: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
 
-User Stories:
+# User Stories:
+As a player, I want cars to appear in a grid so that I can interact with them visually.
+As a player, I want to click on slow cars so that I can earn points and feel rewarded.
+As a player, I want slow cars to break apart when clicked so that it feels like I sliced them.
+As a player, I want a ninja sound to play when I slice a car so that the game feels more fun and dramatic.
+As a player, I want my score to go up when I slice a slow car so that I can track my success.
+As a player, I want the game to subtract points if I click the wrong car so that I’m challenged to pay attention.
+As a player, I want to lose points if I don’t click a slow car in time so that I feel urgency to act.
+As a player, I want some cars to shout funny or rude insults so that the game has personality and makes me laugh.
+As a player, I want those insults to appear in speech bubbles so that it feels like a cartoon scene.
+As a player, I want to see my score update immediately so that I always know how I’m doing.
+As a player, I want to know when the game is over so that I can stop playing and see my final score.
+As a player, I want to see a “Game Over” screen with my score so that I can feel a sense of completion.
+As a player, I want some cars to spin or wiggle so that it’s harder to click them.
+As a player, I want to see visual feedback when I click something wrong so I know I made a mistake.
+As a player, I want the game to get harder over time so that I stay engaged.
+As a player, I want the game to give me positive messages when I score well so I feel encouraged.
+As a player, I want the game to include accessibility features so I can play no matter my abilities.
 
 Pseudocode:
 
