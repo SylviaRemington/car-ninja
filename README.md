@@ -37,6 +37,9 @@ General External Resources:
 Libraries: 
 Assets:
 References:
+Image Resources: Auto Trader
+Image Link: https://images.autotrader.com/scaler/408/306/hn/c/03775bd69037404893e710eea5872111.jpg
+
 
 5. Technologies Used: List of the technologies used, for example: HTML, CSS, JavaScript, Google Fonts (is that a technology or just a linked site?), etc.
 HTML
