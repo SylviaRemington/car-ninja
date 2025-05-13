@@ -27,8 +27,8 @@ Background Info: I chose to create this game because (1) Fruit Ninja is FUN! Who
 3. Getting started: Include a link to your deployed game and any instructions you deem important. This should also contain a link to your planning materials./Use one of these three terminologies "Deployed Game" or "Play at" or "Demo"
 Link to deployed game:
 Instructions: 
-Link to my planning materials:
-Excalidraw Proposal Rendering:
+Link to my planning materials: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
+Excalidraw Proposal Rendering: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
 User Stories:
 Pseudocode:
 
