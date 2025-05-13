@@ -55,11 +55,11 @@ instructionsButton.addEventListener('click', () => {
     instructionsScreen.classList.add('active');
 });
 
-// // Instructions button so it functions:
+// Instructions button so it functions:
 // instructionsButton.addEventListener('click', () => {
 //     starterScreen.classList.remove('active');
 //     gameplayScreen.classList.add('active'); 
-//     // instructionsScreen.classList.add('active');
+    // instructionsScreen.classList.add('active');
 // });
 
 // Back button so it functions:
