@@ -12,6 +12,7 @@ let score, let lives, const gameGrid, const width, const height, const cellCount
 const gameplayScreen, const startButton, let gameTimer, let timeLeft, let countdownInterval,
 const scoreDisplay, const countdownDisplay
 
+✅Code the Instructions Screen 
 Code the Start Game Button Functionality
 Code the Score Functionality
 Code the Timer Functionality
@@ -44,21 +45,15 @@ const gameplayScreen = document.getElementById('gameplay-screen');
 const backButton = document.getElementById('back-button');
 
 //Instructions button so it functions:
-instructionsButton.addEventListener('click', () => {
+instructionsButton.addEventListener('click', () => { //When you click on the instructions button
     // hiding all other screens first to prevent overlaps
-    document.querySelectorAll('.screens').forEach(screen => {
+    document.querySelectorAll('.screens').forEach(screen => { //you select all other screens
         screen.classList.remove('active');
     });
     // to show only the instructions screen
-    instructionsScreen.classList.add('active');
+    instructionsScreen.classList.add('active'); //find the instructions screen and mark it as active
 });
 
-// Instructions button so it functions:
-// instructionsButton.addEventListener('click', () => {
-//     starterScreen.classList.remove('active');
-//     gameplayScreen.classList.add('active'); 
-    // instructionsScreen.classList.add('active');
-// });
 
 // Back button so it functions:
 backButton.addEventListener('click', () => {
@@ -384,3 +379,12 @@ Code for 3 Round Functionality
 create click event where click on car and number generates for score
 create click event where click on a cell that doesn't have points, and number generates for score
 */
+
+// ADDTL CODE FOR INSTRUCTIONS BUTTON THAT DIDN'T WORK AND COMMENTING OUT / OLDER VERSIONS
+// Instructions button so it functions:
+// instructionsButton.addEventListener('click', () => {
+//     starterScreen.classList.remove('active');
+//     gameplayScreen.classList.add('active'); 
+    // instructionsScreen.classList.add('active');
+// });
+
