@@ -10,9 +10,10 @@ This idea of using licensing was shared with me by Landon. He's been using this 
 
 ___________________________________
 
-MIT License
+## MIT License
 
 (This is me practicing doing the action of a copyright for future use when I create an original piece.)
+
 Copyright (c) 2025 Sylvia Remington
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
