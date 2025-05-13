@@ -134,7 +134,7 @@ startButton.addEventListener('click', () => { //listen for the start button clic
 
 //PART OF CAR SPAWNING FUNCTIONALITY
 
-//CREATING ADDING AND REMOVING CYBERTRUCK
+//CREATING ADDING CYBERTRUCK
 function addCyberTruck(cellNumber) { //creates a function & takes a cellNumber as input. Number tells it which cell to use.
     cells[cellNumber].classList.add("cybertruck");//go to the specific cell in the grid (using whatever the number is)
     //This shows the cybertruck in the cell.
@@ -142,6 +142,7 @@ function addCyberTruck(cellNumber) { //creates a function & takes a cellNumber a
 
 // ------
 
+//REMOVING CYBERTRUCK
 function removeCyberTruck() {
     cells[cybertruckPosition].classList.remove("cybertruck");//go to the cell where the cybertruck is and remove cybertruck from cell
 }
@@ -150,8 +151,8 @@ function removeCyberTruck() {
 //-----------------------------------------------------------------------------------------------------------
 
 //CREATING SPAWN CAR SECTION
-// SPAWN CAR Section
-// spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
+// CAR SPAWNING FUNCTIONALITY
+
 function spawnCar() { //Declaring a function called spawnCar that will run code to add a car image to the grid when called
     if (!isGameActive) return;
     const randomCellPick = Math.floor(Math.random() * cells.length); //storing a random # to pick a grid cell
@@ -410,3 +411,5 @@ create click event where click on a cell that doesn't have points, and number ge
 // });
 
 //getElementById - JS method that finds one specific element on page by its id name
+
+// spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
