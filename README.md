@@ -61,10 +61,11 @@ Image Resources: Auto Trader
 Image Link: https://images.autotrader.com/scaler/408/306/hn/c/03775bd69037404893e710eea5872111.jpg
 
 
-5. Technologies Used: List of the technologies used, for example: HTML, CSS, JavaScript, Google Fonts (is that a technology or just a linked site?), etc.
-HTML
-CSS
-JavaScript
+## Technologies Used: 
+- HTML
+- CSS
+- JavaScript
+- Google searches for images
 
 6. Next Steps: Planned future enhancements (stretch goals).
 Expanding on the game and creating a full slice rather than just a click
