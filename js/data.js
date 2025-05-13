@@ -74,6 +74,7 @@ const carChoiceNinja = [
     locations: ["Rome", "Australia", "Nepal", "Japan", "Underground", "Under water"], 
 }
 ];
+
 //above create a startGame function within the Object like...
 // startGame: function() {
 //     console.log("Game started!");
@@ -87,16 +88,24 @@ const carChoiceNinja = [
 INFORMATION ABOUT INCONSISTENT KEYS THAT CAN BE DELETED LATER AFTER I DELVE MORE INTO THIS AND BETTER UNDERSTAND IT:
 Why Consistent Keys (e.g., text) Are Recommended
 
-You’re correct that iterating by index lets you access each object (e.g., carComments[0], carComments[1]), but the issue is accessing the comment text inside each object due to inconsistent keys (comment1, comment2, etc.). Here’s why this causes problems and why consistent keys help:
-Problem with Inconsistent Keys:
-Each object has a different key (comment1, comment2, comment3, etc.), so to get the comment text, you need to know which key to use for each index:
+Iterating by index lets you access each object (e.g., carComments[0], carComments[1]), 
+but the issue is accessing the comment text inside each object due to inconsistent keys 
+(e.g. comment1, comment2, etc.). 
+
+Here’s why this causes problems and why consistent keys help:
+Problem with Inconsistent Keys
+Each object has a different key (comment1, comment2, comment3, etc.), 
+so to get the comment text, you need to know which key to use for each index:
 carComments[0].comment1 gets “Oh noooo! I was driving to slow!”
 
 carComments[1].comment2 gets “”, etc.
 
-When iterating, you can’t use a single key to access the text. You’d need logic to match the index to the correct key (e.g., if index === 0, use comment1; if index === 1, use comment2), which is complex and error-prone.
+When iterating, you can’t use a single key to access the text. 
+You’d need logic to match the index to the correct key 
+(e.g., if index === 0, use comment1; if index === 1, use comment2), which is complex and error-prone.
 
-For specific comment selection (e.g., picking “Oh noooo!” for a slow-driving scenario), you must hardcode the key (comment1) and index (0), making your function less flexible.
+For specific comment selection (e.g., picking “Oh noooo!” for a slow-driving scenario), 
+you must hardcode the key (comment1) and index (0), making your function less flexible.
 
 Why Consistent Keys Help:
 Using the same key (e.g., text) for all objects means you can access the comment text with one key, regardless of index:
@@ -115,7 +124,6 @@ Indices Are Enough: The array’s index (0, 1, 2, ...) already identifies each c
 Unique Keys Add Complexity: Needing to know comment1 vs. comment2 in your function logic is harder than using text and relying on indices or an id property.
 
 Example (no code): If you want “Oh noooo!” for a slow-driving function, check carComments[0].text or add { text: "Oh noooo!", id: "slow" } and filter by id, not comment1.
-
-
+--Reference from chatGPT
 */
 

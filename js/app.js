@@ -299,3 +299,8 @@ function startGameTimer() {
 /* #gameover-screen {
     text-align: center;
 } */
+
+// CODE GRAVEYARD ---------------------------------------------------------------
+//I put my excess code and code ideas in another file since it's so large.
+//If you want to see all the Code Graveyard code (thousands of lines with notes, ideas, etc), 
+//you can find that on my github account under the repo name of "car-ninja-alternate-universe"
