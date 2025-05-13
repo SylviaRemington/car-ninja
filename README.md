@@ -64,7 +64,7 @@ simple enough and work. Instead of fruit, I'd be chopping cars. If this idea sou
 good for my level, I'll make a trello and then submit it. Just wanted to make sure
 I'm on the right track."
 
-## After researching online, here's kind of a basic format:
+### After researching online, here's kind of a basic format:
 - For a Simple Web Version I could make a beginner version like this:
 - Fruit/aka Cars (images or colored circles) appear on screen.
 - You click the car to “slice” it before it disappears.
