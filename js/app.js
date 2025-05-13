@@ -135,14 +135,15 @@ startButton.addEventListener('click', () => { //listen for the start button clic
 //PART OF CAR SPAWNING FUNCTIONALITY
 
 //CREATING ADDING AND REMOVING CYBERTRUCK
-function addCyberTruck(cellNumber) {
-    cells[cellNumber].classList.add("cybertruck");
+function addCyberTruck(cellNumber) { //creates a function & takes a cellNumber as input. Number tells it which cell to use.
+    cells[cellNumber].classList.add("cybertruck");//go to the specific cell in the grid (using whatever the number is)
+    //This shows the cybertruck in the cell.
 }
 
 // ------
 
 function removeCyberTruck() {
-    cells[cybertruckPosition].classList.remove("cybertruck");
+    cells[cybertruckPosition].classList.remove("cybertruck");//go to the cell where the cybertruck is and remove cybertruck from cell
 }
 
 
