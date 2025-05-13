@@ -17,13 +17,17 @@ Ultimately, in its current iteration, it is purely a game in which you click on 
 
 Deployed Game: wait for it... wait for it...
 
-Instructions: (1) Click on Start Game Button to commence the game, (2) Click cars to score points, (3) Score 17+ points in 15 seconds to win!
+Instructions: 
+(1) Click on Start Game Button to commence the game 
+(2) Click cars to score points 
+(3) Score 17+ points in 15 seconds to win!
 
 Excalidraw Proposal Rendering: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
 
 Link to my planning materials: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
 
 User Stories:
+
 Pseudocode:
 
 
