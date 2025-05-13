@@ -51,6 +51,98 @@ Link to my planning materials: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVo
 - As a player, I want the game to include accessibility features so I can play no matter my abilities.
 
 ## Pseudocode:
+# Car Ninja Project - Pseudocode Developer Tasks
+
+# Initial proposal Idea that I sent to Tristan that he ok'd 
+"I just thought of a fun idea. I could do a take off of "Fruit Ninja" and instead do a
+simple "Car Ninja" game where I use a grid and the cars move... but if a car is
+moving too slowly, I can chop it /click it to get it out of the way. I think it could be
+simple enough and work. Instead of fruit, I'd be chopping cars. If this idea sounds
+good for my level, I'll make a trello and then submit it. Just wanted to make sure
+I'm on the right track."
+
+# After researching online, here's kind of a basic format:
+- For a Simple Web Version I could make a beginner version like this:
+- Fruit/aka Cars (images or colored circles) appear on screen.
+- You click the car to “slice” it before it disappears.
+- Add a “splat” effect and a score.
+- Bonus: some “bombs”/"potholes" you shouldn’t click!
+- I don’t need real swiping — clicking is enough to capture the feel. I just
+substitute cars for fruit
+
+## Pseudocode Delineated Below:
+# Basic SetUp
+1. Design the game grid layout using HTML/CSS/Flexbox (html, css)
+2. Create a "score display" area on the screen - to update the score. (html using
+a div element / css custom font, size, color, position / js updates the number
+in live format based on user actions.)
+• Always visible in the corner (usually top right) (html, css, flexbox)
+• Updates instantly when the player clicks/slices the car. (js)
+• If possible, style with a custom font or glowing effect to match the game
+theme. (css)
+3. Create another "___ tries left" with "score display" or a button? (html, css, js)
+4. Add "Instructions" button. (html)
+5. Add "Start Game" button. (html)
+6. After "Start Game" button is pressed, have screen do "Ready...go!" (kind of
+like a count down)
+7. Add "Game Over" button, that when pressed resets and goes back to the
+beginning where you can play again. / Maybe show a "Game Over" screen
+with the final score and a restart options (html, css, js)
+8. Create a condition to end the game (e.g. time runs out, score limit, or used up
+all your click/slice tries/amounts) (js)
+9. Add an area of "fun facts" about these cars. Fruit ninja has a fun fact section
+right after Game Over.
+10. Add a home screen option/image/link to go back to home screen.
+Car Generation & Appearance
+11. Download some different images of diverse cars - Cybertruck, Ferrari, Toyota
+(html)
+12. Assign a type label to each car so users can tell what kind it is (html, css,
+maybe js)
+13. Set up different car types: slow, fast, spinning, wiggling (js)
+14. Apply different styles or animations to make cars look unique (eg., wiggle,
+spin) (css and animations)
+15. Create a function to spawn car elements in random grid cells / Either that or
+just have cars move from bottom to top of screen at various speeds, and after
+they are clicked have them somehow disappear or break apart. (js)
+16. Create random potholes to pop up, in place of cars. Lose points if you click
+on them.
+Interactions
+17. Add click handling so players can click cars (js)
+18. Determine what happens when a slow car is clicked (sound, score, slice -
+maybe explosion sound or ninja sound, score goes up by a certain amount of
+points, somehow break car apart?) (js)
+19. Determine what happens when a wrong car is clicked (penalty, warning) (js)
+20. Prevent the same car from being clicked twice (js)
+Timing & Game Loop
+21. Set up a timer that spawns cars every few seconds/or starts cars every few
+seconds (js)
+22. Set a 30-second timeout per car — if it’s not clicked, subtract points and
+remove it (js)
+23. Create a setTimeout() and clearTimeout() - keep track of all active timeouts
+so can clear them if needed. This keeps track of it & lets me stop scheduled
+actions if something changes (like navigating away, resetting a form, etc.). (js)
+Score Management
+24. Create functions to increase or decrease the score (js)
+25. Update the score display in real time (js)
+Slice Animation & Sound
+26. Design the slice effect: breaking the car into halves and animating them
+apart (css, js) / I want to do this with the click of a button. Not sure if I will
+actually be able to make car break apart.
+27. Play a ninja sound effect when the slice/click happens (html, js)
+28. Remove the broken pieces after animation ends, or have a splat at the
+side of the road (js)
+Insults & Speech Bubbles
+29. Create a list of insults the cars can say (js)
+30. Randomly trigger insults on certain cars after a short delay (js)
+31. Display insults in styled speech bubbles next to the car (html, css, js)
+32. Remove the speech bubble after a few seconds (js)
+End Game (Optional)
+33. Create a condition to end the game (e.g., time runs out, score limit, or
+mistake count) (js)
+34. Show a “Game Over” screen with the final score and a restart option (html,
+css, js)
+# LEVEL UP STUFF:
+add some stuff from creating websites
 
 
 ## Learning Resources (Attributions)
