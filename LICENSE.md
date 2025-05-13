@@ -1,9 +1,10 @@
 
 ## Disclaimer
+
 *Car Ninja is an educational project inspired by Fruit Ninja, created solely for learning purposes. All assets are used under fair use for academic demonstration.*
 ___________________________________
 
-In addition... From the creator, Sylvia Remington, this is a creation for a class assignment, and is my first time creating a game. I chose to create a game that is quite similar to Fruit Ninja except I am using cars and only "clicking on them". 
+In addition... From the student, Sylvia Remington, this is a creation for a class assignment, and is my first time creating a game. I chose to create a game that is quite similar to Fruit Ninja except I am using cars and only "clicking on them". 
 
 This idea of using licensing was shared to me by Landon. He's been using this verbiage for his original code, and it was great to get the awareness of how we can protect our future original code and code ideas. I am using this MIT verbiage from Landon as a placeholder until I am able to research this further. I am aware that my game is very similar to Fruit Ninja, and most likely does not need any licensing since I'm creating it to learn how to code. However, I wanted to put this in my project as practice for future original projects! Yay!... Just wanted to get all this out there and be as transparent as possible. Thanks! 
 
@@ -11,6 +12,7 @@ ___________________________________
 
 MIT License
 
+(This is me practicing doing the action of a copyright for future use when I create an original piece.)
 Copyright (c) 2025 Sylvia Remington
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
