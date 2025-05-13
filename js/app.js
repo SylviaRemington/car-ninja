@@ -25,11 +25,11 @@ Create click event where click on a cell that doesn't have points, and number ge
 
 /* ------ADDTL VARIABLES ADDED TO THE TOP THAT I WAS MISSING ----------*/
 
-let spawnLoop = null;
-let isGameActive = false; // New game state flag
-const livesDisplay = document.getElementById('tries-left');
-const countdownDisplay = document.getElementById('countdown-timer');
-const gameOverScreen = document.getElementById('gameover-screen');
+let spawnLoop = null; //This remembers where the game's car spawning timer is, so I can stop it later
+let isGameActive = false; // Like an on/off switch for the game - if false, means the game isn't active and running right now.
+const livesDisplay = document.getElementById('tries-left'); //getting the element where I can show how many lives user has left. Ended up taking this off the game.
+const countdownDisplay = document.getElementById('countdown-timer'); //getting the count-down timer so we can count down from 15 seconds
+const gameOverScreen = document.getElementById('gameover-screen'); //gets the gameover-screen for when win or lose.
 
 
 // /*-------- Temporary Code to Have For Gameplay Screen As Active Until I'm able to create code that moves from one screen to the next-----*/
