@@ -101,16 +101,17 @@ createGrid(); //called the function so a grid can be built for the game
 
 
 //CREATING START BUTTON FUNCTIONALITY
-const startButton = document.getElementById("start-game");
-startButton.addEventListener('click', startGame);
+const startButton = document.getElementById("start-game"); //find the element with id "start-game" & save it to a variable startButton
+startButton.addEventListener('click', startGame); //listen for a click on the start-game button to start the game (& when clicked, startGame function.)
 
-function startGame() {
-    score = 0;
-    isGameActive = true;
-    updateScore();
+function startGame() { //When the game starts...
+    score = 0; // Set the score back to zero.
+    isGameActive = true; //Mark the game as active so it knows it is running.
+    updateScore(); //Call a function that updates the score display on the screen.
+
     //clear any existing intervals
-    if (spawnLoop) clearInterval(spawnLoop);
-    if (countdownInterval) clearInterval(countdownInterval);
+    if (spawnLoop) clearInterval(spawnLoop); //If the game is already running, stop the old car-spawning timer and countdown timer, clear it.
+    if (countdownInterval) clearInterval(countdownInterval); //If countdown timer is running, stop it and clear it. So that don't have multiple countdowns.
 
     // Reset screens
     document.getElementById('gameplay-screen').classList.add('active');
@@ -248,7 +249,15 @@ function startGameTimer() {
         gameplayScreen.classList.remove('active');
         gameOverScreen.classList.add('active');
     
-        const message = score >= 17 ? 'You Win! Ninja Master!' : 'Game Over, man! You lose! Try Again.';
+
+        let message;
+        if (score >=17) {
+            message = 'You Win! Ninja Master!';
+        } else {
+            message = 'Game Over, man! You lose! Try Again.';
+        }
+        // const message = score >= 17 ? 'You Win! Ninja Master!' : 'Game Over, man! You lose! Try Again.'; //This is another version of the previous code I wrote. But more advanced.
+
         gameOverScreen.innerHTML = `<h2>${message}</h2><button id="play-again" class="buttons">Play Again!</button>`;
         document.getElementById('play-again').addEventListener('click', restartGame);
     }
@@ -398,3 +407,4 @@ create click event where click on a cell that doesn't have points, and number ge
     // instructionsScreen.classList.add('active');
 // });
 
+//getElementById - JS method that finds one specific element on page by its id name
