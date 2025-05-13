@@ -20,14 +20,14 @@ const scoreDisplay, const countdownDisplay
 ✅Code the Instructions Screen 
 ✅ Code the Grid
 ✅ Code the Start Game Button Functionality
-Code the Score Functionality
-Code the Timer Functionality
-Code the Car Spawning Functionality
-Code the game over Functionality
-Code the pothole spawning functionality
-Code the win/loss conditions
-Create click event where click on car and number generates for score
-Create click event where click on a cell that doesn't have points, and number generates for score
+✅ Code the Car Spawning Functionality
+✅ CLICK-TO-SCORE FUNCTIONALITY
+✅ Code the Score Functionality
+✅ Code the Countdown Timer Functionality
+✅ Code the Gameover Functionality
+✅ Code a win/lose message depending on if win or lose
+✅ Code Restart Game Functionality
+Code the pothole spawning functionality --Level Up 
 */
 
 /* ------ADDTL VARIABLES ADDED TO THE TOP THAT I WAS MISSING ----------*/
@@ -223,70 +223,69 @@ function startGameTimer() { //Here I created a function that's starting the game
         //timeLeft--; Can also do this /it's the same
         countdownDisplay.textContent = `Time Left: ${timeLeft}`; //Update the screen to show the new time left.
         if (timeLeft <= 3) { //If there are 3 seconds or less remaining,
-            countdownDisplay.classList.add("low-time"); //add a css class to change the look to red (This part isn't working yet.)
-        } else {
-            countdownDisplay.classList.remove("low-time");
+            countdownDisplay.classList.add("low-time"); //added a css class so I can change the timer to red to warn peeps it's almost gameover.//Need to rework this because it's not showing up correctly.
+        } else { //If there are more than 3 seconds left,
+            countdownDisplay.classList.remove("low-time"); //Then, make sure the red warning style is removed.
         }
-    }, 1000);
+    }, 1000); //The whole timer runs every 1 second (They compute stuff here as every 1000 milliseconds.)
 }
 
     // After 15 seconds, end the game
-    gameTimer = setTimeout(() => {
-      triggerGameOver();
-    }, 15000);
+    gameTimer = setTimeout(() => { //Start a timer that waits 15 seconds. When time is up, run the triggerGameOver code.
+      triggerGameOver(); //calling the function
+    }, 15000); //then wait 15 seconds before running the function
  
     //-----------------------------------------------------------------------------------------------------------
 
-    function triggerGameOver() {
-        clearInterval(countdownInterval);
-        if (spawnLoop) clearInterval(spawnLoop);
-        spawnLoop = null;
-        isGameActive = false;
+    function triggerGameOver() { //This runs when the game ends...
+        clearInterval(countdownInterval); //Stop the countdown timer.
+        if (spawnLoop) clearInterval(spawnLoop); //If car-spawning timer is still running, stop it.
+        spawnLoop = null; //Clear out the timer variable completely.
+        isGameActive = false; //Make game no longer active.
     
-        const cars = document.querySelectorAll('#game-grid img');
-        cars.forEach(car => car.remove());
+        const cars = document.querySelectorAll('#game-grid img');//find all car images from the grid
+        cars.forEach(car => car.remove()); //remove all car images from the grid... doing a forEach loop to remove every car.
     
-        const gameplayScreen = document.getElementById('gameplay-screen');
+        const gameplayScreen = document.getElementById('gameplay-screen'); //Find the gameplay screen and the game over screen on the page
         const gameOverScreen = document.getElementById('gameover-screen');
-        gameplayScreen.classList.remove('active');
-        gameOverScreen.classList.add('active');
+        gameplayScreen.classList.remove('active'); //Hide the gameplay screen.
+        gameOverScreen.classList.add('active'); //Show the gameover screen.
     
-        //WIN LOSE MESSAGE
+        //WIN LOSE MESSAGE - choosing a message based on the WIN/LOSE score
         let message;
-        if (score >=17) {
+        if (score >=17) { //If score is 17 or more, player wins.
             message = 'You Win! Ninja Master!';
-        } else {
+        } else { //else lost
             message = 'Game Over, man! You lose! Try Again.';
         }
         // const message = score >= 17 ? 'You Win! Ninja Master!' : 'Game Over, man! You lose! Try Again.'; //This is another version of the previous code I wrote. But more advanced.
 
         gameOverScreen.innerHTML = `<h2>${message}</h2><button id="play-again" class="buttons">Play Again!</button>`;
-        document.getElementById('play-again').addEventListener('click', restartGame);
+        //Shows the win or lose message on the screen & then adds a play again button underneath it.
+        document.getElementById('play-again').addEventListener('click', restartGame); 
+        //When the "Play Again" button is clicked, restart the game.
     }
 
     //-----------------------------------------------------------------------------------------------------------
 
-    function restartGame() {
-        // Reset score and timer display
-        score = 0;
-        timeLeft = 15;
-        updateScore();
-        document.getElementById('countdown-timer').textContent = `Time Left: ${timeLeft}`;
+    function restartGame() { //Resets everything and starts game again.
+        // Resets score and timer display.
+        score = 0; //Sets the score back to zero.
+        timeLeft = 15; //Sets the countdown timer back to 15 seconds.
+        updateScore(); //Calls updateScore function - go find the score display and change the text to match the current value of the score.
+        document.getElementById('countdown-timer').textContent = `Time Left: ${timeLeft}`; //updates the countdown display to show the time left of 15//ultimately resetting it.
         
         // Clear any existing cars
-        document.querySelectorAll('#game-grid img').forEach(img => img.remove());
+        document.querySelectorAll('#game-grid img').forEach(img => img.remove()); //Finds all car images in the grid & removes all to clear board.
         
         // Show gameplay screen, hide game over screen
-        document.getElementById('gameplay-screen').classList.add('active');
-        document.getElementById('gameover-screen').classList.remove('active');
+        document.getElementById('gameplay-screen').classList.add('active'); //Make the gameplay screen active again.
+        document.getElementById('gameover-screen').classList.remove('active'); //Make the gameover screen inactive again.
         
         // Start the game
-        startGame();
+        startGame(); //Start the game again
     }
 
-// function restartGame() {
-//     startGame();
-// };
 
 
 
@@ -296,7 +295,7 @@ function startGameTimer() { //Here I created a function that's starting the game
 
 
 
-
+    
 
 
 // CODE GRAVEYARD ---------------------------------------------------------------
@@ -369,8 +368,6 @@ MORE CODE GRAVEYARD STUFF FROM JS SECTION:
 
 
 
-
-
 */
 
 
@@ -417,4 +414,10 @@ create click event where click on a cell that doesn't have points, and number ge
 // setInterval(spawnCar, 1000); // Spawn car every 1 second//! Commented out setInterval so that it doesn't immediately spawn cars immediately before game starts
 //setInterval is a function that repeatedly calls a function at a set interval.
 
+// Code the win/loss conditions
+// Create click event where click on car and number generates for score
+// Create click event where click on a cell that doesn't have points, and number generates for score
 
+// function restartGame() {
+//     startGame();
+// };
