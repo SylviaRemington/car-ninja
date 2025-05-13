@@ -28,7 +28,6 @@ create click event where click on a cell that doesn't have points, and number ge
 
 /* ------ADDTL VARIABLES ADDED TO THE TOP THAT I WAS MISSING ----------*/
 
-
 let spawnLoop = null;
 let isGameActive = false; // New game state flag
 const livesDisplay = document.getElementById('tries-left');
