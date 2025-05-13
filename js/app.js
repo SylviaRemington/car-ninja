@@ -153,24 +153,24 @@ function removeCyberTruck() {
 //CREATING SPAWN CAR SECTION
 // CAR SPAWNING FUNCTIONALITY
 
-function spawnCar() { //Declaring a function called spawnCar that will run code to add a car image to the grid when called
-    if (!isGameActive) return;
-    const randomCellPick = Math.floor(Math.random() * cells.length); //storing a random # to pick a grid cell
-    //Math.random()built in function generates decimal number and then it's multiplied by 48 //don't totally get it but it's working
-    const cell = cells[randomCellPick];
-    if (!cell.querySelector('img')) { // Check if cell is empty with no image so it can put an image in there
-        const car = document.createElement('img'); //creates a new img html element
-        car.src = '../images/cybertruck.jpg'; //setting image source
+function spawnCar() { //Declaring a function called spawnCar that will run code to add a car image to the grid when called.
+    if (!isGameActive) return; //If the game is not running, stop the code here at return and do nothing.
+    const randomCellPick = Math.floor(Math.random() * cells.length); //pick and store a random number based on how many grid cells there are// This will choose a random cell.
+    //Math.random()built in function generates decimal number and then it's multiplied by 48 //don't totally get it but it's working.
+    const cell = cells[randomCellPick]; //Get the actual cell at that random number, saving to a variable cell.
+    if (!cell.querySelector('img')) { // Check if cell is empty with no image in it, so it can put an image in there.
+        const car = document.createElement('img'); //creates a new img html element (not shown yet)
+        car.src = '../images/cybertruck.jpg'; //sets the picture to be a cybertruck.
         car.alt = 'Cybertruck Car'; //setting alt text for accessibility and screen readers
         car.style.width = '100%'; //newly created car is styled with the width of 100% of the cell
         car.style.height = '100%'; //newly created car is styled with the height of 100% of the cell
-        car.classList.add('car'); // Ensure CSS positioning
-        cell.appendChild(car); //adds car as child of cell
-        car.addEventListener('click', () => {
-            if (isGameActive) {
-                score++;
-                updateScore();
-                car.remove();
+        car.classList.add('car'); // add a class of car to the image/ This also helps with styling and positioning
+        cell.appendChild(car); //finally actually places the car image into the grid, into the cell
+        car.addEventListener('click', () => { //When the car is clicked,
+            if (isGameActive) { //check if the game is running.
+                score++; // If it is, add 1 point to the score.
+                updateScore(); //Update the score display.
+                car.remove(); //Remove the car from the screen
             }
         });
         setTimeout(() => {
@@ -178,10 +178,6 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
         }, 3000); //removes car from grid after 3 seconds if not clicked
 }
 }
-
-
-// setInterval(spawnCar, 1000); // Spawn car every 1 second//! Commented out setInterval so that it doesn't immediately spawn cars immediately before game starts
-//setInterval is a function that repeatedly calls a function at a set interval.
 
 
 //-----------------------------------------------------------------------------------------------------------
@@ -413,3 +409,9 @@ create click event where click on a cell that doesn't have points, and number ge
 //getElementById - JS method that finds one specific element on page by its id name
 
 // spawnCar is showing up in between cells and not hitting cells - Need to figure out why not working
+
+
+// setInterval(spawnCar, 1000); // Spawn car every 1 second//! Commented out setInterval so that it doesn't immediately spawn cars immediately before game starts
+//setInterval is a function that repeatedly calls a function at a set interval.
+
+
