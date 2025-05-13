@@ -19,7 +19,7 @@ const scoreDisplay, const countdownDisplay
 
 ✅Code the Instructions Screen 
 ✅ Code the Grid
-Code the Start Game Button Functionality
+✅ Code the Start Game Button Functionality
 Code the Score Functionality
 Code the Timer Functionality
 Code the Car Spawning Functionality
@@ -86,15 +86,15 @@ let score = 0; //creating score variable for tracking player's points
 // let lives = 3; // creating lives variable for tracking player's lives (3 total)-going to create this after project presentations
 let car = document.createElement('img'); //defining car in global scope
 
-//Creating gameGrid Function
+//Creating gameGrid Function - This function builds the grid when it is called.
 function createGrid() {
-        for (let i = 0; i < cellCount; i++) { //creating for loop that runs once for every cell you want in the grid
-                const cell = document.createElement("div");
-                cells.push(cell); // Store <div> elements, not numbers
-                gameGrid.appendChild(cell);
+        for (let i = 0; i < cellCount; i++) { //creating for loop that runs once for every cell in the grid, & goes one less than cellCount (thus 47 cells)
+                const cell = document.createElement("div"); //this creates a new div, so eventually will have one cell for each div
+                cells.push(cell); // adds the new <div> element to the cells array & lets you keep track of all the grid squares.
+                gameGrid.appendChild(cell); //adds the grid to the page and it shows up on the browser
         }
 }
-createGrid();
+createGrid(); //called the function so a grid can be built for the game
 
 
 //-----------------------------------------------------------------------------------------------------------
