@@ -75,7 +75,7 @@ substitute cars for fruit.
 
 ## Pseudocode Delineated Below:
 ### Basic SetUp
-1. Design the game grid layout using HTML/CSS/Flexbox (html, css)
+1. Design the game grid layout using HTML/CSS/Flexbox. (html, css)
 2. Create a "score display" area on the screen - to update the score. (html using
 a div element / css custom font, size, color, position / js updates the number
 in live format based on user actions.)
@@ -144,7 +144,7 @@ End Game (Optional)
 mistake count) (js)
 34. Show a “Game Over” screen with the final score and a restart option (html,
 css, js)
-# LEVEL UP STUFF:
+### LEVEL UP STUFF:
 add some stuff from creating websites
 
 
