@@ -7,7 +7,7 @@ Ready to ninja chop some cars??!? Have all the cars around you been driving too 
 ![Gameplay Screenshot](./images/instructions.png)
 
 ## Disclaimer
-*Car Ninja is an educational project inspired by Fruit Ninja, created solely for learning purposes. All assets are used under fair use for academic demonstration.*
+*Car Ninja is an educational project inspired by Fruit Ninja, created solely for learning purposes. All assets are used under fair use for academic demonstration.... In addition, this is from a ninja-movie-watching-fan!*
 
 ## Description & Background Info
 Car Ninja was originally inspired by the game Fruit Ninja! I had big plans to create something almost identical to Fruit Ninja; except instead of slicing fruit, you'd be clicking on cars and watching them break apart!
@@ -21,11 +21,12 @@ Ultimately, in its current iteration, it is purely a game in which you click on 
 ### Deployed Game: wait for it... wait for it...
 *(We will be creating the deployed link on Project Presentations Day)*
 
-Instructions: 
+## Instructions: 
 - (1) Click on "Start Game" Button to commence the game. 
 - (2) Click cars to score points.
 - (3) Score 17+ points in 15 seconds to win!
 
+## My Planning Materials including proposal, user stories, and pseudo code:
 Excalidraw Proposal Rendering: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
 
 Link to my planning materials: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVoD,z0pOg97SMsKWoaxYUjVtcA
@@ -83,7 +84,7 @@ Link to my planning materials: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVo
 - The ability to be different characters as you play.
 
 
-If time, add sections including: Features, Screenshot/Images/Visuals Descriptions,MVP Requirements, Early Concept/Ideas, Process aka Build/CodeProcess, Known Issues & Bug Solves, Edge Cases Covered, and also disclaimer since I'm re-creating a game that is already big "Fruit Ninja". Somewhere state that this is educational, for learning class purposes, and is from a ninja-movie-watching-fan!
+- If time, add sections including: Features, Screenshot/Images/Visuals Descriptions, Early Concept/Ideas, Process aka Build/CodeProcess, Known Issues & Bug Solves, Edge Cases Covered, and also disclaimer since I'm re-creating a game that is already big "Fruit Ninja". Somewhere state that this is educational, for learning class purposes, and is from a ninja-movie-watching-fan!
 
 ## Ahas & Awarenesses from this project while researching code, coding, and fixing bugs
 
