@@ -64,17 +64,17 @@ simple enough and work. Instead of fruit, I'd be chopping cars. If this idea sou
 good for my level, I'll make a trello and then submit it. Just wanted to make sure
 I'm on the right track."
 
-# After researching online, here's kind of a basic format:
+## After researching online, here's kind of a basic format:
 - For a Simple Web Version I could make a beginner version like this:
 - Fruit/aka Cars (images or colored circles) appear on screen.
 - You click the car to “slice” it before it disappears.
 - Add a “splat” effect and a score.
 - Bonus: some “bombs”/"potholes" you shouldn’t click!
 - I don’t need real swiping — clicking is enough to capture the feel. I just
-substitute cars for fruit
+substitute cars for fruit.
 
 ## Pseudocode Delineated Below:
-# Basic SetUp
+### Basic SetUp
 1. Design the game grid layout using HTML/CSS/Flexbox (html, css)
 2. Create a "score display" area on the screen - to update the score. (html using
 a div element / css custom font, size, color, position / js updates the number
