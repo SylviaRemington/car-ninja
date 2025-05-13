@@ -10,7 +10,7 @@ This idea of using licensing was shared with me by Landon. He's been using this 
 
 ___________________________________
 
-## MIT License
+### MIT License
 
 (This is me practicing doing the action of a copyright for future use when I create an original piece.)
 
