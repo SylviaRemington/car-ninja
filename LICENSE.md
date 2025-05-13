@@ -1,3 +1,6 @@
+
+## Disclaimer
+*Car Ninja is an educational project inspired by Fruit Ninja, created solely for learning purposes. All assets are used under fair use for academic demonstration.*
 ___________________________________
 
 In addition... From the creator, Sylvia Remington, this is a creation for a class assignment, and is my first time creating a game. I chose to create a game that is quite similar to Fruit Ninja except I am using cars and only "clicking on them". 

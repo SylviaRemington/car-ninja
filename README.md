@@ -6,6 +6,9 @@ Ready to ninja chop some cars??!? Have all the cars around you been driving too 
 ![Gameplay Screenshot](./images/car-ninja-screenshot.png)
 ![Gameplay Screenshot](./images/instructions.png)
 
+## Disclaimer
+*Car Ninja is an educational project inspired by Fruit Ninja, created solely for learning purposes. All assets are used under fair use for academic demonstration.*
+
 ## Description & Background Info
 Car Ninja was originally inspired by the game Fruit Ninja! I had big plans to create something almost identical to Fruit Ninja; except instead of slicing fruit, you'd be clicking on cars and watching them break apart!
 
@@ -45,7 +48,7 @@ Link to my planning materials: https://excalidraw.com/#json=sC5spph5Pl5N-gakOGVo
 - As a player, I want the game to give me positive messages when I score well so I feel encouraged.
 - As a player, I want the game to include accessibility features so I can play no matter my abilities.
 
-Pseudocode:
+## Pseudocode:
 
 
 README Requirements:

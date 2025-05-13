@@ -24,8 +24,7 @@ header h1 { /* chose header h1 to differentiate between other headers on other s
 }
 
 h2 {
-    margin-top: 0; 
-    /* removes all space above */
+    margin-top: 0; /* removes all space above */
     margin-bottom: .8px;
     color: cornflowerblue;
     -webkit-text-stroke: 1px black;
@@ -76,7 +75,7 @@ nav {
 }
 
 .active { 
-    /* Any element with class="active" will be visible on the screen. And the class="active" is done in JS */
+    /* elements with class="active" will be visible on the screen. And the class="active" is done in JS */
     display: block;
 }
 
