@@ -14,16 +14,13 @@ const scoreDisplay, const countdownDisplay
 
 Code the Start Game Button Functionality
 Code the Score Functionality
-Code the Lives Functionality
 Code the Timer Functionality
 Code the Car Spawning Functionality
-Code the game Over-Functionality
+Code the game over Functionality
 Code the pothole spawning functionality
 Code the win/loss conditions
-Code for 3 Round Functionality
-
-create click event where click on car and number generates for score
-create click event where click on a cell that doesn't have points, and number generates for score
+Create click event where click on car and number generates for score
+Create click event where click on a cell that doesn't have points, and number generates for score
 */
 
 /* ------ADDTL VARIABLES ADDED TO THE TOP THAT I WAS MISSING ----------*/
@@ -39,6 +36,7 @@ const gameOverScreen = document.getElementById('gameover-screen');
 
 //INSTRUCTIONS
 // Get the elements
+//1st we get the elements with getElementById or querySelector
 const instructionsButton = document.getElementById('instructions');
 const instructionsScreen = document.getElementById('instructions-screen');
 const starterScreen = document.getElementById('starter-screen');
@@ -357,4 +355,32 @@ MORE CODE GRAVEYARD STUFF FROM JS SECTION:
 
 
 
+*/
+
+
+// CAR NINJA GAME JS
+
+// console.log('JS LINKED AND WORKING');
+
+/*
+✅ Create grid first in HTML CSS & JS - so have game's playing field needed for cars and potholes
+Set Up Variables and Displays for score/lives/displays: ✅ Set up score, ✅ lives, and displays to track and show the game’s state.
+
+✅ Set up these variables already:
+let score, let lives, const gameGrid, const width, const height, const cellCount, const cells, const cell,
+const gameplayScreen, const startButton, let gameTimer, let timeLeft, let countdownInterval,
+const scoreDisplay, const countdownDisplay
+
+Code the Start Game Button Functionality
+Code the Score Functionality
+Code the Lives Functionality
+Code the Timer Functionality
+Code the Car Spawning Functionality
+Code the game Over-Functionality
+Code the pothole spawning functionality
+Code the win/loss conditions
+Code for 3 Round Functionality
+
+create click event where click on car and number generates for score
+create click event where click on a cell that doesn't have points, and number generates for score
 */
