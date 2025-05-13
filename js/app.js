@@ -3,6 +3,11 @@
 
 console.log('JS LINKED AND WORKING');
 
+//FOR INSTRUCTORS: Notes below (and the comments next to the code) are necessary for me to understand what I am doing currently.
+//I am aware that in real world coding situations, I will need all of this gone. This is just helping me so that I can 
+//get through this exercise and mentally retain and understand what I am doing. Thank you for understanding.
+//I've also put thousands of lines of code, comments, and ideas in a "Code Graveyard" in another repository named "car-ninja-alternate-universe."
+
 /*
 ✅ Create grid first in HTML CSS & JS - so have game's playing field needed for cars and potholes
 Set Up Variables and Displays for score/lives/displays: ✅ Set up score, ✅ lives, and displays to track and show the game’s state.
@@ -13,6 +18,7 @@ const gameplayScreen, const startButton, let gameTimer, let timeLeft, let countd
 const scoreDisplay, const countdownDisplay
 
 ✅Code the Instructions Screen 
+✅ Code the Grid
 Code the Start Game Button Functionality
 Code the Score Functionality
 Code the Timer Functionality
@@ -71,17 +77,18 @@ gameplayScreen.classList.add('active'); // Show gameplay screen - as active (as 
 // Creating gameGrid
 // /* Using tools/example Tristan showed in class*/
 const gameGrid = document.querySelector("#game-grid");//grabbing the grid in html
-const width = 12; // columns - width usually refers to how many columns are in each row. 12 columns * 12 rows = 144 squares total
+const width = 12; // columns - width usually refers to how many columns are in each row. 12 columns * 4 rows = 48 squares total
 const height = 4; // rows
 const cellCount = width * height; //12 * 4 = 48 --currently creating a game with 12 across and 4 high -- subject to change later
 const cells = []; //creating an empty array that is meant to store each cell of the grid as I create them in a loop.
 const cell = document.createElement("div"); //creating the cells
 let score = 0; //creating score variable for tracking player's points
-// let lives = 3; // creating lives variable for tracking player's lives (3 total)
+// let lives = 3; // creating lives variable for tracking player's lives (3 total)-going to create this after project presentations
 let car = document.createElement('img'); //defining car in global scope
 
+//Creating gameGrid Function
 function createGrid() {
-        for (let i = 0; i < cellCount; i++) {
+        for (let i = 0; i < cellCount; i++) { //creating for loop that runs once for every cell you want in the grid
                 const cell = document.createElement("div");
                 cells.push(cell); // Store <div> elements, not numbers
                 gameGrid.appendChild(cell);
@@ -90,7 +97,7 @@ function createGrid() {
 createGrid();
 
 
-// ------------------------------
+//-----------------------------------------------------------------------------------------------------------
 
 
 //CREATING START BUTTON FUNCTIONALITY
@@ -121,9 +128,10 @@ startButton.addEventListener('click', () => {
 
 
 
-// ------------------------------
+//-----------------------------------------------------------------------------------------------------------
 
 //PART OF CAR SPAWNING FUNCTIONALITY
+
 //CREATING ADDING AND REMOVING CYBERTRUCK
 function addCyberTruck(cellNumber) {
     cells[cellNumber].classList.add("cybertruck");
@@ -136,7 +144,7 @@ function removeCyberTruck() {
 }
 
 
-// ------------------------------
+//-----------------------------------------------------------------------------------------------------------
 
 //CREATING SPAWN CAR SECTION
 // SPAWN CAR Section
@@ -172,7 +180,7 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
 //setInterval is a function that repeatedly calls a function at a set interval.
 
 
-// ------------------------------
+//-----------------------------------------------------------------------------------------------------------
 
 //ADDING CLICK-TO-SCORE FUNCTIONALITY
 const scoreDisplay = document.getElementById("points-earned"); //selecting and creating a variable for the score display element
@@ -181,7 +189,7 @@ function updateScore() { //updates the score
     scoreDisplay.textContent = `Score: ${score}`;
 }
 
-// ------------------------------
+//-----------------------------------------------------------------------------------------------------------
 
 //ADDING COUNTDOWN TIMER FUNCTIONALITY, SO CODE DOESN'T GO ON INDEFINITELY
 //getting help from chatgpt, deepseek, and grok big time for this one:
@@ -224,6 +232,7 @@ function startGameTimer() {
       triggerGameOver();
     }, 15000);
  
+    //-----------------------------------------------------------------------------------------------------------
 
     function triggerGameOver() {
         clearInterval(countdownInterval);
@@ -243,6 +252,8 @@ function startGameTimer() {
         gameOverScreen.innerHTML = `<h2>${message}</h2><button id="play-again" class="buttons">Play Again!</button>`;
         document.getElementById('play-again').addEventListener('click', restartGame);
     }
+
+    //-----------------------------------------------------------------------------------------------------------
 
     function restartGame() {
         // Reset score and timer display
