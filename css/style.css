@@ -77,7 +77,9 @@ nav {
 
 .active { 
     /* This means that the elements with class="active" will be visible on the screen. 
-    And the class="active" interactivity stuff is in JS */
+    It shows any element with this class & overrides the .screens hiding to make it visible again.
+    And the class="active" interactivity stuff is in JS. JS can switch these classes to control 
+    which screen (e.g. instructions, gameplay, game-over, etc.) is currently visible */
     display: block;
 }
 
@@ -133,8 +135,8 @@ margin: 0;/* Resets top/bottom margins */
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
-    margin-bottom: 20px; /* Space between score and game grid */
-    text-align: center; /* Optional: Center the text */
+    margin-bottom: 20px; /* adding more space between score and game grid */
+    text-align: center; /* centering the text in the score display */
 }
 
 #points-earned, #tries-left {
@@ -147,27 +149,27 @@ margin: 0;/* Resets top/bottom margins */
             GRID 
 *****************************/
 
-#game-grid {/* targeting the full container/the outer wrapper holding all the grid squares */
+#game-grid {/* targeting the full container/the outer wrapper part holding all the grid squares */
     display: flex; /* to arrange cells in the grid*/
     flex-wrap: wrap; /* to arrange cells in the grid */
     width: 600px; /*sets grid size - fixed width for 12 columns so grid has stability depending on screen size */
     margin: 0 auto; /* to center the grid on the page & fixes left alignment issue*/
-
 }
 
 #game-grid div { /* targeting each individual box inside the grid */
     width: calc(100% / 12); /* makes every cell exactly 50px wide (600 divided by 12) */
     height: 50px;  /* keeps height 50px for 4 rows - not sure why height in px works but height in % doesn't */
     border: 1px solid rgb(17, 111, 142); /* for cell outlines */
-    box-sizing: border-box; /* ensures borders are included in width */
+    box-sizing: border-box; /* This makes sure borders are included in width */
 }
 
 #game-grid div.cybertruck {
     background-image: url("../images/cybertruck.jpg");
-    background-size: 100% 100%; /* stretch to fill cell - I'm ok if image is distorted - wanted it to be on purpose so car looks more cartoony */
-    /* Can use background-size: cover too to fill without the distortion */
-    background-repeat: no-repeat; /*to show one image*/
-    background-position: center; /*to center the in the cell*/
+    background-size: 100% 100%; /* stretch to fill cell - I'm ok if image is distorted - wanted it to be on purpose so 
+    car looks more cartoony */
+    /* Can use background-size: cover -- This css fills the entire cell without the distortion. */
+    background-repeat: no-repeat; /*to show one image in the cell and not have multiple images in one cell*/
+    background-position: center; /*to center the image in the cell*/
 }
 
 
@@ -193,7 +195,7 @@ footer {
 
 #gameover-screen {
     text-align: center;
-    padding-top: 20px; /* can move this higher or lower depending on where I want the game over text to fit */
+    padding-top: 20px; /* can move this higher or lower depending on where I want the gameover text to fit */
 }
 
 #gameover-screen button {
