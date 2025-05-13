@@ -184,9 +184,10 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
 
 //ADDING CLICK-TO-SCORE FUNCTIONALITY
 const scoreDisplay = document.getElementById("points-earned"); //selecting and creating a variable for the score display element
+//finding the element on the page with the id points-earned. Saving it to a variable. And then, this is the spot where the score will show up.
 
 function updateScore() { //updates the score
-    scoreDisplay.textContent = `Score: ${score}`;
+    scoreDisplay.textContent = `Score: ${score}`; //changes the text inside the score display area
 }
 
 //-----------------------------------------------------------------------------------------------------------
