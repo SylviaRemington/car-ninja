@@ -6,7 +6,7 @@ ___________________________________
 
 In addition... From the student, Sylvia Remington, this is a creation for a class assignment, and is my first time creating a game. I chose to create a game that is quite similar to Fruit Ninja except I am using cars and only "clicking on them". 
 
-This idea of using licensing was shared to me by Landon. He's been using this verbiage for his original code, and it was great to get the awareness of how we can protect our future original code and code ideas. I am using this MIT verbiage from Landon as a placeholder until I am able to research this further. I am aware that my game is very similar to Fruit Ninja, and most likely does not need any licensing since I'm creating it to learn how to code. However, I wanted to put this in my project as practice for future original projects! Yay!... Just wanted to get all this out there and be as transparent as possible. Thanks! 
+This idea of using licensing was shared with me by Landon. He's been using this verbiage for his original code, and it was great to get the awareness of how we can protect our future original code and code ideas. I am using this MIT verbiage from Landon as a placeholder until I am able to research this further. I am aware that my game is very similar to Fruit Ninja, and most likely does not need any licensing since I'm creating it to learn how to code. However, I wanted to put this in my project as practice for future original projects! Yay!... Just wanted to get all this out there and be as transparent as possible. Thanks! 
 
 ___________________________________
 
