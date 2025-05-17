@@ -19,7 +19,6 @@ Ultimately, in its current iteration, it is purely a game in which you click on 
 ## Getting Started
 
 ## Deployed Game: https://sylviaremington.github.io/car-ninja/
-"
 
 ## Instructions: 
 - (1) Click on "Start Game" Button to commence the game. 
