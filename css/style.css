@@ -9,6 +9,12 @@
 
 body {
     background-color: lightgrey;
+    /* margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; */
+
 }
 
 
@@ -164,7 +170,7 @@ margin: 0;/* Resets top/bottom margins */
 }
 
 #game-grid div.cybertruck {
-    background-image: url("../images/cybertruck.jpg");
+    background-image: url("images/cybertruck.jpg");
     background-size: 100% 100%; /* stretch to fill cell - I'm ok if image is distorted - wanted it to be on purpose so 
     car looks more cartoony */
     /* Can use background-size: cover -- This css fills the entire cell without the distortion. */

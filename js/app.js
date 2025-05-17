@@ -160,7 +160,7 @@ function spawnCar() { //Declaring a function called spawnCar that will run code 
     const cell = cells[randomCellPick]; //Get the actual cell at that random number, saving to a variable cell.
     if (!cell.querySelector('img')) { // Check if cell is empty with no image in it, so it can put an image in there.
         const car = document.createElement('img'); //creates a new img html element (not shown yet)
-        car.src = '../images/cybertruck.jpg'; //sets the picture to be a cybertruck.
+        car.src = 'images/cybertruck.jpg'; //sets the picture to be a cybertruck.
         car.alt = 'Cybertruck Car'; //setting alt text for accessibility and screen readers
         car.style.width = '100%'; //newly created car is styled with the width of 100% of the cell
         car.style.height = '100%'; //newly created car is styled with the height of 100% of the cell
